@@ -1,0 +1,6 @@
+(sym_lib_table
+  (version 7)
+  (lib (name "SN65LVDS391D")(type "KiCad")(uri "${KIPRJMOD}/project_libraries/ul_SN65LVDS391D/KiCADv6/2025-02-19_23-09-58.kicad_sym")(options "")(descr ""))
+  (lib (name "MCU_RaspberryPi_and_Boards")(type "KiCad")(uri "${KIPRJMOD}/project_libraries/RP-Pico/MCU_RaspberryPi_and_Boards.kicad_sym")(options "")(descr ""))
+  (lib (name "Kria_Board_Parts")(type "KiCad")(uri "${KIPRJMOD}/project_libraries/Kria_Board_Parts/Kria_Board_Parts.kicad_sym")(options "")(descr ""))
+)
