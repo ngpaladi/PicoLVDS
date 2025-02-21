@@ -1,7 +1,7 @@
 (version 1)
 (rule "skew matching 100ohm"
 	(constraint skew (min -1mil) (max 1mil))
-	(constraint length (min 520mil) (max 550mil))
+	(constraint length (min 505mil) (max 525mil))
 	(condition "A.NetClass == '100ohm_diff'")
 	(severity warning))
 (rule "Length matching 50ohm"
