@@ -1,7 +1,7 @@
 (kicad_pcb
-	(version 20240108)
+	(version 20241229)
 	(generator "pcbnew")
-	(generator_version "8.0")
+	(generator_version "9.0")
 	(general
 		(thickness 1.54178)
 		(legacy_teardrops no)
@@ -16,27 +16,27 @@
 	)
 	(layers
 		(0 "F.Cu" signal)
-		(1 "In1.Cu" signal)
-		(2 "In2.Cu" signal)
-		(31 "B.Cu" signal)
-		(32 "B.Adhes" user "B.Adhesive")
-		(33 "F.Adhes" user "F.Adhesive")
-		(34 "B.Paste" user)
-		(35 "F.Paste" user)
-		(36 "B.SilkS" user "B.Silkscreen")
-		(37 "F.SilkS" user "F.Silkscreen")
-		(38 "B.Mask" user)
-		(39 "F.Mask" user)
-		(40 "Dwgs.User" user "User.Drawings")
-		(41 "Cmts.User" user "User.Comments")
-		(42 "Eco1.User" user "User.Eco1")
-		(43 "Eco2.User" user "User.Eco2")
-		(44 "Edge.Cuts" user)
-		(45 "Margin" user)
-		(46 "B.CrtYd" user "B.Courtyard")
-		(47 "F.CrtYd" user "F.Courtyard")
-		(48 "B.Fab" user)
-		(49 "F.Fab" user)
+		(4 "In1.Cu" signal)
+		(6 "In2.Cu" signal)
+		(2 "B.Cu" signal)
+		(9 "F.Adhes" user "F.Adhesive")
+		(11 "B.Adhes" user "B.Adhesive")
+		(13 "F.Paste" user)
+		(15 "B.Paste" user)
+		(5 "F.SilkS" user "F.Silkscreen")
+		(7 "B.SilkS" user "B.Silkscreen")
+		(1 "F.Mask" user)
+		(3 "B.Mask" user)
+		(17 "Dwgs.User" user "User.Drawings")
+		(19 "Cmts.User" user "User.Comments")
+		(21 "Eco1.User" user "User.Eco1")
+		(23 "Eco2.User" user "User.Eco2")
+		(25 "Edge.Cuts" user)
+		(27 "Margin" user)
+		(31 "F.CrtYd" user "F.Courtyard")
+		(29 "B.CrtYd" user "B.Courtyard")
+		(35 "F.Fab" user)
+		(33 "B.Fab" user)
 	)
 	(setup
 		(stackup
@@ -108,9 +108,10 @@
 		)
 		(pad_to_mask_clearance 0)
 		(allow_soldermask_bridges_in_footprints no)
+		(tenting front back)
 		(pcbplotparams
-			(layerselection 0x00010f8_ffffffff)
-			(plot_on_all_layers_selection 0x0000000_00000000)
+			(layerselection 0x00000000_00000000_55555555_575575ff)
+			(plot_on_all_layers_selection 0x00000000_00000000_00000000_00000000)
 			(disableapertmacros no)
 			(usegerberextensions no)
 			(usegerberattributes yes)
@@ -120,7 +121,6 @@
 			(dashed_line_gap_ratio 3.000000)
 			(svgprecision 4)
 			(plotframeref no)
-			(viasonmask no)
 			(mode 1)
 			(useauxorigin no)
 			(hpglpennumber 1)
@@ -128,16 +128,20 @@
 			(hpglpendiameter 15.000000)
 			(pdf_front_fp_property_popups yes)
 			(pdf_back_fp_property_popups yes)
+			(pdf_metadata yes)
+			(pdf_single_document no)
 			(dxfpolygonmode yes)
 			(dxfimperialunits yes)
 			(dxfusepcbnewfont yes)
 			(psnegative no)
 			(psa4output no)
-			(plotreference yes)
-			(plotvalue yes)
-			(plotfptext yes)
+			(plot_black_and_white yes)
 			(plotinvisibletext no)
 			(sketchpadsonfab no)
+			(plotpadnumbers no)
+			(hidednponfab no)
+			(sketchdnponfab yes)
+			(crossoutdnponfab yes)
 			(subtractmaskfromsilk no)
 			(outputformat 1)
 			(mirror no)
@@ -244,7 +248,7 @@
 		(descr "SOIC, 16 Pin (JEDEC MS-012AC, https://www.analog.com/media/en/package-pcb-resources/package/pkg_pdf/soic_narrow-r/r_16.pdf), generated with kicad-footprint-generator ipc_gullwing_generator.py")
 		(tags "SOIC SO")
 		(property "Reference" "U3"
-			(at 0 -5.9 360)
+			(at 0 -5.9 0)
 			(layer "F.SilkS")
 			(uuid "41bac9b3-fec8-421d-9f0c-176ed98d8a72")
 			(effects
@@ -255,7 +259,7 @@
 			)
 		)
 		(property "Value" "SN65LVDS391D"
-			(at 0 5.9 360)
+			(at 0 5.9 0)
 			(layer "F.Fab")
 			(uuid "eb9cc321-e22e-4f58-94b6-2432f2ddfea1")
 			(effects
@@ -265,20 +269,8 @@
 				)
 			)
 		)
-		(property "Footprint" "Package_SO:SOIC-16_3.9x9.9mm_P1.27mm"
-			(at 0 0 360)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "785319c2-692c-45ff-9e23-d89dd20798fc")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-			)
-		)
 		(property "Datasheet" ""
-			(at 0 0 360)
+			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "94584541-6bdd-46c7-9340-05e8a4809e78")
@@ -290,7 +282,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 0 0 360)
+			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "a6b4dc1a-3031-459e-8eb4-aaba2a676fd3")
@@ -353,7 +345,7 @@
 				(width 0.12)
 				(type solid)
 			)
-			(fill solid)
+			(fill yes)
 			(layer "F.SilkS")
 			(uuid "86dfa6b7-8036-48b8-b5f5-b91ab5f628c3")
 		)
@@ -448,7 +440,7 @@
 			(uuid "48c4c424-efed-4584-8a8e-76b72b9811b6")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 0 0 360)
+			(at 0 0 0)
 			(layer "F.Fab")
 			(uuid "5ef68e60-07a2-443c-a0c5-23cb6b7ae366")
 			(effects
@@ -461,7 +453,7 @@
 		(pad "1" smd roundrect
 			(at -2.475 -4.445 180)
 			(size 1.95 0.6)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net 1 "+3V3")
 			(pinfunction "EN1,2")
@@ -471,7 +463,7 @@
 		(pad "2" smd roundrect
 			(at -2.475 -3.175 180)
 			(size 1.95 0.6)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net 75 "/D7")
 			(pinfunction "DIN1")
@@ -481,7 +473,7 @@
 		(pad "3" smd roundrect
 			(at -2.475 -1.905 180)
 			(size 1.95 0.6)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net 89 "/D6")
 			(pinfunction "DIN2")
@@ -491,7 +483,7 @@
 		(pad "4" smd roundrect
 			(at -2.475 -0.635 180)
 			(size 1.95 0.6)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net 1 "+3V3")
 			(pinfunction "VCC")
@@ -501,7 +493,7 @@
 		(pad "5" smd roundrect
 			(at -2.475 0.635 180)
 			(size 1.95 0.6)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net 2 "GND")
 			(pinfunction "GND")
@@ -511,7 +503,7 @@
 		(pad "6" smd roundrect
 			(at -2.475 1.905 180)
 			(size 1.95 0.6)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net 78 "/D5")
 			(pinfunction "DIN3")
@@ -521,7 +513,7 @@
 		(pad "7" smd roundrect
 			(at -2.475 3.175 180)
 			(size 1.95 0.6)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net 84 "/D4")
 			(pinfunction "DIN4")
@@ -531,7 +523,7 @@
 		(pad "8" smd roundrect
 			(at -2.475 4.445 180)
 			(size 1.95 0.6)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net 1 "+3V3")
 			(pinfunction "EN3,4")
@@ -541,7 +533,7 @@
 		(pad "9" smd roundrect
 			(at 2.475 4.445 180)
 			(size 1.95 0.6)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net 25 "/Out_4-")
 			(pinfunction "DOUT4-")
@@ -551,7 +543,7 @@
 		(pad "10" smd roundrect
 			(at 2.475 3.175 180)
 			(size 1.95 0.6)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net 13 "/Out_4+")
 			(pinfunction "DOUT4+")
@@ -561,7 +553,7 @@
 		(pad "11" smd roundrect
 			(at 2.475 1.905 180)
 			(size 1.95 0.6)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net 9 "/Out_5-")
 			(pinfunction "DOUT3-")
@@ -571,7 +563,7 @@
 		(pad "12" smd roundrect
 			(at 2.475 0.635 180)
 			(size 1.95 0.6)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net 5 "/Out_5+")
 			(pinfunction "DOUT3+")
@@ -581,7 +573,7 @@
 		(pad "13" smd roundrect
 			(at 2.475 -0.635 180)
 			(size 1.95 0.6)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net 19 "/Out_6-")
 			(pinfunction "DOUT2-")
@@ -591,7 +583,7 @@
 		(pad "14" smd roundrect
 			(at 2.475 -1.905 180)
 			(size 1.95 0.6)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net 11 "/Out_6+")
 			(pinfunction "DOUT2+")
@@ -601,7 +593,7 @@
 		(pad "15" smd roundrect
 			(at 2.475 -3.175 180)
 			(size 1.95 0.6)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net 10 "/Out_7-")
 			(pinfunction "DOUT1-")
@@ -611,13 +603,14 @@
 		(pad "16" smd roundrect
 			(at 2.475 -4.445 180)
 			(size 1.95 0.6)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net 34 "/Out_7+")
 			(pinfunction "DOUT1+")
 			(pintype "output")
 			(uuid "3259194c-26a9-4acb-9da7-2dd761ea32f4")
 		)
+		(embedded_fonts no)
 		(model "${KICAD8_3DMODEL_DIR}/Package_SO.3dshapes/SOIC-16_3.9x9.9mm_P1.27mm.wrl"
 			(offset
 				(xyz 0 0 0)
@@ -654,19 +647,6 @@
 			(effects
 				(font
 					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric_Pad0.74x0.62mm_HandSolder"
-			(at 0 0 90)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "aca14d49-0a00-4812-b0d3-eb1ce6ad0934")
-			(effects
-				(font
-					(size 1.27 1.27)
 					(thickness 0.15)
 				)
 			)
@@ -816,7 +796,7 @@
 		(pad "1" smd roundrect
 			(at -0.5675 0 90)
 			(size 0.735 0.62)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net 1 "+3V3")
 			(pintype "passive")
@@ -825,12 +805,13 @@
 		(pad "2" smd roundrect
 			(at 0.5675 0 90)
 			(size 0.735 0.62)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net 2 "GND")
 			(pintype "passive")
 			(uuid "e3201229-df4e-44c6-90c7-72b2a0a2fa3f")
 		)
+		(embedded_fonts no)
 		(model "${KICAD8_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0402_1005Metric.wrl"
 			(offset
 				(xyz 0 0 0)
@@ -850,7 +831,7 @@
 		(descr "SOIC, 16 Pin (JEDEC MS-012AC, https://www.analog.com/media/en/package-pcb-resources/package/pkg_pdf/soic_narrow-r/r_16.pdf), generated with kicad-footprint-generator ipc_gullwing_generator.py")
 		(tags "SOIC SO")
 		(property "Reference" "U2"
-			(at 0 -5.9 360)
+			(at 0 -5.9 0)
 			(layer "F.SilkS")
 			(uuid "ee83b6b4-f505-45d2-8e16-439d6dd8e789")
 			(effects
@@ -861,7 +842,7 @@
 			)
 		)
 		(property "Value" "SN65LVDS391D"
-			(at 0 5.9 360)
+			(at 0 5.9 0)
 			(layer "F.Fab")
 			(uuid "e66b4636-fb71-4989-a82b-b5c2b9ed7dad")
 			(effects
@@ -871,20 +852,8 @@
 				)
 			)
 		)
-		(property "Footprint" "Package_SO:SOIC-16_3.9x9.9mm_P1.27mm"
-			(at 0 0 360)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "d2f65203-1185-436d-a10a-8d4a27e98f4e")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-			)
-		)
 		(property "Datasheet" ""
-			(at 0 0 360)
+			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "af4c7809-2efb-43ce-8cb6-d8bd3f64d82e")
@@ -896,7 +865,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 0 0 360)
+			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "ee82080b-38b9-43ee-8f55-1c0c01b0b50f")
@@ -959,7 +928,7 @@
 				(width 0.12)
 				(type solid)
 			)
-			(fill solid)
+			(fill yes)
 			(layer "F.SilkS")
 			(uuid "146d2227-a1b5-44af-b2f2-bc0796eb96d9")
 		)
@@ -1054,7 +1023,7 @@
 			(uuid "63ff3f86-1118-4b51-8edf-65104a0e10ee")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 0 0 360)
+			(at 0 0 0)
 			(layer "F.Fab")
 			(uuid "c7d378d0-cdeb-4639-9ff3-e37d1d0c52b7")
 			(effects
@@ -1067,7 +1036,7 @@
 		(pad "1" smd roundrect
 			(at -2.475 -4.445 180)
 			(size 1.95 0.6)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net 1 "+3V3")
 			(pinfunction "EN1,2")
@@ -1077,7 +1046,7 @@
 		(pad "2" smd roundrect
 			(at -2.475 -3.175 180)
 			(size 1.95 0.6)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net 76 "/D3")
 			(pinfunction "DIN1")
@@ -1087,7 +1056,7 @@
 		(pad "3" smd roundrect
 			(at -2.475 -1.905 180)
 			(size 1.95 0.6)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net 86 "/D2")
 			(pinfunction "DIN2")
@@ -1097,7 +1066,7 @@
 		(pad "4" smd roundrect
 			(at -2.475 -0.635 180)
 			(size 1.95 0.6)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net 1 "+3V3")
 			(pinfunction "VCC")
@@ -1107,7 +1076,7 @@
 		(pad "5" smd roundrect
 			(at -2.475 0.635 180)
 			(size 1.95 0.6)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net 2 "GND")
 			(pinfunction "GND")
@@ -1117,7 +1086,7 @@
 		(pad "6" smd roundrect
 			(at -2.475 1.905 180)
 			(size 1.95 0.6)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net 79 "/D1")
 			(pinfunction "DIN3")
@@ -1127,7 +1096,7 @@
 		(pad "7" smd roundrect
 			(at -2.475 3.175 180)
 			(size 1.95 0.6)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net 77 "/D0")
 			(pinfunction "DIN4")
@@ -1137,7 +1106,7 @@
 		(pad "8" smd roundrect
 			(at -2.475 4.445 180)
 			(size 1.95 0.6)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net 1 "+3V3")
 			(pinfunction "EN3,4")
@@ -1147,7 +1116,7 @@
 		(pad "9" smd roundrect
 			(at 2.475 4.445 180)
 			(size 1.95 0.6)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net 23 "/Out_0-")
 			(pinfunction "DOUT4-")
@@ -1157,7 +1126,7 @@
 		(pad "10" smd roundrect
 			(at 2.475 3.175 180)
 			(size 1.95 0.6)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net 15 "/Out_0+")
 			(pinfunction "DOUT4+")
@@ -1167,7 +1136,7 @@
 		(pad "11" smd roundrect
 			(at 2.475 1.905 180)
 			(size 1.95 0.6)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net 6 "/Out_1-")
 			(pinfunction "DOUT3-")
@@ -1177,7 +1146,7 @@
 		(pad "12" smd roundrect
 			(at 2.475 0.635 180)
 			(size 1.95 0.6)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net 18 "/Out_1+")
 			(pinfunction "DOUT3+")
@@ -1187,7 +1156,7 @@
 		(pad "13" smd roundrect
 			(at 2.475 -0.635 180)
 			(size 1.95 0.6)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net 35 "/Out_2-")
 			(pinfunction "DOUT2-")
@@ -1197,7 +1166,7 @@
 		(pad "14" smd roundrect
 			(at 2.475 -1.905 180)
 			(size 1.95 0.6)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net 28 "/Out_2+")
 			(pinfunction "DOUT2+")
@@ -1207,7 +1176,7 @@
 		(pad "15" smd roundrect
 			(at 2.475 -3.175 180)
 			(size 1.95 0.6)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net 24 "/Out_3-")
 			(pinfunction "DOUT1-")
@@ -1217,13 +1186,14 @@
 		(pad "16" smd roundrect
 			(at 2.475 -4.445 180)
 			(size 1.95 0.6)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net 14 "/Out_3+")
 			(pinfunction "DOUT1+")
 			(pintype "output")
 			(uuid "bbf05c36-3408-4e46-ab7e-f11ac051cb46")
 		)
+		(embedded_fonts no)
 		(model "${KICAD8_3DMODEL_DIR}/Package_SO.3dshapes/SOIC-16_3.9x9.9mm_P1.27mm.wrl"
 			(offset
 				(xyz 0 0 0)
@@ -1262,19 +1232,6 @@
 			(effects
 				(font
 					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Footprint" "Kria_Board_Parts:PinHeader_2x17_P2.54mm_Vertical_ECL"
-			(at 0 0 0)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "597e1790-d57e-4f99-9405-5c4e1e8e96d6")
-			(effects
-				(font
-					(size 1.27 1.27)
 					(thickness 0.15)
 				)
 			)
@@ -1585,12 +1542,7 @@
 			(at 0 0)
 			(size 1.7 1.7)
 			(drill 1)
-			(layers "*.Cu" "*.Mask" "In3.Cu" "In4.Cu" "In5.Cu" "In6.Cu" "In7.Cu" "In8.Cu"
-				"In9.Cu" "In10.Cu" "In11.Cu" "In12.Cu" "In13.Cu" "In14.Cu" "In15.Cu"
-				"In16.Cu" "In17.Cu" "In18.Cu" "In19.Cu" "In20.Cu" "In21.Cu" "In22.Cu"
-				"In23.Cu" "In24.Cu" "In25.Cu" "In26.Cu" "In27.Cu" "In28.Cu" "In29.Cu"
-				"In30.Cu"
-			)
+			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net 15 "/Out_0+")
 			(pinfunction "Pin_1")
@@ -1601,12 +1553,7 @@
 			(at 2.54 0)
 			(size 1.7 1.7)
 			(drill 1)
-			(layers "*.Cu" "*.Mask" "In3.Cu" "In4.Cu" "In5.Cu" "In6.Cu" "In7.Cu" "In8.Cu"
-				"In9.Cu" "In10.Cu" "In11.Cu" "In12.Cu" "In13.Cu" "In14.Cu" "In15.Cu"
-				"In16.Cu" "In17.Cu" "In18.Cu" "In19.Cu" "In20.Cu" "In21.Cu" "In22.Cu"
-				"In23.Cu" "In24.Cu" "In25.Cu" "In26.Cu" "In27.Cu" "In28.Cu" "In29.Cu"
-				"In30.Cu"
-			)
+			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net 23 "/Out_0-")
 			(pinfunction "Pin_2")
@@ -1617,12 +1564,7 @@
 			(at 0 2.54)
 			(size 1.7 1.7)
 			(drill 1)
-			(layers "*.Cu" "*.Mask" "In3.Cu" "In4.Cu" "In5.Cu" "In6.Cu" "In7.Cu" "In8.Cu"
-				"In9.Cu" "In10.Cu" "In11.Cu" "In12.Cu" "In13.Cu" "In14.Cu" "In15.Cu"
-				"In16.Cu" "In17.Cu" "In18.Cu" "In19.Cu" "In20.Cu" "In21.Cu" "In22.Cu"
-				"In23.Cu" "In24.Cu" "In25.Cu" "In26.Cu" "In27.Cu" "In28.Cu" "In29.Cu"
-				"In30.Cu"
-			)
+			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net 18 "/Out_1+")
 			(pinfunction "Pin_3")
@@ -1633,12 +1575,7 @@
 			(at 2.54 2.54)
 			(size 1.7 1.7)
 			(drill 1)
-			(layers "*.Cu" "*.Mask" "In3.Cu" "In4.Cu" "In5.Cu" "In6.Cu" "In7.Cu" "In8.Cu"
-				"In9.Cu" "In10.Cu" "In11.Cu" "In12.Cu" "In13.Cu" "In14.Cu" "In15.Cu"
-				"In16.Cu" "In17.Cu" "In18.Cu" "In19.Cu" "In20.Cu" "In21.Cu" "In22.Cu"
-				"In23.Cu" "In24.Cu" "In25.Cu" "In26.Cu" "In27.Cu" "In28.Cu" "In29.Cu"
-				"In30.Cu"
-			)
+			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net 6 "/Out_1-")
 			(pinfunction "Pin_4")
@@ -1649,12 +1586,7 @@
 			(at 0 5.08)
 			(size 1.7 1.7)
 			(drill 1)
-			(layers "*.Cu" "*.Mask" "In3.Cu" "In4.Cu" "In5.Cu" "In6.Cu" "In7.Cu" "In8.Cu"
-				"In9.Cu" "In10.Cu" "In11.Cu" "In12.Cu" "In13.Cu" "In14.Cu" "In15.Cu"
-				"In16.Cu" "In17.Cu" "In18.Cu" "In19.Cu" "In20.Cu" "In21.Cu" "In22.Cu"
-				"In23.Cu" "In24.Cu" "In25.Cu" "In26.Cu" "In27.Cu" "In28.Cu" "In29.Cu"
-				"In30.Cu"
-			)
+			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net 28 "/Out_2+")
 			(pinfunction "Pin_5")
@@ -1665,12 +1597,7 @@
 			(at 2.54 5.08)
 			(size 1.7 1.7)
 			(drill 1)
-			(layers "*.Cu" "*.Mask" "In3.Cu" "In4.Cu" "In5.Cu" "In6.Cu" "In7.Cu" "In8.Cu"
-				"In9.Cu" "In10.Cu" "In11.Cu" "In12.Cu" "In13.Cu" "In14.Cu" "In15.Cu"
-				"In16.Cu" "In17.Cu" "In18.Cu" "In19.Cu" "In20.Cu" "In21.Cu" "In22.Cu"
-				"In23.Cu" "In24.Cu" "In25.Cu" "In26.Cu" "In27.Cu" "In28.Cu" "In29.Cu"
-				"In30.Cu"
-			)
+			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net 35 "/Out_2-")
 			(pinfunction "Pin_6")
@@ -1681,12 +1608,7 @@
 			(at 0 7.62)
 			(size 1.7 1.7)
 			(drill 1)
-			(layers "*.Cu" "*.Mask" "In3.Cu" "In4.Cu" "In5.Cu" "In6.Cu" "In7.Cu" "In8.Cu"
-				"In9.Cu" "In10.Cu" "In11.Cu" "In12.Cu" "In13.Cu" "In14.Cu" "In15.Cu"
-				"In16.Cu" "In17.Cu" "In18.Cu" "In19.Cu" "In20.Cu" "In21.Cu" "In22.Cu"
-				"In23.Cu" "In24.Cu" "In25.Cu" "In26.Cu" "In27.Cu" "In28.Cu" "In29.Cu"
-				"In30.Cu"
-			)
+			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net 14 "/Out_3+")
 			(pinfunction "Pin_7")
@@ -1697,12 +1619,7 @@
 			(at 2.54 7.62)
 			(size 1.7 1.7)
 			(drill 1)
-			(layers "*.Cu" "*.Mask" "In3.Cu" "In4.Cu" "In5.Cu" "In6.Cu" "In7.Cu" "In8.Cu"
-				"In9.Cu" "In10.Cu" "In11.Cu" "In12.Cu" "In13.Cu" "In14.Cu" "In15.Cu"
-				"In16.Cu" "In17.Cu" "In18.Cu" "In19.Cu" "In20.Cu" "In21.Cu" "In22.Cu"
-				"In23.Cu" "In24.Cu" "In25.Cu" "In26.Cu" "In27.Cu" "In28.Cu" "In29.Cu"
-				"In30.Cu"
-			)
+			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net 24 "/Out_3-")
 			(pinfunction "Pin_8")
@@ -1713,12 +1630,7 @@
 			(at 0 10.16)
 			(size 1.7 1.7)
 			(drill 1)
-			(layers "*.Cu" "*.Mask" "In3.Cu" "In4.Cu" "In5.Cu" "In6.Cu" "In7.Cu" "In8.Cu"
-				"In9.Cu" "In10.Cu" "In11.Cu" "In12.Cu" "In13.Cu" "In14.Cu" "In15.Cu"
-				"In16.Cu" "In17.Cu" "In18.Cu" "In19.Cu" "In20.Cu" "In21.Cu" "In22.Cu"
-				"In23.Cu" "In24.Cu" "In25.Cu" "In26.Cu" "In27.Cu" "In28.Cu" "In29.Cu"
-				"In30.Cu"
-			)
+			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net 13 "/Out_4+")
 			(pinfunction "Pin_9")
@@ -1729,12 +1641,7 @@
 			(at 2.54 10.16)
 			(size 1.7 1.7)
 			(drill 1)
-			(layers "*.Cu" "*.Mask" "In3.Cu" "In4.Cu" "In5.Cu" "In6.Cu" "In7.Cu" "In8.Cu"
-				"In9.Cu" "In10.Cu" "In11.Cu" "In12.Cu" "In13.Cu" "In14.Cu" "In15.Cu"
-				"In16.Cu" "In17.Cu" "In18.Cu" "In19.Cu" "In20.Cu" "In21.Cu" "In22.Cu"
-				"In23.Cu" "In24.Cu" "In25.Cu" "In26.Cu" "In27.Cu" "In28.Cu" "In29.Cu"
-				"In30.Cu"
-			)
+			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net 25 "/Out_4-")
 			(pinfunction "Pin_10")
@@ -1745,12 +1652,7 @@
 			(at 0 12.7)
 			(size 1.7 1.7)
 			(drill 1)
-			(layers "*.Cu" "*.Mask" "In3.Cu" "In4.Cu" "In5.Cu" "In6.Cu" "In7.Cu" "In8.Cu"
-				"In9.Cu" "In10.Cu" "In11.Cu" "In12.Cu" "In13.Cu" "In14.Cu" "In15.Cu"
-				"In16.Cu" "In17.Cu" "In18.Cu" "In19.Cu" "In20.Cu" "In21.Cu" "In22.Cu"
-				"In23.Cu" "In24.Cu" "In25.Cu" "In26.Cu" "In27.Cu" "In28.Cu" "In29.Cu"
-				"In30.Cu"
-			)
+			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net 5 "/Out_5+")
 			(pinfunction "Pin_11")
@@ -1761,12 +1663,7 @@
 			(at 2.54 12.7)
 			(size 1.7 1.7)
 			(drill 1)
-			(layers "*.Cu" "*.Mask" "In3.Cu" "In4.Cu" "In5.Cu" "In6.Cu" "In7.Cu" "In8.Cu"
-				"In9.Cu" "In10.Cu" "In11.Cu" "In12.Cu" "In13.Cu" "In14.Cu" "In15.Cu"
-				"In16.Cu" "In17.Cu" "In18.Cu" "In19.Cu" "In20.Cu" "In21.Cu" "In22.Cu"
-				"In23.Cu" "In24.Cu" "In25.Cu" "In26.Cu" "In27.Cu" "In28.Cu" "In29.Cu"
-				"In30.Cu"
-			)
+			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net 9 "/Out_5-")
 			(pinfunction "Pin_12")
@@ -1777,12 +1674,7 @@
 			(at 0 15.24)
 			(size 1.7 1.7)
 			(drill 1)
-			(layers "*.Cu" "*.Mask" "In3.Cu" "In4.Cu" "In5.Cu" "In6.Cu" "In7.Cu" "In8.Cu"
-				"In9.Cu" "In10.Cu" "In11.Cu" "In12.Cu" "In13.Cu" "In14.Cu" "In15.Cu"
-				"In16.Cu" "In17.Cu" "In18.Cu" "In19.Cu" "In20.Cu" "In21.Cu" "In22.Cu"
-				"In23.Cu" "In24.Cu" "In25.Cu" "In26.Cu" "In27.Cu" "In28.Cu" "In29.Cu"
-				"In30.Cu"
-			)
+			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net 11 "/Out_6+")
 			(pinfunction "Pin_13")
@@ -1793,12 +1685,7 @@
 			(at 2.54 15.24)
 			(size 1.7 1.7)
 			(drill 1)
-			(layers "*.Cu" "*.Mask" "In3.Cu" "In4.Cu" "In5.Cu" "In6.Cu" "In7.Cu" "In8.Cu"
-				"In9.Cu" "In10.Cu" "In11.Cu" "In12.Cu" "In13.Cu" "In14.Cu" "In15.Cu"
-				"In16.Cu" "In17.Cu" "In18.Cu" "In19.Cu" "In20.Cu" "In21.Cu" "In22.Cu"
-				"In23.Cu" "In24.Cu" "In25.Cu" "In26.Cu" "In27.Cu" "In28.Cu" "In29.Cu"
-				"In30.Cu"
-			)
+			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net 19 "/Out_6-")
 			(pinfunction "Pin_14")
@@ -1809,12 +1696,7 @@
 			(at 0 17.78)
 			(size 1.7 1.7)
 			(drill 1)
-			(layers "*.Cu" "*.Mask" "In3.Cu" "In4.Cu" "In5.Cu" "In6.Cu" "In7.Cu" "In8.Cu"
-				"In9.Cu" "In10.Cu" "In11.Cu" "In12.Cu" "In13.Cu" "In14.Cu" "In15.Cu"
-				"In16.Cu" "In17.Cu" "In18.Cu" "In19.Cu" "In20.Cu" "In21.Cu" "In22.Cu"
-				"In23.Cu" "In24.Cu" "In25.Cu" "In26.Cu" "In27.Cu" "In28.Cu" "In29.Cu"
-				"In30.Cu"
-			)
+			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net 34 "/Out_7+")
 			(pinfunction "Pin_15")
@@ -1825,12 +1707,7 @@
 			(at 2.54 17.78)
 			(size 1.7 1.7)
 			(drill 1)
-			(layers "*.Cu" "*.Mask" "In3.Cu" "In4.Cu" "In5.Cu" "In6.Cu" "In7.Cu" "In8.Cu"
-				"In9.Cu" "In10.Cu" "In11.Cu" "In12.Cu" "In13.Cu" "In14.Cu" "In15.Cu"
-				"In16.Cu" "In17.Cu" "In18.Cu" "In19.Cu" "In20.Cu" "In21.Cu" "In22.Cu"
-				"In23.Cu" "In24.Cu" "In25.Cu" "In26.Cu" "In27.Cu" "In28.Cu" "In29.Cu"
-				"In30.Cu"
-			)
+			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net 10 "/Out_7-")
 			(pinfunction "Pin_16")
@@ -1841,12 +1718,7 @@
 			(at 0 20.32)
 			(size 1.7 1.7)
 			(drill 1)
-			(layers "*.Cu" "*.Mask" "In3.Cu" "In4.Cu" "In5.Cu" "In6.Cu" "In7.Cu" "In8.Cu"
-				"In9.Cu" "In10.Cu" "In11.Cu" "In12.Cu" "In13.Cu" "In14.Cu" "In15.Cu"
-				"In16.Cu" "In17.Cu" "In18.Cu" "In19.Cu" "In20.Cu" "In21.Cu" "In22.Cu"
-				"In23.Cu" "In24.Cu" "In25.Cu" "In26.Cu" "In27.Cu" "In28.Cu" "In29.Cu"
-				"In30.Cu"
-			)
+			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net 20 "/Out_8+")
 			(pinfunction "Pin_17")
@@ -1857,12 +1729,7 @@
 			(at 2.54 20.32)
 			(size 1.7 1.7)
 			(drill 1)
-			(layers "*.Cu" "*.Mask" "In3.Cu" "In4.Cu" "In5.Cu" "In6.Cu" "In7.Cu" "In8.Cu"
-				"In9.Cu" "In10.Cu" "In11.Cu" "In12.Cu" "In13.Cu" "In14.Cu" "In15.Cu"
-				"In16.Cu" "In17.Cu" "In18.Cu" "In19.Cu" "In20.Cu" "In21.Cu" "In22.Cu"
-				"In23.Cu" "In24.Cu" "In25.Cu" "In26.Cu" "In27.Cu" "In28.Cu" "In29.Cu"
-				"In30.Cu"
-			)
+			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net 3 "/Out_8-")
 			(pinfunction "Pin_18")
@@ -1873,12 +1740,7 @@
 			(at 0 22.86)
 			(size 1.7 1.7)
 			(drill 1)
-			(layers "*.Cu" "*.Mask" "In3.Cu" "In4.Cu" "In5.Cu" "In6.Cu" "In7.Cu" "In8.Cu"
-				"In9.Cu" "In10.Cu" "In11.Cu" "In12.Cu" "In13.Cu" "In14.Cu" "In15.Cu"
-				"In16.Cu" "In17.Cu" "In18.Cu" "In19.Cu" "In20.Cu" "In21.Cu" "In22.Cu"
-				"In23.Cu" "In24.Cu" "In25.Cu" "In26.Cu" "In27.Cu" "In28.Cu" "In29.Cu"
-				"In30.Cu"
-			)
+			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net 29 "/Out_9+")
 			(pinfunction "Pin_19")
@@ -1889,12 +1751,7 @@
 			(at 2.54 22.86)
 			(size 1.7 1.7)
 			(drill 1)
-			(layers "*.Cu" "*.Mask" "In3.Cu" "In4.Cu" "In5.Cu" "In6.Cu" "In7.Cu" "In8.Cu"
-				"In9.Cu" "In10.Cu" "In11.Cu" "In12.Cu" "In13.Cu" "In14.Cu" "In15.Cu"
-				"In16.Cu" "In17.Cu" "In18.Cu" "In19.Cu" "In20.Cu" "In21.Cu" "In22.Cu"
-				"In23.Cu" "In24.Cu" "In25.Cu" "In26.Cu" "In27.Cu" "In28.Cu" "In29.Cu"
-				"In30.Cu"
-			)
+			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net 12 "/Out_9-")
 			(pinfunction "Pin_20")
@@ -1905,12 +1762,7 @@
 			(at 0 25.4)
 			(size 1.7 1.7)
 			(drill 1)
-			(layers "*.Cu" "*.Mask" "In3.Cu" "In4.Cu" "In5.Cu" "In6.Cu" "In7.Cu" "In8.Cu"
-				"In9.Cu" "In10.Cu" "In11.Cu" "In12.Cu" "In13.Cu" "In14.Cu" "In15.Cu"
-				"In16.Cu" "In17.Cu" "In18.Cu" "In19.Cu" "In20.Cu" "In21.Cu" "In22.Cu"
-				"In23.Cu" "In24.Cu" "In25.Cu" "In26.Cu" "In27.Cu" "In28.Cu" "In29.Cu"
-				"In30.Cu"
-			)
+			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net 30 "/Out_10+")
 			(pinfunction "Pin_21")
@@ -1921,12 +1773,7 @@
 			(at 2.54 25.4)
 			(size 1.7 1.7)
 			(drill 1)
-			(layers "*.Cu" "*.Mask" "In3.Cu" "In4.Cu" "In5.Cu" "In6.Cu" "In7.Cu" "In8.Cu"
-				"In9.Cu" "In10.Cu" "In11.Cu" "In12.Cu" "In13.Cu" "In14.Cu" "In15.Cu"
-				"In16.Cu" "In17.Cu" "In18.Cu" "In19.Cu" "In20.Cu" "In21.Cu" "In22.Cu"
-				"In23.Cu" "In24.Cu" "In25.Cu" "In26.Cu" "In27.Cu" "In28.Cu" "In29.Cu"
-				"In30.Cu"
-			)
+			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net 26 "/Out_10-")
 			(pinfunction "Pin_22")
@@ -1937,12 +1784,7 @@
 			(at 0 27.94)
 			(size 1.7 1.7)
 			(drill 1)
-			(layers "*.Cu" "*.Mask" "In3.Cu" "In4.Cu" "In5.Cu" "In6.Cu" "In7.Cu" "In8.Cu"
-				"In9.Cu" "In10.Cu" "In11.Cu" "In12.Cu" "In13.Cu" "In14.Cu" "In15.Cu"
-				"In16.Cu" "In17.Cu" "In18.Cu" "In19.Cu" "In20.Cu" "In21.Cu" "In22.Cu"
-				"In23.Cu" "In24.Cu" "In25.Cu" "In26.Cu" "In27.Cu" "In28.Cu" "In29.Cu"
-				"In30.Cu"
-			)
+			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net 21 "/Out_11+")
 			(pinfunction "Pin_23")
@@ -1953,12 +1795,7 @@
 			(at 2.54 27.94)
 			(size 1.7 1.7)
 			(drill 1)
-			(layers "*.Cu" "*.Mask" "In3.Cu" "In4.Cu" "In5.Cu" "In6.Cu" "In7.Cu" "In8.Cu"
-				"In9.Cu" "In10.Cu" "In11.Cu" "In12.Cu" "In13.Cu" "In14.Cu" "In15.Cu"
-				"In16.Cu" "In17.Cu" "In18.Cu" "In19.Cu" "In20.Cu" "In21.Cu" "In22.Cu"
-				"In23.Cu" "In24.Cu" "In25.Cu" "In26.Cu" "In27.Cu" "In28.Cu" "In29.Cu"
-				"In30.Cu"
-			)
+			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net 8 "/Out_11-")
 			(pinfunction "Pin_24")
@@ -1969,12 +1806,7 @@
 			(at 0 30.48)
 			(size 1.7 1.7)
 			(drill 1)
-			(layers "*.Cu" "*.Mask" "In3.Cu" "In4.Cu" "In5.Cu" "In6.Cu" "In7.Cu" "In8.Cu"
-				"In9.Cu" "In10.Cu" "In11.Cu" "In12.Cu" "In13.Cu" "In14.Cu" "In15.Cu"
-				"In16.Cu" "In17.Cu" "In18.Cu" "In19.Cu" "In20.Cu" "In21.Cu" "In22.Cu"
-				"In23.Cu" "In24.Cu" "In25.Cu" "In26.Cu" "In27.Cu" "In28.Cu" "In29.Cu"
-				"In30.Cu"
-			)
+			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net 17 "/Out_12+")
 			(pinfunction "Pin_25")
@@ -1985,12 +1817,7 @@
 			(at 2.54 30.48)
 			(size 1.7 1.7)
 			(drill 1)
-			(layers "*.Cu" "*.Mask" "In3.Cu" "In4.Cu" "In5.Cu" "In6.Cu" "In7.Cu" "In8.Cu"
-				"In9.Cu" "In10.Cu" "In11.Cu" "In12.Cu" "In13.Cu" "In14.Cu" "In15.Cu"
-				"In16.Cu" "In17.Cu" "In18.Cu" "In19.Cu" "In20.Cu" "In21.Cu" "In22.Cu"
-				"In23.Cu" "In24.Cu" "In25.Cu" "In26.Cu" "In27.Cu" "In28.Cu" "In29.Cu"
-				"In30.Cu"
-			)
+			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net 36 "/Out_12-")
 			(pinfunction "Pin_26")
@@ -2001,12 +1828,7 @@
 			(at 0 33.02)
 			(size 1.7 1.7)
 			(drill 1)
-			(layers "*.Cu" "*.Mask" "In3.Cu" "In4.Cu" "In5.Cu" "In6.Cu" "In7.Cu" "In8.Cu"
-				"In9.Cu" "In10.Cu" "In11.Cu" "In12.Cu" "In13.Cu" "In14.Cu" "In15.Cu"
-				"In16.Cu" "In17.Cu" "In18.Cu" "In19.Cu" "In20.Cu" "In21.Cu" "In22.Cu"
-				"In23.Cu" "In24.Cu" "In25.Cu" "In26.Cu" "In27.Cu" "In28.Cu" "In29.Cu"
-				"In30.Cu"
-			)
+			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net 33 "/Out_13+")
 			(pinfunction "Pin_27")
@@ -2017,12 +1839,7 @@
 			(at 2.54 33.02)
 			(size 1.7 1.7)
 			(drill 1)
-			(layers "*.Cu" "*.Mask" "In3.Cu" "In4.Cu" "In5.Cu" "In6.Cu" "In7.Cu" "In8.Cu"
-				"In9.Cu" "In10.Cu" "In11.Cu" "In12.Cu" "In13.Cu" "In14.Cu" "In15.Cu"
-				"In16.Cu" "In17.Cu" "In18.Cu" "In19.Cu" "In20.Cu" "In21.Cu" "In22.Cu"
-				"In23.Cu" "In24.Cu" "In25.Cu" "In26.Cu" "In27.Cu" "In28.Cu" "In29.Cu"
-				"In30.Cu"
-			)
+			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net 22 "/Out_13-")
 			(pinfunction "Pin_28")
@@ -2033,12 +1850,7 @@
 			(at 0 35.56)
 			(size 1.7 1.7)
 			(drill 1)
-			(layers "*.Cu" "*.Mask" "In3.Cu" "In4.Cu" "In5.Cu" "In6.Cu" "In7.Cu" "In8.Cu"
-				"In9.Cu" "In10.Cu" "In11.Cu" "In12.Cu" "In13.Cu" "In14.Cu" "In15.Cu"
-				"In16.Cu" "In17.Cu" "In18.Cu" "In19.Cu" "In20.Cu" "In21.Cu" "In22.Cu"
-				"In23.Cu" "In24.Cu" "In25.Cu" "In26.Cu" "In27.Cu" "In28.Cu" "In29.Cu"
-				"In30.Cu"
-			)
+			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net 32 "/Out_14+")
 			(pinfunction "Pin_29")
@@ -2049,12 +1861,7 @@
 			(at 2.54 35.56)
 			(size 1.7 1.7)
 			(drill 1)
-			(layers "*.Cu" "*.Mask" "In3.Cu" "In4.Cu" "In5.Cu" "In6.Cu" "In7.Cu" "In8.Cu"
-				"In9.Cu" "In10.Cu" "In11.Cu" "In12.Cu" "In13.Cu" "In14.Cu" "In15.Cu"
-				"In16.Cu" "In17.Cu" "In18.Cu" "In19.Cu" "In20.Cu" "In21.Cu" "In22.Cu"
-				"In23.Cu" "In24.Cu" "In25.Cu" "In26.Cu" "In27.Cu" "In28.Cu" "In29.Cu"
-				"In30.Cu"
-			)
+			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net 7 "/Out_14-")
 			(pinfunction "Pin_30")
@@ -2065,12 +1872,7 @@
 			(at 0 38.1)
 			(size 1.7 1.7)
 			(drill 1)
-			(layers "*.Cu" "*.Mask" "In3.Cu" "In4.Cu" "In5.Cu" "In6.Cu" "In7.Cu" "In8.Cu"
-				"In9.Cu" "In10.Cu" "In11.Cu" "In12.Cu" "In13.Cu" "In14.Cu" "In15.Cu"
-				"In16.Cu" "In17.Cu" "In18.Cu" "In19.Cu" "In20.Cu" "In21.Cu" "In22.Cu"
-				"In23.Cu" "In24.Cu" "In25.Cu" "In26.Cu" "In27.Cu" "In28.Cu" "In29.Cu"
-				"In30.Cu"
-			)
+			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net 27 "/Out_15+")
 			(pinfunction "Pin_31")
@@ -2081,12 +1883,7 @@
 			(at 2.54 38.1)
 			(size 1.7 1.7)
 			(drill 1)
-			(layers "*.Cu" "*.Mask" "In3.Cu" "In4.Cu" "In5.Cu" "In6.Cu" "In7.Cu" "In8.Cu"
-				"In9.Cu" "In10.Cu" "In11.Cu" "In12.Cu" "In13.Cu" "In14.Cu" "In15.Cu"
-				"In16.Cu" "In17.Cu" "In18.Cu" "In19.Cu" "In20.Cu" "In21.Cu" "In22.Cu"
-				"In23.Cu" "In24.Cu" "In25.Cu" "In26.Cu" "In27.Cu" "In28.Cu" "In29.Cu"
-				"In30.Cu"
-			)
+			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net 16 "/Out_15-")
 			(pinfunction "Pin_32")
@@ -2097,12 +1894,7 @@
 			(at 0 40.64)
 			(size 1.7 1.7)
 			(drill 1)
-			(layers "*.Cu" "*.Mask" "In3.Cu" "In4.Cu" "In5.Cu" "In6.Cu" "In7.Cu" "In8.Cu"
-				"In9.Cu" "In10.Cu" "In11.Cu" "In12.Cu" "In13.Cu" "In14.Cu" "In15.Cu"
-				"In16.Cu" "In17.Cu" "In18.Cu" "In19.Cu" "In20.Cu" "In21.Cu" "In22.Cu"
-				"In23.Cu" "In24.Cu" "In25.Cu" "In26.Cu" "In27.Cu" "In28.Cu" "In29.Cu"
-				"In30.Cu"
-			)
+			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net 4 "unconnected-(J1-Pin_33-Pad33)")
 			(pinfunction "Pin_33")
@@ -2113,18 +1905,14 @@
 			(at 2.54 40.64)
 			(size 1.7 1.7)
 			(drill 1)
-			(layers "*.Cu" "*.Mask" "In3.Cu" "In4.Cu" "In5.Cu" "In6.Cu" "In7.Cu" "In8.Cu"
-				"In9.Cu" "In10.Cu" "In11.Cu" "In12.Cu" "In13.Cu" "In14.Cu" "In15.Cu"
-				"In16.Cu" "In17.Cu" "In18.Cu" "In19.Cu" "In20.Cu" "In21.Cu" "In22.Cu"
-				"In23.Cu" "In24.Cu" "In25.Cu" "In26.Cu" "In27.Cu" "In28.Cu" "In29.Cu"
-				"In30.Cu"
-			)
+			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net 31 "unconnected-(J1-Pin_34-Pad34)")
 			(pinfunction "Pin_34")
 			(pintype "passive+no_connect")
 			(uuid "055553b9-4e73-456f-ac20-f8fd5649eab9")
 		)
+		(embedded_fonts no)
 		(model "${KICAD8_3DMODEL_DIR}/Connector_PinHeader_2.54mm.3dshapes/PinHeader_2x17_P2.54mm_Vertical.wrl"
 			(offset
 				(xyz 0 0 0)
@@ -2161,19 +1949,6 @@
 			(effects
 				(font
 					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric_Pad0.74x0.62mm_HandSolder"
-			(at 0 0 90)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "9f148307-1322-47da-a215-9809d5db2af8")
-			(effects
-				(font
-					(size 1.27 1.27)
 					(thickness 0.15)
 				)
 			)
@@ -2323,7 +2098,7 @@
 		(pad "1" smd roundrect
 			(at -0.5675 0 90)
 			(size 0.735 0.62)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net 1 "+3V3")
 			(pintype "passive")
@@ -2332,12 +2107,13 @@
 		(pad "2" smd roundrect
 			(at 0.5675 0 90)
 			(size 0.735 0.62)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net 2 "GND")
 			(pintype "passive")
 			(uuid "72cce08c-880d-47a5-b339-0b31ad20ec04")
 		)
+		(embedded_fonts no)
 		(model "${KICAD8_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0402_1005Metric.wrl"
 			(offset
 				(xyz 0 0 0)
@@ -2374,19 +2150,6 @@
 			(effects
 				(font
 					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric_Pad0.74x0.62mm_HandSolder"
-			(at 0 0 90)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "93b8f0ad-c902-4558-ad55-0d90f6b11624")
-			(effects
-				(font
-					(size 1.27 1.27)
 					(thickness 0.15)
 				)
 			)
@@ -2536,7 +2299,7 @@
 		(pad "1" smd roundrect
 			(at -0.5675 0 90)
 			(size 0.735 0.62)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net 1 "+3V3")
 			(pintype "passive")
@@ -2545,12 +2308,13 @@
 		(pad "2" smd roundrect
 			(at 0.5675 0 90)
 			(size 0.735 0.62)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net 2 "GND")
 			(pintype "passive")
 			(uuid "c9b21e87-c6b1-4c6f-ac0d-db118e4313ce")
 		)
+		(embedded_fonts no)
 		(model "${KICAD8_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0402_1005Metric.wrl"
 			(offset
 				(xyz 0 0 0)
@@ -2570,7 +2334,7 @@
 		(descr "SOIC, 16 Pin (JEDEC MS-012AC, https://www.analog.com/media/en/package-pcb-resources/package/pkg_pdf/soic_narrow-r/r_16.pdf), generated with kicad-footprint-generator ipc_gullwing_generator.py")
 		(tags "SOIC SO")
 		(property "Reference" "U5"
-			(at 0 -5.9 360)
+			(at 0 -5.9 0)
 			(layer "F.SilkS")
 			(uuid "0d473e58-fd47-4fa8-a535-4fca8784025c")
 			(effects
@@ -2581,7 +2345,7 @@
 			)
 		)
 		(property "Value" "SN65LVDS391D"
-			(at 0 5.9 360)
+			(at 0 5.9 0)
 			(layer "F.Fab")
 			(uuid "36ae392f-9c31-45bb-bd47-6b7a2bf947f5")
 			(effects
@@ -2591,20 +2355,8 @@
 				)
 			)
 		)
-		(property "Footprint" "Package_SO:SOIC-16_3.9x9.9mm_P1.27mm"
-			(at 0 0 360)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "294150a5-b53a-4636-955b-05054d1f7a90")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-			)
-		)
 		(property "Datasheet" ""
-			(at 0 0 360)
+			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "fb530f80-c6e9-47a3-8fcf-91cad930d3ab")
@@ -2616,7 +2368,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 0 0 360)
+			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "e9143ec0-feec-489b-8f68-050c82b58b3b")
@@ -2679,7 +2431,7 @@
 				(width 0.12)
 				(type solid)
 			)
-			(fill solid)
+			(fill yes)
 			(layer "F.SilkS")
 			(uuid "4aaf46a2-abe5-4f69-8c73-d94228a6fd9b")
 		)
@@ -2774,7 +2526,7 @@
 			(uuid "1738e31a-e2e3-4994-9245-3f67eeaa39f2")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 0 0 360)
+			(at 0 0 0)
 			(layer "F.Fab")
 			(uuid "6e1f3852-18e4-4f18-9b77-f962c9596d47")
 			(effects
@@ -2787,7 +2539,7 @@
 		(pad "1" smd roundrect
 			(at -2.475 -4.445 180)
 			(size 1.95 0.6)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net 1 "+3V3")
 			(pinfunction "EN1,2")
@@ -2797,7 +2549,7 @@
 		(pad "2" smd roundrect
 			(at -2.475 -3.175 180)
 			(size 1.95 0.6)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net 85 "/D15")
 			(pinfunction "DIN1")
@@ -2807,7 +2559,7 @@
 		(pad "3" smd roundrect
 			(at -2.475 -1.905 180)
 			(size 1.95 0.6)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net 83 "/D14")
 			(pinfunction "DIN2")
@@ -2817,7 +2569,7 @@
 		(pad "4" smd roundrect
 			(at -2.475 -0.635 180)
 			(size 1.95 0.6)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net 1 "+3V3")
 			(pinfunction "VCC")
@@ -2827,7 +2579,7 @@
 		(pad "5" smd roundrect
 			(at -2.475 0.635 180)
 			(size 1.95 0.6)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net 2 "GND")
 			(pinfunction "GND")
@@ -2837,7 +2589,7 @@
 		(pad "6" smd roundrect
 			(at -2.475 1.905 180)
 			(size 1.95 0.6)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net 90 "/D13")
 			(pinfunction "DIN3")
@@ -2847,7 +2599,7 @@
 		(pad "7" smd roundrect
 			(at -2.475 3.175 180)
 			(size 1.95 0.6)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net 82 "/D12")
 			(pinfunction "DIN4")
@@ -2857,7 +2609,7 @@
 		(pad "8" smd roundrect
 			(at -2.475 4.445 180)
 			(size 1.95 0.6)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net 1 "+3V3")
 			(pinfunction "EN3,4")
@@ -2867,7 +2619,7 @@
 		(pad "9" smd roundrect
 			(at 2.475 4.445 180)
 			(size 1.95 0.6)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net 36 "/Out_12-")
 			(pinfunction "DOUT4-")
@@ -2877,7 +2629,7 @@
 		(pad "10" smd roundrect
 			(at 2.475 3.175 180)
 			(size 1.95 0.6)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net 17 "/Out_12+")
 			(pinfunction "DOUT4+")
@@ -2887,7 +2639,7 @@
 		(pad "11" smd roundrect
 			(at 2.475 1.905 180)
 			(size 1.95 0.6)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net 22 "/Out_13-")
 			(pinfunction "DOUT3-")
@@ -2897,7 +2649,7 @@
 		(pad "12" smd roundrect
 			(at 2.475 0.635 180)
 			(size 1.95 0.6)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net 33 "/Out_13+")
 			(pinfunction "DOUT3+")
@@ -2907,7 +2659,7 @@
 		(pad "13" smd roundrect
 			(at 2.475 -0.635 180)
 			(size 1.95 0.6)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net 7 "/Out_14-")
 			(pinfunction "DOUT2-")
@@ -2917,7 +2669,7 @@
 		(pad "14" smd roundrect
 			(at 2.475 -1.905 180)
 			(size 1.95 0.6)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net 32 "/Out_14+")
 			(pinfunction "DOUT2+")
@@ -2927,7 +2679,7 @@
 		(pad "15" smd roundrect
 			(at 2.475 -3.175 180)
 			(size 1.95 0.6)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net 16 "/Out_15-")
 			(pinfunction "DOUT1-")
@@ -2937,13 +2689,14 @@
 		(pad "16" smd roundrect
 			(at 2.475 -4.445 180)
 			(size 1.95 0.6)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net 27 "/Out_15+")
 			(pinfunction "DOUT1+")
 			(pintype "output")
 			(uuid "0441439d-ae07-4588-afab-a5ef054a1873")
 		)
+		(embedded_fonts no)
 		(model "${KICAD8_3DMODEL_DIR}/Package_SO.3dshapes/SOIC-16_3.9x9.9mm_P1.27mm.wrl"
 			(offset
 				(xyz 0 0 0)
@@ -2980,19 +2733,6 @@
 			(effects
 				(font
 					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric_Pad0.74x0.62mm_HandSolder"
-			(at 0 0 90)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "cf430ca9-720c-4b90-89c6-216d34c8710a")
-			(effects
-				(font
-					(size 1.27 1.27)
 					(thickness 0.15)
 				)
 			)
@@ -3142,7 +2882,7 @@
 		(pad "1" smd roundrect
 			(at -0.5675 0 90)
 			(size 0.735 0.62)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net 1 "+3V3")
 			(pintype "passive")
@@ -3151,12 +2891,13 @@
 		(pad "2" smd roundrect
 			(at 0.5675 0 90)
 			(size 0.735 0.62)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net 2 "GND")
 			(pintype "passive")
 			(uuid "12a6f996-6b3a-44dc-b294-da0eeaffa0bf")
 		)
+		(embedded_fonts no)
 		(model "${KICAD8_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0402_1005Metric.wrl"
 			(offset
 				(xyz 0 0 0)
@@ -3193,18 +2934,6 @@
 			(effects
 				(font
 					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Footprint" "RPi_Pico:RPi_Pico_SMD_TH"
-			(at 0 0 0)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "fae09d46-1c31-46ef-b826-1e9b402df6a0")
-			(effects
-				(font
-					(size 1.27 1.27)
 					(thickness 0.15)
 				)
 			)
@@ -3715,7 +3444,7 @@
 				(width 0.1)
 				(type solid)
 			)
-			(fill solid)
+			(fill yes)
 			(layer "Dwgs.User")
 			(uuid "c8cae058-99db-4fa1-aa53-bcdf103a0a63")
 		)
@@ -3727,7 +3456,7 @@
 				(width 0.1)
 				(type solid)
 			)
-			(fill solid)
+			(fill yes)
 			(layer "Dwgs.User")
 			(uuid "a5b771b8-ba27-4d2d-85de-5db4067e35ba")
 		)
@@ -3739,7 +3468,7 @@
 				(width 0.1)
 				(type solid)
 			)
-			(fill solid)
+			(fill yes)
 			(layer "Dwgs.User")
 			(uuid "4b6506ee-4c31-4b68-a7cc-7ced9d3a671f")
 		)
@@ -3751,7 +3480,7 @@
 				(width 0.1)
 				(type solid)
 			)
-			(fill solid)
+			(fill yes)
 			(layer "Dwgs.User")
 			(uuid "005c1f1b-58d4-405a-a243-f7d35e31fb89")
 		)
@@ -4333,60 +4062,35 @@
 			(at -2.725 -24)
 			(size 1.8 1.8)
 			(drill 1.8)
-			(layers "*.Cu" "*.Mask" "In3.Cu" "In4.Cu" "In5.Cu" "In6.Cu" "In7.Cu" "In8.Cu"
-				"In9.Cu" "In10.Cu" "In11.Cu" "In12.Cu" "In13.Cu" "In14.Cu" "In15.Cu"
-				"In16.Cu" "In17.Cu" "In18.Cu" "In19.Cu" "In20.Cu" "In21.Cu" "In22.Cu"
-				"In23.Cu" "In24.Cu" "In25.Cu" "In26.Cu" "In27.Cu" "In28.Cu" "In29.Cu"
-				"In30.Cu"
-			)
+			(layers "*.Cu" "*.Mask")
 			(uuid "df5337b9-6b47-4672-ba93-1ff1e63f8d43")
 		)
 		(pad "" np_thru_hole oval
 			(at -2.425 -20.97)
 			(size 1.5 1.5)
 			(drill 1.5)
-			(layers "*.Cu" "*.Mask" "In3.Cu" "In4.Cu" "In5.Cu" "In6.Cu" "In7.Cu" "In8.Cu"
-				"In9.Cu" "In10.Cu" "In11.Cu" "In12.Cu" "In13.Cu" "In14.Cu" "In15.Cu"
-				"In16.Cu" "In17.Cu" "In18.Cu" "In19.Cu" "In20.Cu" "In21.Cu" "In22.Cu"
-				"In23.Cu" "In24.Cu" "In25.Cu" "In26.Cu" "In27.Cu" "In28.Cu" "In29.Cu"
-				"In30.Cu"
-			)
+			(layers "*.Cu" "*.Mask")
 			(uuid "f61c16e0-1f4a-4d2b-a3e3-1127f4e90ba1")
 		)
 		(pad "" np_thru_hole oval
 			(at 2.425 -20.97)
 			(size 1.5 1.5)
 			(drill 1.5)
-			(layers "*.Cu" "*.Mask" "In3.Cu" "In4.Cu" "In5.Cu" "In6.Cu" "In7.Cu" "In8.Cu"
-				"In9.Cu" "In10.Cu" "In11.Cu" "In12.Cu" "In13.Cu" "In14.Cu" "In15.Cu"
-				"In16.Cu" "In17.Cu" "In18.Cu" "In19.Cu" "In20.Cu" "In21.Cu" "In22.Cu"
-				"In23.Cu" "In24.Cu" "In25.Cu" "In26.Cu" "In27.Cu" "In28.Cu" "In29.Cu"
-				"In30.Cu"
-			)
+			(layers "*.Cu" "*.Mask")
 			(uuid "f81a602d-eed7-4c9f-ab19-4e548df61eda")
 		)
 		(pad "" np_thru_hole oval
 			(at 2.725 -24)
 			(size 1.8 1.8)
 			(drill 1.8)
-			(layers "*.Cu" "*.Mask" "In3.Cu" "In4.Cu" "In5.Cu" "In6.Cu" "In7.Cu" "In8.Cu"
-				"In9.Cu" "In10.Cu" "In11.Cu" "In12.Cu" "In13.Cu" "In14.Cu" "In15.Cu"
-				"In16.Cu" "In17.Cu" "In18.Cu" "In19.Cu" "In20.Cu" "In21.Cu" "In22.Cu"
-				"In23.Cu" "In24.Cu" "In25.Cu" "In26.Cu" "In27.Cu" "In28.Cu" "In29.Cu"
-				"In30.Cu"
-			)
+			(layers "*.Cu" "*.Mask")
 			(uuid "af409b92-e78d-40e0-a202-2976ab68b804")
 		)
 		(pad "1" thru_hole oval
 			(at -8.89 -24.13)
 			(size 1.7 1.7)
 			(drill 1.02)
-			(layers "*.Cu" "*.Mask" "In3.Cu" "In4.Cu" "In5.Cu" "In6.Cu" "In7.Cu" "In8.Cu"
-				"In9.Cu" "In10.Cu" "In11.Cu" "In12.Cu" "In13.Cu" "In14.Cu" "In15.Cu"
-				"In16.Cu" "In17.Cu" "In18.Cu" "In19.Cu" "In20.Cu" "In21.Cu" "In22.Cu"
-				"In23.Cu" "In24.Cu" "In25.Cu" "In26.Cu" "In27.Cu" "In28.Cu" "In29.Cu"
-				"In30.Cu"
-			)
+			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net 77 "/D0")
 			(pinfunction "GPIO0")
@@ -4409,12 +4113,7 @@
 			(at -8.89 -21.59)
 			(size 1.7 1.7)
 			(drill 1.02)
-			(layers "*.Cu" "*.Mask" "In3.Cu" "In4.Cu" "In5.Cu" "In6.Cu" "In7.Cu" "In8.Cu"
-				"In9.Cu" "In10.Cu" "In11.Cu" "In12.Cu" "In13.Cu" "In14.Cu" "In15.Cu"
-				"In16.Cu" "In17.Cu" "In18.Cu" "In19.Cu" "In20.Cu" "In21.Cu" "In22.Cu"
-				"In23.Cu" "In24.Cu" "In25.Cu" "In26.Cu" "In27.Cu" "In28.Cu" "In29.Cu"
-				"In30.Cu"
-			)
+			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net 79 "/D1")
 			(pinfunction "GPIO1")
@@ -4437,12 +4136,7 @@
 			(at -8.89 -19.05)
 			(size 1.7 1.7)
 			(drill 1.02)
-			(layers "*.Cu" "*.Mask" "In3.Cu" "In4.Cu" "In5.Cu" "In6.Cu" "In7.Cu" "In8.Cu"
-				"In9.Cu" "In10.Cu" "In11.Cu" "In12.Cu" "In13.Cu" "In14.Cu" "In15.Cu"
-				"In16.Cu" "In17.Cu" "In18.Cu" "In19.Cu" "In20.Cu" "In21.Cu" "In22.Cu"
-				"In23.Cu" "In24.Cu" "In25.Cu" "In26.Cu" "In27.Cu" "In28.Cu" "In29.Cu"
-				"In30.Cu"
-			)
+			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net 2 "GND")
 			(pinfunction "GND")
@@ -4465,12 +4159,7 @@
 			(at -8.89 -16.51)
 			(size 1.7 1.7)
 			(drill 1.02)
-			(layers "*.Cu" "*.Mask" "In3.Cu" "In4.Cu" "In5.Cu" "In6.Cu" "In7.Cu" "In8.Cu"
-				"In9.Cu" "In10.Cu" "In11.Cu" "In12.Cu" "In13.Cu" "In14.Cu" "In15.Cu"
-				"In16.Cu" "In17.Cu" "In18.Cu" "In19.Cu" "In20.Cu" "In21.Cu" "In22.Cu"
-				"In23.Cu" "In24.Cu" "In25.Cu" "In26.Cu" "In27.Cu" "In28.Cu" "In29.Cu"
-				"In30.Cu"
-			)
+			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net 86 "/D2")
 			(pinfunction "GPIO2")
@@ -4493,12 +4182,7 @@
 			(at -8.89 -13.97)
 			(size 1.7 1.7)
 			(drill 1.02)
-			(layers "*.Cu" "*.Mask" "In3.Cu" "In4.Cu" "In5.Cu" "In6.Cu" "In7.Cu" "In8.Cu"
-				"In9.Cu" "In10.Cu" "In11.Cu" "In12.Cu" "In13.Cu" "In14.Cu" "In15.Cu"
-				"In16.Cu" "In17.Cu" "In18.Cu" "In19.Cu" "In20.Cu" "In21.Cu" "In22.Cu"
-				"In23.Cu" "In24.Cu" "In25.Cu" "In26.Cu" "In27.Cu" "In28.Cu" "In29.Cu"
-				"In30.Cu"
-			)
+			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net 76 "/D3")
 			(pinfunction "GPIO3")
@@ -4521,12 +4205,7 @@
 			(at -8.89 -11.43)
 			(size 1.7 1.7)
 			(drill 1.02)
-			(layers "*.Cu" "*.Mask" "In3.Cu" "In4.Cu" "In5.Cu" "In6.Cu" "In7.Cu" "In8.Cu"
-				"In9.Cu" "In10.Cu" "In11.Cu" "In12.Cu" "In13.Cu" "In14.Cu" "In15.Cu"
-				"In16.Cu" "In17.Cu" "In18.Cu" "In19.Cu" "In20.Cu" "In21.Cu" "In22.Cu"
-				"In23.Cu" "In24.Cu" "In25.Cu" "In26.Cu" "In27.Cu" "In28.Cu" "In29.Cu"
-				"In30.Cu"
-			)
+			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net 84 "/D4")
 			(pinfunction "GPIO4")
@@ -4549,12 +4228,7 @@
 			(at -8.89 -8.89)
 			(size 1.7 1.7)
 			(drill 1.02)
-			(layers "*.Cu" "*.Mask" "In3.Cu" "In4.Cu" "In5.Cu" "In6.Cu" "In7.Cu" "In8.Cu"
-				"In9.Cu" "In10.Cu" "In11.Cu" "In12.Cu" "In13.Cu" "In14.Cu" "In15.Cu"
-				"In16.Cu" "In17.Cu" "In18.Cu" "In19.Cu" "In20.Cu" "In21.Cu" "In22.Cu"
-				"In23.Cu" "In24.Cu" "In25.Cu" "In26.Cu" "In27.Cu" "In28.Cu" "In29.Cu"
-				"In30.Cu"
-			)
+			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net 78 "/D5")
 			(pinfunction "GPIO5")
@@ -4577,12 +4251,7 @@
 			(at -8.89 -6.35)
 			(size 1.7 1.7)
 			(drill 1.02)
-			(layers "*.Cu" "*.Mask" "In3.Cu" "In4.Cu" "In5.Cu" "In6.Cu" "In7.Cu" "In8.Cu"
-				"In9.Cu" "In10.Cu" "In11.Cu" "In12.Cu" "In13.Cu" "In14.Cu" "In15.Cu"
-				"In16.Cu" "In17.Cu" "In18.Cu" "In19.Cu" "In20.Cu" "In21.Cu" "In22.Cu"
-				"In23.Cu" "In24.Cu" "In25.Cu" "In26.Cu" "In27.Cu" "In28.Cu" "In29.Cu"
-				"In30.Cu"
-			)
+			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net 2 "GND")
 			(pinfunction "GND")
@@ -4605,12 +4274,7 @@
 			(at -8.89 -3.81)
 			(size 1.7 1.7)
 			(drill 1.02)
-			(layers "*.Cu" "*.Mask" "In3.Cu" "In4.Cu" "In5.Cu" "In6.Cu" "In7.Cu" "In8.Cu"
-				"In9.Cu" "In10.Cu" "In11.Cu" "In12.Cu" "In13.Cu" "In14.Cu" "In15.Cu"
-				"In16.Cu" "In17.Cu" "In18.Cu" "In19.Cu" "In20.Cu" "In21.Cu" "In22.Cu"
-				"In23.Cu" "In24.Cu" "In25.Cu" "In26.Cu" "In27.Cu" "In28.Cu" "In29.Cu"
-				"In30.Cu"
-			)
+			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net 89 "/D6")
 			(pinfunction "GPIO6")
@@ -4633,12 +4297,7 @@
 			(at -8.89 -1.27)
 			(size 1.7 1.7)
 			(drill 1.02)
-			(layers "*.Cu" "*.Mask" "In3.Cu" "In4.Cu" "In5.Cu" "In6.Cu" "In7.Cu" "In8.Cu"
-				"In9.Cu" "In10.Cu" "In11.Cu" "In12.Cu" "In13.Cu" "In14.Cu" "In15.Cu"
-				"In16.Cu" "In17.Cu" "In18.Cu" "In19.Cu" "In20.Cu" "In21.Cu" "In22.Cu"
-				"In23.Cu" "In24.Cu" "In25.Cu" "In26.Cu" "In27.Cu" "In28.Cu" "In29.Cu"
-				"In30.Cu"
-			)
+			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net 75 "/D7")
 			(pinfunction "GPIO7")
@@ -4661,12 +4320,7 @@
 			(at -8.89 1.27)
 			(size 1.7 1.7)
 			(drill 1.02)
-			(layers "*.Cu" "*.Mask" "In3.Cu" "In4.Cu" "In5.Cu" "In6.Cu" "In7.Cu" "In8.Cu"
-				"In9.Cu" "In10.Cu" "In11.Cu" "In12.Cu" "In13.Cu" "In14.Cu" "In15.Cu"
-				"In16.Cu" "In17.Cu" "In18.Cu" "In19.Cu" "In20.Cu" "In21.Cu" "In22.Cu"
-				"In23.Cu" "In24.Cu" "In25.Cu" "In26.Cu" "In27.Cu" "In28.Cu" "In29.Cu"
-				"In30.Cu"
-			)
+			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net 80 "/D8")
 			(pinfunction "GPIO8")
@@ -4689,12 +4343,7 @@
 			(at -8.89 3.81)
 			(size 1.7 1.7)
 			(drill 1.02)
-			(layers "*.Cu" "*.Mask" "In3.Cu" "In4.Cu" "In5.Cu" "In6.Cu" "In7.Cu" "In8.Cu"
-				"In9.Cu" "In10.Cu" "In11.Cu" "In12.Cu" "In13.Cu" "In14.Cu" "In15.Cu"
-				"In16.Cu" "In17.Cu" "In18.Cu" "In19.Cu" "In20.Cu" "In21.Cu" "In22.Cu"
-				"In23.Cu" "In24.Cu" "In25.Cu" "In26.Cu" "In27.Cu" "In28.Cu" "In29.Cu"
-				"In30.Cu"
-			)
+			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net 88 "/D9")
 			(pinfunction "GPIO9")
@@ -4717,12 +4366,7 @@
 			(at -8.89 6.35)
 			(size 1.7 1.7)
 			(drill 1.02)
-			(layers "*.Cu" "*.Mask" "In3.Cu" "In4.Cu" "In5.Cu" "In6.Cu" "In7.Cu" "In8.Cu"
-				"In9.Cu" "In10.Cu" "In11.Cu" "In12.Cu" "In13.Cu" "In14.Cu" "In15.Cu"
-				"In16.Cu" "In17.Cu" "In18.Cu" "In19.Cu" "In20.Cu" "In21.Cu" "In22.Cu"
-				"In23.Cu" "In24.Cu" "In25.Cu" "In26.Cu" "In27.Cu" "In28.Cu" "In29.Cu"
-				"In30.Cu"
-			)
+			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net 2 "GND")
 			(pinfunction "GND")
@@ -4745,12 +4389,7 @@
 			(at -8.89 8.89)
 			(size 1.7 1.7)
 			(drill 1.02)
-			(layers "*.Cu" "*.Mask" "In3.Cu" "In4.Cu" "In5.Cu" "In6.Cu" "In7.Cu" "In8.Cu"
-				"In9.Cu" "In10.Cu" "In11.Cu" "In12.Cu" "In13.Cu" "In14.Cu" "In15.Cu"
-				"In16.Cu" "In17.Cu" "In18.Cu" "In19.Cu" "In20.Cu" "In21.Cu" "In22.Cu"
-				"In23.Cu" "In24.Cu" "In25.Cu" "In26.Cu" "In27.Cu" "In28.Cu" "In29.Cu"
-				"In30.Cu"
-			)
+			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net 81 "/D10")
 			(pinfunction "GPIO10")
@@ -4773,12 +4412,7 @@
 			(at -8.89 11.43)
 			(size 1.7 1.7)
 			(drill 1.02)
-			(layers "*.Cu" "*.Mask" "In3.Cu" "In4.Cu" "In5.Cu" "In6.Cu" "In7.Cu" "In8.Cu"
-				"In9.Cu" "In10.Cu" "In11.Cu" "In12.Cu" "In13.Cu" "In14.Cu" "In15.Cu"
-				"In16.Cu" "In17.Cu" "In18.Cu" "In19.Cu" "In20.Cu" "In21.Cu" "In22.Cu"
-				"In23.Cu" "In24.Cu" "In25.Cu" "In26.Cu" "In27.Cu" "In28.Cu" "In29.Cu"
-				"In30.Cu"
-			)
+			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net 87 "/D11")
 			(pinfunction "GPIO11")
@@ -4801,12 +4435,7 @@
 			(at -8.89 13.97)
 			(size 1.7 1.7)
 			(drill 1.02)
-			(layers "*.Cu" "*.Mask" "In3.Cu" "In4.Cu" "In5.Cu" "In6.Cu" "In7.Cu" "In8.Cu"
-				"In9.Cu" "In10.Cu" "In11.Cu" "In12.Cu" "In13.Cu" "In14.Cu" "In15.Cu"
-				"In16.Cu" "In17.Cu" "In18.Cu" "In19.Cu" "In20.Cu" "In21.Cu" "In22.Cu"
-				"In23.Cu" "In24.Cu" "In25.Cu" "In26.Cu" "In27.Cu" "In28.Cu" "In29.Cu"
-				"In30.Cu"
-			)
+			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net 82 "/D12")
 			(pinfunction "GPIO12")
@@ -4829,12 +4458,7 @@
 			(at -8.89 16.51)
 			(size 1.7 1.7)
 			(drill 1.02)
-			(layers "*.Cu" "*.Mask" "In3.Cu" "In4.Cu" "In5.Cu" "In6.Cu" "In7.Cu" "In8.Cu"
-				"In9.Cu" "In10.Cu" "In11.Cu" "In12.Cu" "In13.Cu" "In14.Cu" "In15.Cu"
-				"In16.Cu" "In17.Cu" "In18.Cu" "In19.Cu" "In20.Cu" "In21.Cu" "In22.Cu"
-				"In23.Cu" "In24.Cu" "In25.Cu" "In26.Cu" "In27.Cu" "In28.Cu" "In29.Cu"
-				"In30.Cu"
-			)
+			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net 90 "/D13")
 			(pinfunction "GPIO13")
@@ -4857,12 +4481,7 @@
 			(at -8.89 19.05)
 			(size 1.7 1.7)
 			(drill 1.02)
-			(layers "*.Cu" "*.Mask" "In3.Cu" "In4.Cu" "In5.Cu" "In6.Cu" "In7.Cu" "In8.Cu"
-				"In9.Cu" "In10.Cu" "In11.Cu" "In12.Cu" "In13.Cu" "In14.Cu" "In15.Cu"
-				"In16.Cu" "In17.Cu" "In18.Cu" "In19.Cu" "In20.Cu" "In21.Cu" "In22.Cu"
-				"In23.Cu" "In24.Cu" "In25.Cu" "In26.Cu" "In27.Cu" "In28.Cu" "In29.Cu"
-				"In30.Cu"
-			)
+			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net 2 "GND")
 			(pinfunction "GND")
@@ -4885,12 +4504,7 @@
 			(at -8.89 21.59)
 			(size 1.7 1.7)
 			(drill 1.02)
-			(layers "*.Cu" "*.Mask" "In3.Cu" "In4.Cu" "In5.Cu" "In6.Cu" "In7.Cu" "In8.Cu"
-				"In9.Cu" "In10.Cu" "In11.Cu" "In12.Cu" "In13.Cu" "In14.Cu" "In15.Cu"
-				"In16.Cu" "In17.Cu" "In18.Cu" "In19.Cu" "In20.Cu" "In21.Cu" "In22.Cu"
-				"In23.Cu" "In24.Cu" "In25.Cu" "In26.Cu" "In27.Cu" "In28.Cu" "In29.Cu"
-				"In30.Cu"
-			)
+			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net 83 "/D14")
 			(pinfunction "GPIO14")
@@ -4913,12 +4527,7 @@
 			(at -8.89 24.13)
 			(size 1.7 1.7)
 			(drill 1.02)
-			(layers "*.Cu" "*.Mask" "In3.Cu" "In4.Cu" "In5.Cu" "In6.Cu" "In7.Cu" "In8.Cu"
-				"In9.Cu" "In10.Cu" "In11.Cu" "In12.Cu" "In13.Cu" "In14.Cu" "In15.Cu"
-				"In16.Cu" "In17.Cu" "In18.Cu" "In19.Cu" "In20.Cu" "In21.Cu" "In22.Cu"
-				"In23.Cu" "In24.Cu" "In25.Cu" "In26.Cu" "In27.Cu" "In28.Cu" "In29.Cu"
-				"In30.Cu"
-			)
+			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net 85 "/D15")
 			(pinfunction "GPIO15")
@@ -4941,12 +4550,7 @@
 			(at 8.89 24.13)
 			(size 1.7 1.7)
 			(drill 1.02)
-			(layers "*.Cu" "*.Mask" "In3.Cu" "In4.Cu" "In5.Cu" "In6.Cu" "In7.Cu" "In8.Cu"
-				"In9.Cu" "In10.Cu" "In11.Cu" "In12.Cu" "In13.Cu" "In14.Cu" "In15.Cu"
-				"In16.Cu" "In17.Cu" "In18.Cu" "In19.Cu" "In20.Cu" "In21.Cu" "In22.Cu"
-				"In23.Cu" "In24.Cu" "In25.Cu" "In26.Cu" "In27.Cu" "In28.Cu" "In29.Cu"
-				"In30.Cu"
-			)
+			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net 42 "unconnected-(U1-GPIO16-Pad21)")
 			(pinfunction "GPIO16")
@@ -4969,12 +4573,7 @@
 			(at 8.89 21.59)
 			(size 1.7 1.7)
 			(drill 1.02)
-			(layers "*.Cu" "*.Mask" "In3.Cu" "In4.Cu" "In5.Cu" "In6.Cu" "In7.Cu" "In8.Cu"
-				"In9.Cu" "In10.Cu" "In11.Cu" "In12.Cu" "In13.Cu" "In14.Cu" "In15.Cu"
-				"In16.Cu" "In17.Cu" "In18.Cu" "In19.Cu" "In20.Cu" "In21.Cu" "In22.Cu"
-				"In23.Cu" "In24.Cu" "In25.Cu" "In26.Cu" "In27.Cu" "In28.Cu" "In29.Cu"
-				"In30.Cu"
-			)
+			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net 53 "unconnected-(U1-GPIO17-Pad22)")
 			(pinfunction "GPIO17")
@@ -4997,12 +4596,7 @@
 			(at 8.89 19.05)
 			(size 1.7 1.7)
 			(drill 1.02)
-			(layers "*.Cu" "*.Mask" "In3.Cu" "In4.Cu" "In5.Cu" "In6.Cu" "In7.Cu" "In8.Cu"
-				"In9.Cu" "In10.Cu" "In11.Cu" "In12.Cu" "In13.Cu" "In14.Cu" "In15.Cu"
-				"In16.Cu" "In17.Cu" "In18.Cu" "In19.Cu" "In20.Cu" "In21.Cu" "In22.Cu"
-				"In23.Cu" "In24.Cu" "In25.Cu" "In26.Cu" "In27.Cu" "In28.Cu" "In29.Cu"
-				"In30.Cu"
-			)
+			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net 2 "GND")
 			(pinfunction "GND")
@@ -5025,12 +4619,7 @@
 			(at 8.89 16.51)
 			(size 1.7 1.7)
 			(drill 1.02)
-			(layers "*.Cu" "*.Mask" "In3.Cu" "In4.Cu" "In5.Cu" "In6.Cu" "In7.Cu" "In8.Cu"
-				"In9.Cu" "In10.Cu" "In11.Cu" "In12.Cu" "In13.Cu" "In14.Cu" "In15.Cu"
-				"In16.Cu" "In17.Cu" "In18.Cu" "In19.Cu" "In20.Cu" "In21.Cu" "In22.Cu"
-				"In23.Cu" "In24.Cu" "In25.Cu" "In26.Cu" "In27.Cu" "In28.Cu" "In29.Cu"
-				"In30.Cu"
-			)
+			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net 66 "unconnected-(U1-GPIO18-Pad24)_1")
 			(pinfunction "GPIO18")
@@ -5053,12 +4642,7 @@
 			(at 8.89 13.97)
 			(size 1.7 1.7)
 			(drill 1.02)
-			(layers "*.Cu" "*.Mask" "In3.Cu" "In4.Cu" "In5.Cu" "In6.Cu" "In7.Cu" "In8.Cu"
-				"In9.Cu" "In10.Cu" "In11.Cu" "In12.Cu" "In13.Cu" "In14.Cu" "In15.Cu"
-				"In16.Cu" "In17.Cu" "In18.Cu" "In19.Cu" "In20.Cu" "In21.Cu" "In22.Cu"
-				"In23.Cu" "In24.Cu" "In25.Cu" "In26.Cu" "In27.Cu" "In28.Cu" "In29.Cu"
-				"In30.Cu"
-			)
+			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net 64 "unconnected-(U1-GPIO19-Pad25)_1")
 			(pinfunction "GPIO19")
@@ -5081,12 +4665,7 @@
 			(at 8.89 11.43)
 			(size 1.7 1.7)
 			(drill 1.02)
-			(layers "*.Cu" "*.Mask" "In3.Cu" "In4.Cu" "In5.Cu" "In6.Cu" "In7.Cu" "In8.Cu"
-				"In9.Cu" "In10.Cu" "In11.Cu" "In12.Cu" "In13.Cu" "In14.Cu" "In15.Cu"
-				"In16.Cu" "In17.Cu" "In18.Cu" "In19.Cu" "In20.Cu" "In21.Cu" "In22.Cu"
-				"In23.Cu" "In24.Cu" "In25.Cu" "In26.Cu" "In27.Cu" "In28.Cu" "In29.Cu"
-				"In30.Cu"
-			)
+			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net 71 "unconnected-(U1-GPIO20-Pad26)_1")
 			(pinfunction "GPIO20")
@@ -5109,12 +4688,7 @@
 			(at 8.89 8.89)
 			(size 1.7 1.7)
 			(drill 1.02)
-			(layers "*.Cu" "*.Mask" "In3.Cu" "In4.Cu" "In5.Cu" "In6.Cu" "In7.Cu" "In8.Cu"
-				"In9.Cu" "In10.Cu" "In11.Cu" "In12.Cu" "In13.Cu" "In14.Cu" "In15.Cu"
-				"In16.Cu" "In17.Cu" "In18.Cu" "In19.Cu" "In20.Cu" "In21.Cu" "In22.Cu"
-				"In23.Cu" "In24.Cu" "In25.Cu" "In26.Cu" "In27.Cu" "In28.Cu" "In29.Cu"
-				"In30.Cu"
-			)
+			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net 60 "unconnected-(U1-GPIO21-Pad27)_1")
 			(pinfunction "GPIO21")
@@ -5137,12 +4711,7 @@
 			(at 8.89 6.35)
 			(size 1.7 1.7)
 			(drill 1.02)
-			(layers "*.Cu" "*.Mask" "In3.Cu" "In4.Cu" "In5.Cu" "In6.Cu" "In7.Cu" "In8.Cu"
-				"In9.Cu" "In10.Cu" "In11.Cu" "In12.Cu" "In13.Cu" "In14.Cu" "In15.Cu"
-				"In16.Cu" "In17.Cu" "In18.Cu" "In19.Cu" "In20.Cu" "In21.Cu" "In22.Cu"
-				"In23.Cu" "In24.Cu" "In25.Cu" "In26.Cu" "In27.Cu" "In28.Cu" "In29.Cu"
-				"In30.Cu"
-			)
+			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net 2 "GND")
 			(pinfunction "GND")
@@ -5165,12 +4734,7 @@
 			(at 8.89 3.81)
 			(size 1.7 1.7)
 			(drill 1.02)
-			(layers "*.Cu" "*.Mask" "In3.Cu" "In4.Cu" "In5.Cu" "In6.Cu" "In7.Cu" "In8.Cu"
-				"In9.Cu" "In10.Cu" "In11.Cu" "In12.Cu" "In13.Cu" "In14.Cu" "In15.Cu"
-				"In16.Cu" "In17.Cu" "In18.Cu" "In19.Cu" "In20.Cu" "In21.Cu" "In22.Cu"
-				"In23.Cu" "In24.Cu" "In25.Cu" "In26.Cu" "In27.Cu" "In28.Cu" "In29.Cu"
-				"In30.Cu"
-			)
+			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net 41 "unconnected-(U1-GPIO22-Pad29)")
 			(pinfunction "GPIO22")
@@ -5193,12 +4757,7 @@
 			(at 8.89 1.27)
 			(size 1.7 1.7)
 			(drill 1.02)
-			(layers "*.Cu" "*.Mask" "In3.Cu" "In4.Cu" "In5.Cu" "In6.Cu" "In7.Cu" "In8.Cu"
-				"In9.Cu" "In10.Cu" "In11.Cu" "In12.Cu" "In13.Cu" "In14.Cu" "In15.Cu"
-				"In16.Cu" "In17.Cu" "In18.Cu" "In19.Cu" "In20.Cu" "In21.Cu" "In22.Cu"
-				"In23.Cu" "In24.Cu" "In25.Cu" "In26.Cu" "In27.Cu" "In28.Cu" "In29.Cu"
-				"In30.Cu"
-			)
+			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net 46 "unconnected-(U1-RUN-Pad30)")
 			(pinfunction "RUN")
@@ -5221,12 +4780,7 @@
 			(at 8.89 -1.27)
 			(size 1.7 1.7)
 			(drill 1.02)
-			(layers "*.Cu" "*.Mask" "In3.Cu" "In4.Cu" "In5.Cu" "In6.Cu" "In7.Cu" "In8.Cu"
-				"In9.Cu" "In10.Cu" "In11.Cu" "In12.Cu" "In13.Cu" "In14.Cu" "In15.Cu"
-				"In16.Cu" "In17.Cu" "In18.Cu" "In19.Cu" "In20.Cu" "In21.Cu" "In22.Cu"
-				"In23.Cu" "In24.Cu" "In25.Cu" "In26.Cu" "In27.Cu" "In28.Cu" "In29.Cu"
-				"In30.Cu"
-			)
+			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net 43 "unconnected-(U1-GPIO26_ADC0-Pad31)")
 			(pinfunction "GPIO26_ADC0")
@@ -5249,12 +4803,7 @@
 			(at 8.89 -3.81)
 			(size 1.7 1.7)
 			(drill 1.02)
-			(layers "*.Cu" "*.Mask" "In3.Cu" "In4.Cu" "In5.Cu" "In6.Cu" "In7.Cu" "In8.Cu"
-				"In9.Cu" "In10.Cu" "In11.Cu" "In12.Cu" "In13.Cu" "In14.Cu" "In15.Cu"
-				"In16.Cu" "In17.Cu" "In18.Cu" "In19.Cu" "In20.Cu" "In21.Cu" "In22.Cu"
-				"In23.Cu" "In24.Cu" "In25.Cu" "In26.Cu" "In27.Cu" "In28.Cu" "In29.Cu"
-				"In30.Cu"
-			)
+			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net 62 "unconnected-(U1-GPIO27_ADC1-Pad32)_1")
 			(pinfunction "GPIO27_ADC1")
@@ -5277,12 +4826,7 @@
 			(at 8.89 -6.35)
 			(size 1.7 1.7)
 			(drill 1.02)
-			(layers "*.Cu" "*.Mask" "In3.Cu" "In4.Cu" "In5.Cu" "In6.Cu" "In7.Cu" "In8.Cu"
-				"In9.Cu" "In10.Cu" "In11.Cu" "In12.Cu" "In13.Cu" "In14.Cu" "In15.Cu"
-				"In16.Cu" "In17.Cu" "In18.Cu" "In19.Cu" "In20.Cu" "In21.Cu" "In22.Cu"
-				"In23.Cu" "In24.Cu" "In25.Cu" "In26.Cu" "In27.Cu" "In28.Cu" "In29.Cu"
-				"In30.Cu"
-			)
+			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net 45 "unconnected-(U1-AGND-Pad33)_1")
 			(pinfunction "AGND")
@@ -5305,12 +4849,7 @@
 			(at 8.89 -8.89)
 			(size 1.7 1.7)
 			(drill 1.02)
-			(layers "*.Cu" "*.Mask" "In3.Cu" "In4.Cu" "In5.Cu" "In6.Cu" "In7.Cu" "In8.Cu"
-				"In9.Cu" "In10.Cu" "In11.Cu" "In12.Cu" "In13.Cu" "In14.Cu" "In15.Cu"
-				"In16.Cu" "In17.Cu" "In18.Cu" "In19.Cu" "In20.Cu" "In21.Cu" "In22.Cu"
-				"In23.Cu" "In24.Cu" "In25.Cu" "In26.Cu" "In27.Cu" "In28.Cu" "In29.Cu"
-				"In30.Cu"
-			)
+			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net 37 "unconnected-(U1-GPIO28_ADC2-Pad34)")
 			(pinfunction "GPIO28_ADC2")
@@ -5333,12 +4872,7 @@
 			(at 8.89 -11.43)
 			(size 1.7 1.7)
 			(drill 1.02)
-			(layers "*.Cu" "*.Mask" "In3.Cu" "In4.Cu" "In5.Cu" "In6.Cu" "In7.Cu" "In8.Cu"
-				"In9.Cu" "In10.Cu" "In11.Cu" "In12.Cu" "In13.Cu" "In14.Cu" "In15.Cu"
-				"In16.Cu" "In17.Cu" "In18.Cu" "In19.Cu" "In20.Cu" "In21.Cu" "In22.Cu"
-				"In23.Cu" "In24.Cu" "In25.Cu" "In26.Cu" "In27.Cu" "In28.Cu" "In29.Cu"
-				"In30.Cu"
-			)
+			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net 38 "unconnected-(U1-ADC_VREF-Pad35)")
 			(pinfunction "ADC_VREF")
@@ -5361,12 +4895,7 @@
 			(at 8.89 -13.97)
 			(size 1.7 1.7)
 			(drill 1.02)
-			(layers "*.Cu" "*.Mask" "In3.Cu" "In4.Cu" "In5.Cu" "In6.Cu" "In7.Cu" "In8.Cu"
-				"In9.Cu" "In10.Cu" "In11.Cu" "In12.Cu" "In13.Cu" "In14.Cu" "In15.Cu"
-				"In16.Cu" "In17.Cu" "In18.Cu" "In19.Cu" "In20.Cu" "In21.Cu" "In22.Cu"
-				"In23.Cu" "In24.Cu" "In25.Cu" "In26.Cu" "In27.Cu" "In28.Cu" "In29.Cu"
-				"In30.Cu"
-			)
+			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net 1 "+3V3")
 			(pinfunction "3V3")
@@ -5389,12 +4918,7 @@
 			(at 8.89 -16.51)
 			(size 1.7 1.7)
 			(drill 1.02)
-			(layers "*.Cu" "*.Mask" "In3.Cu" "In4.Cu" "In5.Cu" "In6.Cu" "In7.Cu" "In8.Cu"
-				"In9.Cu" "In10.Cu" "In11.Cu" "In12.Cu" "In13.Cu" "In14.Cu" "In15.Cu"
-				"In16.Cu" "In17.Cu" "In18.Cu" "In19.Cu" "In20.Cu" "In21.Cu" "In22.Cu"
-				"In23.Cu" "In24.Cu" "In25.Cu" "In26.Cu" "In27.Cu" "In28.Cu" "In29.Cu"
-				"In30.Cu"
-			)
+			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net 69 "unconnected-(U1-3V3_EN-Pad37)")
 			(pinfunction "3V3_EN")
@@ -5417,12 +4941,7 @@
 			(at 8.89 -19.05)
 			(size 1.7 1.7)
 			(drill 1.02)
-			(layers "*.Cu" "*.Mask" "In3.Cu" "In4.Cu" "In5.Cu" "In6.Cu" "In7.Cu" "In8.Cu"
-				"In9.Cu" "In10.Cu" "In11.Cu" "In12.Cu" "In13.Cu" "In14.Cu" "In15.Cu"
-				"In16.Cu" "In17.Cu" "In18.Cu" "In19.Cu" "In20.Cu" "In21.Cu" "In22.Cu"
-				"In23.Cu" "In24.Cu" "In25.Cu" "In26.Cu" "In27.Cu" "In28.Cu" "In29.Cu"
-				"In30.Cu"
-			)
+			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net 2 "GND")
 			(pinfunction "GND")
@@ -5445,12 +4964,7 @@
 			(at 8.89 -21.59)
 			(size 1.7 1.7)
 			(drill 1.02)
-			(layers "*.Cu" "*.Mask" "In3.Cu" "In4.Cu" "In5.Cu" "In6.Cu" "In7.Cu" "In8.Cu"
-				"In9.Cu" "In10.Cu" "In11.Cu" "In12.Cu" "In13.Cu" "In14.Cu" "In15.Cu"
-				"In16.Cu" "In17.Cu" "In18.Cu" "In19.Cu" "In20.Cu" "In21.Cu" "In22.Cu"
-				"In23.Cu" "In24.Cu" "In25.Cu" "In26.Cu" "In27.Cu" "In28.Cu" "In29.Cu"
-				"In30.Cu"
-			)
+			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net 74 "unconnected-(U1-VSYS-Pad39)_1")
 			(pinfunction "VSYS")
@@ -5473,12 +4987,7 @@
 			(at 8.89 -24.13)
 			(size 1.7 1.7)
 			(drill 1.02)
-			(layers "*.Cu" "*.Mask" "In3.Cu" "In4.Cu" "In5.Cu" "In6.Cu" "In7.Cu" "In8.Cu"
-				"In9.Cu" "In10.Cu" "In11.Cu" "In12.Cu" "In13.Cu" "In14.Cu" "In15.Cu"
-				"In16.Cu" "In17.Cu" "In18.Cu" "In19.Cu" "In20.Cu" "In21.Cu" "In22.Cu"
-				"In23.Cu" "In24.Cu" "In25.Cu" "In26.Cu" "In27.Cu" "In28.Cu" "In29.Cu"
-				"In30.Cu"
-			)
+			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net 67 "unconnected-(U1-VBUS-Pad40)")
 			(pinfunction "VBUS")
@@ -5501,12 +5010,7 @@
 			(at -2.54 23.9)
 			(size 1.7 1.7)
 			(drill 1.02)
-			(layers "*.Cu" "*.Mask" "In3.Cu" "In4.Cu" "In5.Cu" "In6.Cu" "In7.Cu" "In8.Cu"
-				"In9.Cu" "In10.Cu" "In11.Cu" "In12.Cu" "In13.Cu" "In14.Cu" "In15.Cu"
-				"In16.Cu" "In17.Cu" "In18.Cu" "In19.Cu" "In20.Cu" "In21.Cu" "In22.Cu"
-				"In23.Cu" "In24.Cu" "In25.Cu" "In26.Cu" "In27.Cu" "In28.Cu" "In29.Cu"
-				"In30.Cu"
-			)
+			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net 58 "unconnected-(U1-SWCLK-Pad41)_1")
 			(pinfunction "SWCLK")
@@ -5529,12 +5033,7 @@
 			(at 0 23.9)
 			(size 1.7 1.7)
 			(drill 1.02)
-			(layers "*.Cu" "*.Mask" "In3.Cu" "In4.Cu" "In5.Cu" "In6.Cu" "In7.Cu" "In8.Cu"
-				"In9.Cu" "In10.Cu" "In11.Cu" "In12.Cu" "In13.Cu" "In14.Cu" "In15.Cu"
-				"In16.Cu" "In17.Cu" "In18.Cu" "In19.Cu" "In20.Cu" "In21.Cu" "In22.Cu"
-				"In23.Cu" "In24.Cu" "In25.Cu" "In26.Cu" "In27.Cu" "In28.Cu" "In29.Cu"
-				"In30.Cu"
-			)
+			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net 65 "unconnected-(U1-GND-Pad42)_1")
 			(pinfunction "GND")
@@ -5557,12 +5056,7 @@
 			(at 2.54 23.9)
 			(size 1.7 1.7)
 			(drill 1.02)
-			(layers "*.Cu" "*.Mask" "In3.Cu" "In4.Cu" "In5.Cu" "In6.Cu" "In7.Cu" "In8.Cu"
-				"In9.Cu" "In10.Cu" "In11.Cu" "In12.Cu" "In13.Cu" "In14.Cu" "In15.Cu"
-				"In16.Cu" "In17.Cu" "In18.Cu" "In19.Cu" "In20.Cu" "In21.Cu" "In22.Cu"
-				"In23.Cu" "In24.Cu" "In25.Cu" "In26.Cu" "In27.Cu" "In28.Cu" "In29.Cu"
-				"In30.Cu"
-			)
+			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net 39 "unconnected-(U1-SWDIO-Pad43)")
 			(pinfunction "SWDIO")
@@ -5581,6 +5075,7 @@
 			(pintype "bidirectional+no_connect")
 			(uuid "81cefaa8-086b-4970-bebe-314a6f6c79b6")
 		)
+		(embedded_fonts no)
 		(model "${KIPRJMOD}/project_libraries/RP-Pico/Pico.wrl"
 			(offset
 				(xyz 0 0 0)
@@ -5600,7 +5095,7 @@
 		(descr "SOIC, 16 Pin (JEDEC MS-012AC, https://www.analog.com/media/en/package-pcb-resources/package/pkg_pdf/soic_narrow-r/r_16.pdf), generated with kicad-footprint-generator ipc_gullwing_generator.py")
 		(tags "SOIC SO")
 		(property "Reference" "U4"
-			(at 0 -5.9 360)
+			(at 0 -5.9 0)
 			(layer "F.SilkS")
 			(uuid "2c88bc65-b737-4e7b-8a21-ccea19ceda02")
 			(effects
@@ -5611,7 +5106,7 @@
 			)
 		)
 		(property "Value" "SN65LVDS391D"
-			(at 0 5.9 360)
+			(at 0 5.9 0)
 			(layer "F.Fab")
 			(uuid "3140fb6f-446f-43b5-a94d-8962ac82b016")
 			(effects
@@ -5621,20 +5116,8 @@
 				)
 			)
 		)
-		(property "Footprint" "Package_SO:SOIC-16_3.9x9.9mm_P1.27mm"
-			(at 0 0 360)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "6ffa0d98-2233-4b95-a72a-741b4696b131")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-			)
-		)
 		(property "Datasheet" ""
-			(at 0 0 360)
+			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "59d521a4-2423-4028-9a8a-25a218856d09")
@@ -5646,7 +5129,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 0 0 360)
+			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "7c240273-0ccc-4842-a158-3b21300c1dd0")
@@ -5709,7 +5192,7 @@
 				(width 0.12)
 				(type solid)
 			)
-			(fill solid)
+			(fill yes)
 			(layer "F.SilkS")
 			(uuid "1d195ec2-9347-4457-8ff4-1e5b6e8f2412")
 		)
@@ -5804,7 +5287,7 @@
 			(uuid "21571b1d-52e9-4883-8899-674244682837")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 0 0 360)
+			(at 0 0 0)
 			(layer "F.Fab")
 			(uuid "ba8447a7-4e20-437c-8f7c-81eb584fd5b9")
 			(effects
@@ -5817,7 +5300,7 @@
 		(pad "1" smd roundrect
 			(at -2.475 -4.445 180)
 			(size 1.95 0.6)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net 1 "+3V3")
 			(pinfunction "EN1,2")
@@ -5827,7 +5310,7 @@
 		(pad "2" smd roundrect
 			(at -2.475 -3.175 180)
 			(size 1.95 0.6)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net 87 "/D11")
 			(pinfunction "DIN1")
@@ -5837,7 +5320,7 @@
 		(pad "3" smd roundrect
 			(at -2.475 -1.905 180)
 			(size 1.95 0.6)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net 81 "/D10")
 			(pinfunction "DIN2")
@@ -5847,7 +5330,7 @@
 		(pad "4" smd roundrect
 			(at -2.475 -0.635 180)
 			(size 1.95 0.6)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net 1 "+3V3")
 			(pinfunction "VCC")
@@ -5857,7 +5340,7 @@
 		(pad "5" smd roundrect
 			(at -2.475 0.635 180)
 			(size 1.95 0.6)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net 2 "GND")
 			(pinfunction "GND")
@@ -5867,7 +5350,7 @@
 		(pad "6" smd roundrect
 			(at -2.475 1.905 180)
 			(size 1.95 0.6)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net 88 "/D9")
 			(pinfunction "DIN3")
@@ -5877,7 +5360,7 @@
 		(pad "7" smd roundrect
 			(at -2.475 3.175 180)
 			(size 1.95 0.6)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net 80 "/D8")
 			(pinfunction "DIN4")
@@ -5887,7 +5370,7 @@
 		(pad "8" smd roundrect
 			(at -2.475 4.445 180)
 			(size 1.95 0.6)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net 1 "+3V3")
 			(pinfunction "EN3,4")
@@ -5897,7 +5380,7 @@
 		(pad "9" smd roundrect
 			(at 2.475 4.445 180)
 			(size 1.95 0.6)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net 3 "/Out_8-")
 			(pinfunction "DOUT4-")
@@ -5907,7 +5390,7 @@
 		(pad "10" smd roundrect
 			(at 2.475 3.175 180)
 			(size 1.95 0.6)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net 20 "/Out_8+")
 			(pinfunction "DOUT4+")
@@ -5917,7 +5400,7 @@
 		(pad "11" smd roundrect
 			(at 2.475 1.905 180)
 			(size 1.95 0.6)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net 12 "/Out_9-")
 			(pinfunction "DOUT3-")
@@ -5927,7 +5410,7 @@
 		(pad "12" smd roundrect
 			(at 2.475 0.635 180)
 			(size 1.95 0.6)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net 29 "/Out_9+")
 			(pinfunction "DOUT3+")
@@ -5937,7 +5420,7 @@
 		(pad "13" smd roundrect
 			(at 2.475 -0.635 180)
 			(size 1.95 0.6)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net 26 "/Out_10-")
 			(pinfunction "DOUT2-")
@@ -5947,7 +5430,7 @@
 		(pad "14" smd roundrect
 			(at 2.475 -1.905 180)
 			(size 1.95 0.6)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net 30 "/Out_10+")
 			(pinfunction "DOUT2+")
@@ -5957,7 +5440,7 @@
 		(pad "15" smd roundrect
 			(at 2.475 -3.175 180)
 			(size 1.95 0.6)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net 8 "/Out_11-")
 			(pinfunction "DOUT1-")
@@ -5967,13 +5450,14 @@
 		(pad "16" smd roundrect
 			(at 2.475 -4.445 180)
 			(size 1.95 0.6)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net 21 "/Out_11+")
 			(pinfunction "DOUT1+")
 			(pintype "output")
 			(uuid "19e9098d-8e14-42a8-9256-a2ca3949e7bf")
 		)
+		(embedded_fonts no)
 		(model "${KICAD8_3DMODEL_DIR}/Package_SO.3dshapes/SOIC-16_3.9x9.9mm_P1.27mm.wrl"
 			(offset
 				(xyz 0 0 0)
@@ -6013,7 +5497,7 @@
 			(width 0.1)
 			(type solid)
 		)
-		(fill solid)
+		(fill yes)
 		(layer "F.SilkS")
 		(uuid "3c43046a-ec90-4d44-b27b-275157794848")
 	)
@@ -6044,7 +5528,7 @@
 			(width 0.1)
 			(type solid)
 		)
-		(fill solid)
+		(fill yes)
 		(layer "F.SilkS")
 		(uuid "7bd0d875-d22f-40fb-8b79-2e3872999cba")
 	)
@@ -6105,11 +5589,11 @@
 			(width 0.05)
 			(type default)
 		)
-		(fill none)
+		(fill no)
 		(layer "Edge.Cuts")
 		(uuid "4a87e199-2f72-4f32-8060-0ea80632071c")
 	)
-	(gr_text "PicoLVDS v2\nNoah Paladino"
+	(gr_text "PicoLVDS v${REVISION}\nNoah Paladino"
 		(at 41.6 62.8 90)
 		(layer "F.SilkS")
 		(uuid "f190d9eb-32f7-42c1-985a-d9b8f7b92959")
@@ -14872,7 +14356,7 @@
 	(zone
 		(net 2)
 		(net_name "GND")
-		(layers "In1.Cu" "B.Cu")
+		(layers "B.Cu" "In1.Cu")
 		(uuid "97491cc7-1cb1-44ff-b188-7a858b3605fd")
 		(hatch edge 0.5)
 		(connect_pads
@@ -14890,7 +14374,7 @@
 			)
 		)
 		(filled_polygon
-			(layer "In1.Cu")
+			(layer "B.Cu")
 			(pts
 				(xy 61.353699 37.720185) (xy 61.399454 37.772989) (xy 61.409398 37.842147) (xy 61.392387 37.88929)
 				(xy 61.308808 38.025676) (xy 61.21168 38.260166) (xy 61.211676 38.260178) (xy 61.152427 38.506971)
@@ -15702,7 +15186,7 @@
 			)
 		)
 		(filled_polygon
-			(layer "B.Cu")
+			(layer "In1.Cu")
 			(pts
 				(xy 61.353699 37.720185) (xy 61.399454 37.772989) (xy 61.409398 37.842147) (xy 61.392387 37.88929)
 				(xy 61.308808 38.025676) (xy 61.21168 38.260166) (xy 61.211676 38.260178) (xy 61.152427 38.506971)
@@ -17284,14 +16768,14 @@
 		(target_skew_max 0.1)
 		(target_skew_min -0.1)
 		(tuning_mode "single")
-		(members 0533bfab-af6c-4afd-a5cb-bea70607f894 16e87a6d-00a3-413c-9a32-dd19ee9edfd1
-			348c5158-b022-47da-a814-b6b7b70ebeac 39277bf4-1b5d-437a-b66e-fd21d26cc54f
-			4597381f-6d05-404a-9361-da27497763f3 51771154-c7c4-4f0c-b146-64b99aa322ec
-			584dfc8b-7e2d-472a-963f-433bc6b96453 699d130b-f213-415d-9bf3-aac1065ce9ef
-			6f6e9d26-f436-4392-a267-55c259901bad 7180dab4-fbcd-48be-9ca5-50bab8fe2e9e
-			7286951a-6ff0-48f7-9c0e-9b4bc62e68d4 84a161e1-b2ce-41ed-9f81-70a45eff44e2
-			9b8d0100-bf40-4106-bdc9-87a7c181dc9d b82f19e2-0794-40b1-8439-61e83a953c3a
-			d4455114-f1d6-456e-9730-59dc5f3c4779 ffac826a-dd6e-4444-8913-160450c0961f
+		(members "0533bfab-af6c-4afd-a5cb-bea70607f894" "16e87a6d-00a3-413c-9a32-dd19ee9edfd1"
+			"348c5158-b022-47da-a814-b6b7b70ebeac" "39277bf4-1b5d-437a-b66e-fd21d26cc54f"
+			"4597381f-6d05-404a-9361-da27497763f3" "51771154-c7c4-4f0c-b146-64b99aa322ec"
+			"584dfc8b-7e2d-472a-963f-433bc6b96453" "699d130b-f213-415d-9bf3-aac1065ce9ef"
+			"6f6e9d26-f436-4392-a267-55c259901bad" "7180dab4-fbcd-48be-9ca5-50bab8fe2e9e"
+			"7286951a-6ff0-48f7-9c0e-9b4bc62e68d4" "84a161e1-b2ce-41ed-9f81-70a45eff44e2"
+			"9b8d0100-bf40-4106-bdc9-87a7c181dc9d" "b82f19e2-0794-40b1-8439-61e83a953c3a"
+			"d4455114-f1d6-456e-9730-59dc5f3c4779" "ffac826a-dd6e-4444-8913-160450c0961f"
 		)
 	)
 	(generated
@@ -17335,15 +16819,15 @@
 		(target_skew_max 0.0127)
 		(target_skew_min -0.0127)
 		(tuning_mode "diff_pair_skew")
-		(members 0718a772-6a17-47f2-a817-20ae80dc13dd 4075b824-8a5a-4acf-b7cf-b897df5c9d76
-			40e98a48-131a-4cb3-a24d-b41b8b0f96c9 42bc0b1d-3ea7-44d3-8cdf-bc43ed736f0d
-			61174cce-df9c-47a6-b1a1-7f0cfb7d7b9f 6aeb9959-f25e-4c10-93c9-f72bae2d03cb
-			7fea8f66-bde6-4c0b-bdd8-43ec3ff1b0b3 8dfcac6c-81c1-4958-b265-172611902884
-			940ca2a0-952c-426d-a8ad-7ad240d68493 975d0e84-6ce7-402c-b5c6-13ca392c9720
-			9ed8ad38-395b-4e29-beca-a24740de931b 9f2f5e15-4027-491e-9b13-14197955c8bb
-			a2ce760a-10c8-42a7-a68b-36a9067f78bc da34039b-ebf1-4982-a444-e85d3bc7a566
-			e58e8725-751a-4cc4-9250-138786f1086c fa6aaa16-7110-4278-8e2c-bce5df56cb70
-			ff1cbde7-4ab5-41ca-97cf-254bdd65880f
+		(members "0718a772-6a17-47f2-a817-20ae80dc13dd" "4075b824-8a5a-4acf-b7cf-b897df5c9d76"
+			"40e98a48-131a-4cb3-a24d-b41b8b0f96c9" "42bc0b1d-3ea7-44d3-8cdf-bc43ed736f0d"
+			"61174cce-df9c-47a6-b1a1-7f0cfb7d7b9f" "6aeb9959-f25e-4c10-93c9-f72bae2d03cb"
+			"7fea8f66-bde6-4c0b-bdd8-43ec3ff1b0b3" "8dfcac6c-81c1-4958-b265-172611902884"
+			"940ca2a0-952c-426d-a8ad-7ad240d68493" "975d0e84-6ce7-402c-b5c6-13ca392c9720"
+			"9ed8ad38-395b-4e29-beca-a24740de931b" "9f2f5e15-4027-491e-9b13-14197955c8bb"
+			"a2ce760a-10c8-42a7-a68b-36a9067f78bc" "da34039b-ebf1-4982-a444-e85d3bc7a566"
+			"e58e8725-751a-4cc4-9250-138786f1086c" "fa6aaa16-7110-4278-8e2c-bce5df56cb70"
+			"ff1cbde7-4ab5-41ca-97cf-254bdd65880f"
 		)
 	)
 	(generated
@@ -17387,19 +16871,19 @@
 		(target_skew_max 0.0127)
 		(target_skew_min -0.0127)
 		(tuning_mode "diff_pair_skew")
-		(members 062ed401-12f7-44e0-82c9-5285b92a379c 0c4a1a03-1310-40b3-beab-7fcb16991fa7
-			2183a870-a5ac-48e6-980b-008355093884 26907147-d30f-4265-80ff-77ae2ed6ee8f
-			41d3a233-2741-409e-b0d9-09933938c5ed 476b32c9-69ab-4416-9d3a-d53be8c05506
-			516a6ab1-495f-48d8-978a-3eea3e2c7a28 63f61931-41d4-4288-a421-91e1f322c60e
-			6c69ee44-7ea7-41f7-8d62-88bdd5deee26 6ddc7967-d428-4801-b7e3-9ad65305939c
-			6f1e50e0-741a-4978-adb5-c2da4d3a2c1a 9a215952-5571-4b26-b4bf-11bc59b2bfb6
-			a2f7d5be-8dc8-4505-bbd8-fa7044aaf6c0 b7ddaf32-e38b-4866-9603-3748292cb262
-			b813ea6b-3847-4609-8c16-5947fa11f7e0 b84d5819-8b6d-4822-b7e6-4fe7d9d69dd6
-			ba4882b0-9f37-426f-ada8-0b09d78f5660 d7120451-e5b6-4588-95bc-79e7a7bb4672
-			d795674f-fd10-4945-9d86-39cf52ea2668 eba0bf42-9a26-418d-8c20-edecdc33ad08
-			eeafad1d-643f-4001-9b9b-5c13cc723f8d f1e35e7d-bacd-408b-a99e-308cf3798aaa
-			f3f99d84-b508-4420-900e-ccffb7fb49ed f43188b4-7233-47d3-be20-2abe79bf7a21
-			f7352edb-3282-404d-96dc-feab1f3ee2c1
+		(members "062ed401-12f7-44e0-82c9-5285b92a379c" "0c4a1a03-1310-40b3-beab-7fcb16991fa7"
+			"2183a870-a5ac-48e6-980b-008355093884" "26907147-d30f-4265-80ff-77ae2ed6ee8f"
+			"41d3a233-2741-409e-b0d9-09933938c5ed" "476b32c9-69ab-4416-9d3a-d53be8c05506"
+			"516a6ab1-495f-48d8-978a-3eea3e2c7a28" "63f61931-41d4-4288-a421-91e1f322c60e"
+			"6c69ee44-7ea7-41f7-8d62-88bdd5deee26" "6ddc7967-d428-4801-b7e3-9ad65305939c"
+			"6f1e50e0-741a-4978-adb5-c2da4d3a2c1a" "9a215952-5571-4b26-b4bf-11bc59b2bfb6"
+			"a2f7d5be-8dc8-4505-bbd8-fa7044aaf6c0" "b7ddaf32-e38b-4866-9603-3748292cb262"
+			"b813ea6b-3847-4609-8c16-5947fa11f7e0" "b84d5819-8b6d-4822-b7e6-4fe7d9d69dd6"
+			"ba4882b0-9f37-426f-ada8-0b09d78f5660" "d7120451-e5b6-4588-95bc-79e7a7bb4672"
+			"d795674f-fd10-4945-9d86-39cf52ea2668" "eba0bf42-9a26-418d-8c20-edecdc33ad08"
+			"eeafad1d-643f-4001-9b9b-5c13cc723f8d" "f1e35e7d-bacd-408b-a99e-308cf3798aaa"
+			"f3f99d84-b508-4420-900e-ccffb7fb49ed" "f43188b4-7233-47d3-be20-2abe79bf7a21"
+			"f7352edb-3282-404d-96dc-feab1f3ee2c1"
 		)
 	)
 	(generated
@@ -17438,15 +16922,15 @@
 		(target_skew_max 0.1)
 		(target_skew_min -0.1)
 		(tuning_mode "single")
-		(members 0d00db2c-f54b-4598-a956-b53f0ba1cf59 0d6589da-286f-4f73-9e48-8b1a49406717
-			1d4d7fab-3d66-412b-9051-f08bf79270ce 282aa391-2be1-4c5d-8560-b01a28fd1f76
-			2bd388f7-dace-48b8-abc5-fe212f06ad30 4e0ee854-ab99-4861-be11-375db3327a53
-			8f8de855-147f-4c17-ae2b-0c876475d1f4 9eddc60c-f4a6-4c9e-91e2-6849300a50ab
-			9ef1f066-d211-447c-b245-39a273a8e744 a48f858a-24e7-416e-a492-54464d718e91
-			a4ae4e83-4e1d-450b-a615-935682e398ca a745afaf-6fd2-4676-992e-563681ea5f39
-			aa66f095-7a57-49e7-9b77-5d8954f4cc11 b1f82f0c-4438-4a0c-94f3-b28af52a71f8
-			cb13ed30-ec1a-48d3-83de-1ed3f7a1e5bb e06dd814-a2fa-474b-99fc-929a69202984
-			fc55e88c-564f-443a-ab4a-e81a4480221a fec51467-159a-4001-9d38-577037c83e5c
+		(members "0d00db2c-f54b-4598-a956-b53f0ba1cf59" "0d6589da-286f-4f73-9e48-8b1a49406717"
+			"1d4d7fab-3d66-412b-9051-f08bf79270ce" "282aa391-2be1-4c5d-8560-b01a28fd1f76"
+			"2bd388f7-dace-48b8-abc5-fe212f06ad30" "4e0ee854-ab99-4861-be11-375db3327a53"
+			"8f8de855-147f-4c17-ae2b-0c876475d1f4" "9eddc60c-f4a6-4c9e-91e2-6849300a50ab"
+			"9ef1f066-d211-447c-b245-39a273a8e744" "a48f858a-24e7-416e-a492-54464d718e91"
+			"a4ae4e83-4e1d-450b-a615-935682e398ca" "a745afaf-6fd2-4676-992e-563681ea5f39"
+			"aa66f095-7a57-49e7-9b77-5d8954f4cc11" "b1f82f0c-4438-4a0c-94f3-b28af52a71f8"
+			"cb13ed30-ec1a-48d3-83de-1ed3f7a1e5bb" "e06dd814-a2fa-474b-99fc-929a69202984"
+			"fc55e88c-564f-443a-ab4a-e81a4480221a" "fec51467-159a-4001-9d38-577037c83e5c"
 		)
 	)
 	(generated
@@ -17490,14 +16974,14 @@
 		(target_skew_max 0.1)
 		(target_skew_min -0.1)
 		(tuning_mode "diff_pair")
-		(members 10153a6b-ee7f-4a41-9b00-1e92b044228e 162e204c-4281-4ab3-bf76-bed1ca06f340
-			25f7241d-e3dc-4c3d-9670-14c653a814ff 2957a79f-b949-4e70-8dc1-a242ecca7324
-			3cde8ae2-ba06-4aa9-b0ae-6b49f966095a 40467531-6a3c-432a-8d5c-3f698033f7d0
-			6c07e428-0407-4141-b57f-396d7dbcb313 80a44bb3-3926-4c5d-b491-cda06a3d2608
-			8a3eec77-a4a7-41a7-9845-9e6bc27fc34d b8efcc7a-3087-440c-93d1-a8f2d52e540b
-			bf3b997a-c1cf-4699-a713-329d0da928ab c1af380a-997a-4fb4-8f90-c59a454b5973
-			e10f546e-1cd0-465d-a6a0-73530520bfa1 f423f606-3399-4c5e-bb54-407f271b32b4
-			fb935477-a06f-47b8-b8cc-f9e788831840
+		(members "10153a6b-ee7f-4a41-9b00-1e92b044228e" "162e204c-4281-4ab3-bf76-bed1ca06f340"
+			"25f7241d-e3dc-4c3d-9670-14c653a814ff" "2957a79f-b949-4e70-8dc1-a242ecca7324"
+			"3cde8ae2-ba06-4aa9-b0ae-6b49f966095a" "40467531-6a3c-432a-8d5c-3f698033f7d0"
+			"6c07e428-0407-4141-b57f-396d7dbcb313" "80a44bb3-3926-4c5d-b491-cda06a3d2608"
+			"8a3eec77-a4a7-41a7-9845-9e6bc27fc34d" "b8efcc7a-3087-440c-93d1-a8f2d52e540b"
+			"bf3b997a-c1cf-4699-a713-329d0da928ab" "c1af380a-997a-4fb4-8f90-c59a454b5973"
+			"e10f546e-1cd0-465d-a6a0-73530520bfa1" "f423f606-3399-4c5e-bb54-407f271b32b4"
+			"fb935477-a06f-47b8-b8cc-f9e788831840"
 		)
 	)
 	(generated
@@ -17541,15 +17025,15 @@
 		(target_skew_max 0.0127)
 		(target_skew_min -0.0127)
 		(tuning_mode "diff_pair_skew")
-		(members 02fcaee9-ddf3-4ad5-a289-3f4c3eab005f 0341d4b9-553c-4608-898c-9fd99c25e8e7
-			06da7ba8-ddaf-42dc-b214-a97542c8283e 22d3a6fe-8d5d-4723-bda7-3eef5ac0eb08
-			3e26f66a-9a57-4238-b31d-d5c5b0a98bdb 4c0fbb4b-bc07-4c03-a3da-6df22b5df8fe
-			5aff5d19-6f34-4c76-ae3a-4b2b2d272453 611c73cb-5d5c-414e-8619-f9063314d1ea
-			6daa78e9-0df8-4b42-8a22-db3cc11e0acc 7a0557dd-0e9c-42b4-9d9d-477bfe8e77ce
-			7d5f3f42-bc31-4aac-bf68-371cde5dab86 811305e1-06e5-465f-a077-d444c175e5bf
-			91d977cf-2c2b-4f9a-a701-9c8ebdb70d2a 95aa0203-d52c-4424-a79c-36f4633e5981
-			98d059ab-79ac-4879-b136-55b4a8acca51 b139c89b-6013-4d25-a3b6-81231b9949e7
-			f34431e1-afae-4ee7-8fe0-74764c2ce15e
+		(members "02fcaee9-ddf3-4ad5-a289-3f4c3eab005f" "0341d4b9-553c-4608-898c-9fd99c25e8e7"
+			"06da7ba8-ddaf-42dc-b214-a97542c8283e" "22d3a6fe-8d5d-4723-bda7-3eef5ac0eb08"
+			"3e26f66a-9a57-4238-b31d-d5c5b0a98bdb" "4c0fbb4b-bc07-4c03-a3da-6df22b5df8fe"
+			"5aff5d19-6f34-4c76-ae3a-4b2b2d272453" "611c73cb-5d5c-414e-8619-f9063314d1ea"
+			"6daa78e9-0df8-4b42-8a22-db3cc11e0acc" "7a0557dd-0e9c-42b4-9d9d-477bfe8e77ce"
+			"7d5f3f42-bc31-4aac-bf68-371cde5dab86" "811305e1-06e5-465f-a077-d444c175e5bf"
+			"91d977cf-2c2b-4f9a-a701-9c8ebdb70d2a" "95aa0203-d52c-4424-a79c-36f4633e5981"
+			"98d059ab-79ac-4879-b136-55b4a8acca51" "b139c89b-6013-4d25-a3b6-81231b9949e7"
+			"f34431e1-afae-4ee7-8fe0-74764c2ce15e"
 		)
 	)
 	(generated
@@ -17588,57 +17072,14 @@
 		(target_skew_max 0.1)
 		(target_skew_min -0.1)
 		(tuning_mode "single")
-		(members 25210a81-46a8-4c34-ac24-a1fb032df51f 3fbe816f-7ac1-4511-b302-0f50595be4bf
-			52117614-751d-417b-abcc-131be2dc609e 6c1b4d59-7b4c-4c1e-8044-a68b0ebb0621
-			765f3bf9-8b2a-46e7-9135-53a25cd23361 82bcc9b2-e4c7-43c0-aa75-63ad75735d00
-			98d7ec39-0c3b-4896-be80-2c73affb4929 bc0ce64d-7942-45ab-a943-24688759c7b0
-			c5303bfb-8de7-4f00-b720-ddd04ba00411 e553796d-29fc-46fa-bad9-48e20446dd76
-			fe300895-182e-4b61-afac-5555b75abb41 fea5034c-8883-4c8f-9430-12efda1ae0cd
-			ffa02af2-08e8-4a5a-a28e-8453c8a24c79
+		(members "25210a81-46a8-4c34-ac24-a1fb032df51f" "3fbe816f-7ac1-4511-b302-0f50595be4bf"
+			"52117614-751d-417b-abcc-131be2dc609e" "6c1b4d59-7b4c-4c1e-8044-a68b0ebb0621"
+			"765f3bf9-8b2a-46e7-9135-53a25cd23361" "82bcc9b2-e4c7-43c0-aa75-63ad75735d00"
+			"98d7ec39-0c3b-4896-be80-2c73affb4929" "bc0ce64d-7942-45ab-a943-24688759c7b0"
+			"c5303bfb-8de7-4f00-b720-ddd04ba00411" "e553796d-29fc-46fa-bad9-48e20446dd76"
+			"fe300895-182e-4b61-afac-5555b75abb41" "fea5034c-8883-4c8f-9430-12efda1ae0cd"
+			"ffa02af2-08e8-4a5a-a28e-8453c8a24c79"
 		)
-	)
-	(generated
-		(uuid "339828df-c620-41f6-b322-4638b896a121")
-		(type tuning_pattern)
-		(name "Tuning Pattern")
-		(layer "F.Cu")
-		(base_line
-			(pts
-				(xy 42.809991 41.32617) (xy 40.242138 41.32617) (xy 38.340772 43.227536)
-			)
-		)
-		(base_line_coupled
-			(pts
-				(xy 42.809991 41.65383) (xy 42.792191 41.65383)
-			)
-		)
-		(corner_radius_percent 80)
-		(end
-			(xy 38.340772 43.227536)
-		)
-		(initial_side "right")
-		(last_diff_pair_gap 0.18)
-		(last_netname "/Out_0-")
-		(last_status "tuned")
-		(last_track_width 0.17526)
-		(last_tuning "-0.0127 mm (tuned)")
-		(max_amplitude 1)
-		(min_amplitude 0.2)
-		(min_spacing 0.6)
-		(origin
-			(xy 42.809991 41.32617)
-		)
-		(override_custom_rules no)
-		(rounded yes)
-		(single_sided no)
-		(target_length 1000000)
-		(target_length_max 1000000)
-		(target_length_min 0)
-		(target_skew -0.0127)
-		(target_skew_max 0.0127)
-		(target_skew_min -0.0127)
-		(tuning_mode "diff_pair_skew")
-		(members)
 	)
 	(generated
 		(uuid "424a2777-3e19-4495-8c68-9bb8c60e02e4")
@@ -17681,19 +17122,19 @@
 		(target_skew_max 0.0127)
 		(target_skew_min -0.0127)
 		(tuning_mode "diff_pair_skew")
-		(members 03e2a99e-1d20-4511-a65e-5e01584cd6aa 0f52971f-fea0-423b-9901-febeaff158c5
-			11d91613-b8d8-4f99-a2f2-2ce8acb1aa1c 2f82157a-0b40-4248-beb9-ea74dfcb3d7a
-			3906bdc5-8d2d-4b5b-a295-83afa6971982 4e0aa109-f7b6-4147-bdb1-eaf360fc9571
-			4ee73e60-be41-45f4-86e8-9f7e28fc4b8f 69f0149e-dc4a-4358-88ec-767d3cfb022e
-			6b2e570e-6a78-402b-86a7-342c72498bc1 8567a8f6-8f99-48d3-ab6b-c204541af93f
-			88189a0c-7e3d-4dc4-8211-30394bd860b9 93a57555-2e35-4ea2-87b1-dcc6f5e1043a
-			9651f885-5dcb-4f34-984b-a8c00b9dbeb6 c2ff28c2-87e9-4fdf-874c-da90db66f356
-			c9ef3872-395e-45cd-ad8f-e4364c17cc2a ca211971-ee7a-49db-aa00-e73a84659834
-			cdacd6e7-e0ab-4ba2-bf32-efe18fac1c48 cfd99248-6048-4a90-897d-ca231337ae38
-			dd4891bf-1c37-406b-85f9-367e1e256bd2 e1eb0cd2-c55c-4bea-bb1a-3591fdd511fc
-			e5cd77a1-affd-4bda-b4c9-a02e5d825d8e ea649bd1-bb5f-4b36-9c7a-14e1b0293614
-			f2af03d0-588f-49e8-a838-dbd3dda645db f480eb9c-471d-460e-a662-ac69ad9a36ca
-			f6524abb-6a12-42f4-a0af-c51de12d50d9
+		(members "03e2a99e-1d20-4511-a65e-5e01584cd6aa" "0f52971f-fea0-423b-9901-febeaff158c5"
+			"11d91613-b8d8-4f99-a2f2-2ce8acb1aa1c" "2f82157a-0b40-4248-beb9-ea74dfcb3d7a"
+			"3906bdc5-8d2d-4b5b-a295-83afa6971982" "4e0aa109-f7b6-4147-bdb1-eaf360fc9571"
+			"4ee73e60-be41-45f4-86e8-9f7e28fc4b8f" "69f0149e-dc4a-4358-88ec-767d3cfb022e"
+			"6b2e570e-6a78-402b-86a7-342c72498bc1" "8567a8f6-8f99-48d3-ab6b-c204541af93f"
+			"88189a0c-7e3d-4dc4-8211-30394bd860b9" "93a57555-2e35-4ea2-87b1-dcc6f5e1043a"
+			"9651f885-5dcb-4f34-984b-a8c00b9dbeb6" "c2ff28c2-87e9-4fdf-874c-da90db66f356"
+			"c9ef3872-395e-45cd-ad8f-e4364c17cc2a" "ca211971-ee7a-49db-aa00-e73a84659834"
+			"cdacd6e7-e0ab-4ba2-bf32-efe18fac1c48" "cfd99248-6048-4a90-897d-ca231337ae38"
+			"dd4891bf-1c37-406b-85f9-367e1e256bd2" "e1eb0cd2-c55c-4bea-bb1a-3591fdd511fc"
+			"e5cd77a1-affd-4bda-b4c9-a02e5d825d8e" "ea649bd1-bb5f-4b36-9c7a-14e1b0293614"
+			"f2af03d0-588f-49e8-a838-dbd3dda645db" "f480eb9c-471d-460e-a662-ac69ad9a36ca"
+			"f6524abb-6a12-42f4-a0af-c51de12d50d9"
 		)
 	)
 	(generated
@@ -17732,14 +17173,14 @@
 		(target_skew_max 0.1)
 		(target_skew_min -0.1)
 		(tuning_mode "single")
-		(members 072eae9f-7e6c-476b-8c05-88ab9178b665 14ebd23d-8fb6-4f54-bb04-0ee6392e4b74
-			15f79af6-5f9c-4cf5-a3fa-d4f989a3e380 1cb7b42b-7975-43ae-b0b7-1bd59c169ca6
-			385bf503-f9cc-47de-b682-268b0d4c593e 653f0bec-0dee-44bd-83a7-6accf5ab32ef
-			91630a0b-391e-4b3d-8328-abd07749922b 92811ce1-8db3-4910-9571-627f16b91106
-			ac06b645-9de1-4f80-9525-68d97e31a801 b51e37bf-a6e1-4317-aca2-b2ed744c0212
-			c8c8dcec-b76e-4eca-ae16-dab219c5893a cc9151de-da55-46a5-a8f6-9622c690713b
-			e4582923-f752-4d19-a922-3b5e603277ec e96067b4-7758-4d6f-ae07-39b7114a5fc0
-			ed261504-36ef-4790-8e42-d787034d20cd
+		(members "072eae9f-7e6c-476b-8c05-88ab9178b665" "14ebd23d-8fb6-4f54-bb04-0ee6392e4b74"
+			"15f79af6-5f9c-4cf5-a3fa-d4f989a3e380" "1cb7b42b-7975-43ae-b0b7-1bd59c169ca6"
+			"385bf503-f9cc-47de-b682-268b0d4c593e" "653f0bec-0dee-44bd-83a7-6accf5ab32ef"
+			"91630a0b-391e-4b3d-8328-abd07749922b" "92811ce1-8db3-4910-9571-627f16b91106"
+			"ac06b645-9de1-4f80-9525-68d97e31a801" "b51e37bf-a6e1-4317-aca2-b2ed744c0212"
+			"c8c8dcec-b76e-4eca-ae16-dab219c5893a" "cc9151de-da55-46a5-a8f6-9622c690713b"
+			"e4582923-f752-4d19-a922-3b5e603277ec" "e96067b4-7758-4d6f-ae07-39b7114a5fc0"
+			"ed261504-36ef-4790-8e42-d787034d20cd"
 		)
 	)
 	(generated
@@ -17783,15 +17224,15 @@
 		(target_skew_max 0.0127)
 		(target_skew_min -0.0127)
 		(tuning_mode "diff_pair_skew")
-		(members 00741f91-9d5c-47b4-9bd2-df6ac1ba4878 020b27f3-8dd9-4ce7-8bb4-5a567c44b386
-			061cfcf9-3753-4329-bd8c-9502fc73e01b 0f320774-7f1e-4e0a-855a-a90465473fde
-			2345a140-9219-4421-adc0-950b794b5180 4866f44a-08cd-4d19-8304-341e9ba2db23
-			48d08102-6b1d-4b08-be02-f8f08433e8e4 526c655a-c171-491f-88dc-721cf87ff2e6
-			5bfaa187-6f46-480c-a8d9-20c5f733ca76 6258fe71-d252-45a9-a3ec-b7609ffc813c
-			7d788c5a-2964-4f15-994e-0400ad4c3342 7e548e6d-ebbe-4dec-ae95-0482134c999e
-			8b60717a-7ded-40a5-80f4-43581cddf182 b08a72f8-aa28-4381-b5e0-4e7d5c5eacd0
-			c419d885-b33e-45b2-a821-bd77b02982bd c8d0ec25-37b8-48a2-88fc-b5b76ee8e053
-			f4779870-3edc-4b3d-b332-a8583bce0cba
+		(members "00741f91-9d5c-47b4-9bd2-df6ac1ba4878" "020b27f3-8dd9-4ce7-8bb4-5a567c44b386"
+			"061cfcf9-3753-4329-bd8c-9502fc73e01b" "0f320774-7f1e-4e0a-855a-a90465473fde"
+			"2345a140-9219-4421-adc0-950b794b5180" "4866f44a-08cd-4d19-8304-341e9ba2db23"
+			"48d08102-6b1d-4b08-be02-f8f08433e8e4" "526c655a-c171-491f-88dc-721cf87ff2e6"
+			"5bfaa187-6f46-480c-a8d9-20c5f733ca76" "6258fe71-d252-45a9-a3ec-b7609ffc813c"
+			"7d788c5a-2964-4f15-994e-0400ad4c3342" "7e548e6d-ebbe-4dec-ae95-0482134c999e"
+			"8b60717a-7ded-40a5-80f4-43581cddf182" "b08a72f8-aa28-4381-b5e0-4e7d5c5eacd0"
+			"c419d885-b33e-45b2-a821-bd77b02982bd" "c8d0ec25-37b8-48a2-88fc-b5b76ee8e053"
+			"f4779870-3edc-4b3d-b332-a8583bce0cba"
 		)
 	)
 	(generated
@@ -17835,14 +17276,14 @@
 		(target_skew_max 0.0127)
 		(target_skew_min -0.0127)
 		(tuning_mode "diff_pair_skew")
-		(members 1a6bf5ac-fc94-4817-8634-c50a9faaba78 22c37ba3-6fb8-4db3-8edb-3a9a1c2429b2
-			3cabc052-4d67-4ab8-841c-79ef5e2ae37d 40a5da3a-37a9-4b8f-9ae8-45b09efab15a
-			494a98cc-6e37-4cbd-849d-16e31a8fd630 4b0f18af-2209-447f-bb84-b66a29ae05e4
-			4ddfe5fa-56eb-44e1-90ac-d3c10d2cc176 65f84218-a76d-411f-9ed7-d6490a8173a0
-			6d37f83b-549a-432e-b377-24c02f07ad7f 851be809-19e7-47bb-b14a-f1b91bf64d07
-			9a5b42c8-f670-44b0-8b37-b786ed0af85a b009623e-7f51-4227-a1bf-8a745730abab
-			f12b94aa-c586-41d2-9abe-68524f0f5e63 f8819872-fc8a-4c45-ba57-245797846412
-			fc72ee7e-163c-42f3-8bdb-d0efd03f314d
+		(members "1a6bf5ac-fc94-4817-8634-c50a9faaba78" "22c37ba3-6fb8-4db3-8edb-3a9a1c2429b2"
+			"3cabc052-4d67-4ab8-841c-79ef5e2ae37d" "40a5da3a-37a9-4b8f-9ae8-45b09efab15a"
+			"494a98cc-6e37-4cbd-849d-16e31a8fd630" "4b0f18af-2209-447f-bb84-b66a29ae05e4"
+			"4ddfe5fa-56eb-44e1-90ac-d3c10d2cc176" "65f84218-a76d-411f-9ed7-d6490a8173a0"
+			"6d37f83b-549a-432e-b377-24c02f07ad7f" "851be809-19e7-47bb-b14a-f1b91bf64d07"
+			"9a5b42c8-f670-44b0-8b37-b786ed0af85a" "b009623e-7f51-4227-a1bf-8a745730abab"
+			"f12b94aa-c586-41d2-9abe-68524f0f5e63" "f8819872-fc8a-4c45-ba57-245797846412"
+			"fc72ee7e-163c-42f3-8bdb-d0efd03f314d"
 		)
 	)
 	(generated
@@ -17881,13 +17322,13 @@
 		(target_skew_max 0.1)
 		(target_skew_min -0.1)
 		(tuning_mode "single")
-		(members 032c39fd-1769-4fd7-9d3f-ccfd0d1ab8bf 15da4168-4a47-472c-8964-ad83541c0e32
-			2aa09380-361f-4852-b682-2ca674dc3c9a 3c78fe73-91c3-43f5-8c67-f52a6e1bb1dc
-			50a971b7-c33c-4b57-b3f6-fb4d1d6e7f3a 770e4167-f490-465c-8dde-0e4625293061
-			88afd5b3-d23e-40a7-94d8-c89281d0152e 89cc9b74-1832-41fd-bcc4-c4c2b55993b9
-			92cf3cab-bef7-4758-b142-d73043b759ed a985b8a8-15f8-4fbc-81a0-ded0b52bcc6f
-			b9cf5122-2842-477a-a544-4d47015614b1 c0791699-c70a-4e28-925e-360a30428714
-			f2fa14db-b8b8-40ce-a31f-f70441c190a7
+		(members "032c39fd-1769-4fd7-9d3f-ccfd0d1ab8bf" "15da4168-4a47-472c-8964-ad83541c0e32"
+			"2aa09380-361f-4852-b682-2ca674dc3c9a" "3c78fe73-91c3-43f5-8c67-f52a6e1bb1dc"
+			"50a971b7-c33c-4b57-b3f6-fb4d1d6e7f3a" "770e4167-f490-465c-8dde-0e4625293061"
+			"88afd5b3-d23e-40a7-94d8-c89281d0152e" "89cc9b74-1832-41fd-bcc4-c4c2b55993b9"
+			"92cf3cab-bef7-4758-b142-d73043b759ed" "a985b8a8-15f8-4fbc-81a0-ded0b52bcc6f"
+			"b9cf5122-2842-477a-a544-4d47015614b1" "c0791699-c70a-4e28-925e-360a30428714"
+			"f2fa14db-b8b8-40ce-a31f-f70441c190a7"
 		)
 	)
 	(generated
@@ -17926,13 +17367,13 @@
 		(target_skew_max 0.1)
 		(target_skew_min -0.1)
 		(tuning_mode "single")
-		(members 144ac75b-52fa-455b-ba08-4ff633c29fae 1af29185-1d00-46ea-9ecb-fdfb378e41f9
-			24e8df30-a81f-4198-9867-7bee184e3035 25b243ef-ba59-4bf2-a2a0-256f65b0b900
-			2b7552f2-c05d-4a7f-ab67-570751dc9ab6 3a4218c4-9dda-4647-b042-97a8485ff764
-			3f43e368-5b9c-43da-bb07-0763a1de510d 44b37ce2-4a99-4a17-af80-0f948469bcef
-			55719610-23ec-4805-9421-32cea6d7b471 562f076e-fe33-42af-9be7-e0ea3ce0b21d
-			6dce3e0b-29d0-4e9c-ae9a-b450e5bee4bb 745e0bd4-9063-4d26-ae5f-80ccd7977a12
-			8916d0c3-393f-4750-a7a0-cadeb258b0ca c3d64139-efd7-4f4a-8357-eaf40a263f7a
+		(members "144ac75b-52fa-455b-ba08-4ff633c29fae" "1af29185-1d00-46ea-9ecb-fdfb378e41f9"
+			"24e8df30-a81f-4198-9867-7bee184e3035" "25b243ef-ba59-4bf2-a2a0-256f65b0b900"
+			"2b7552f2-c05d-4a7f-ab67-570751dc9ab6" "3a4218c4-9dda-4647-b042-97a8485ff764"
+			"3f43e368-5b9c-43da-bb07-0763a1de510d" "44b37ce2-4a99-4a17-af80-0f948469bcef"
+			"55719610-23ec-4805-9421-32cea6d7b471" "562f076e-fe33-42af-9be7-e0ea3ce0b21d"
+			"6dce3e0b-29d0-4e9c-ae9a-b450e5bee4bb" "745e0bd4-9063-4d26-ae5f-80ccd7977a12"
+			"8916d0c3-393f-4750-a7a0-cadeb258b0ca" "c3d64139-efd7-4f4a-8357-eaf40a263f7a"
 		)
 	)
 	(generated
@@ -17971,58 +17412,15 @@
 		(target_skew_max 0.1)
 		(target_skew_min -0.1)
 		(tuning_mode "single")
-		(members 074ef7e7-40cf-4387-a102-aa3b8b66324e 0a676441-4342-4aba-a08b-3f0afb605a4c
-			2828eb41-c0db-4328-8981-3e86509cacf4 3012dde1-1a10-4820-bbe7-bef54ef5350f
-			38f6566b-1202-491c-b191-4a8bfc18d201 47390ff6-def9-4021-91ad-91854921dde9
-			483b08d2-bc2f-47cc-83f5-f7ecac008ac3 562a6581-e3d3-46aa-aa68-c045f27ec752
-			cc537b36-af70-40f3-9594-3f7257a9c15b d9ace774-9ff9-4c79-adbb-4732f973877e
-			ea4ba427-d482-4da2-b0c1-a2da4a918b40 efbca198-afcf-4145-a00e-20aa0820eb95
-			eff7f502-8d4e-4f1e-8b49-02534adcb528 f4668453-280d-40a2-a870-5af0e0f11b2e
-			fd5809ee-80f5-49bc-aa67-e78863047238
+		(members "074ef7e7-40cf-4387-a102-aa3b8b66324e" "0a676441-4342-4aba-a08b-3f0afb605a4c"
+			"2828eb41-c0db-4328-8981-3e86509cacf4" "3012dde1-1a10-4820-bbe7-bef54ef5350f"
+			"38f6566b-1202-491c-b191-4a8bfc18d201" "47390ff6-def9-4021-91ad-91854921dde9"
+			"483b08d2-bc2f-47cc-83f5-f7ecac008ac3" "562a6581-e3d3-46aa-aa68-c045f27ec752"
+			"cc537b36-af70-40f3-9594-3f7257a9c15b" "d9ace774-9ff9-4c79-adbb-4732f973877e"
+			"ea4ba427-d482-4da2-b0c1-a2da4a918b40" "efbca198-afcf-4145-a00e-20aa0820eb95"
+			"eff7f502-8d4e-4f1e-8b49-02534adcb528" "f4668453-280d-40a2-a870-5af0e0f11b2e"
+			"fd5809ee-80f5-49bc-aa67-e78863047238"
 		)
-	)
-	(generated
-		(uuid "59ad898a-17cb-46e4-9bbf-81cbb62e327d")
-		(type tuning_pattern)
-		(name "Tuning Pattern")
-		(layer "F.Cu")
-		(base_line
-			(pts
-				(xy 43.925321 56.76766) (xy 39.779386 56.76766)
-			)
-		)
-		(base_line_coupled
-			(pts
-				(xy 43.88 56.44) (xy 39.779386 56.44)
-			)
-		)
-		(corner_radius_percent 80)
-		(end
-			(xy 39.779386 56.76766)
-		)
-		(initial_side "left")
-		(last_diff_pair_gap 0.1524)
-		(last_netname "/Out_5+")
-		(last_status "too_short")
-		(last_track_width 0.17526)
-		(last_tuning "12.2722 mm (too short)")
-		(max_amplitude 1)
-		(min_amplitude 0.2)
-		(min_spacing 1)
-		(origin
-			(xy 43.925321 56.76766)
-		)
-		(override_custom_rules no)
-		(rounded yes)
-		(single_sided no)
-		(target_length 12.7)
-		(target_length_max 13.462)
-		(target_length_min 12.7)
-		(target_skew 0)
-		(target_skew_max 0.1)
-		(target_skew_min -0.1)
-		(tuning_mode "diff_pair")
-		(members)
 	)
 	(generated
 		(uuid "694bd445-4fae-458b-b09c-5c4dbc9f837e")
@@ -18065,14 +17463,14 @@
 		(target_skew_max 0.0127)
 		(target_skew_min -0.0127)
 		(tuning_mode "diff_pair_skew")
-		(members 30518c6c-3940-42bd-94e3-7abbb828092f 33c3ce12-f327-4a6f-9b5b-748322dc64a6
-			3b158304-c7d6-4fc3-adef-bf477dae4c5b 4213bc52-3bca-43ac-a467-d21416a43cc9
-			4d7cc70c-44a7-497d-a113-018ed2f3d2c7 64731d6a-5ae6-4b9c-908e-d2ee109de1bd
-			6a0119ab-254d-4821-88b8-1dcb17b36f1d 915fd001-2e60-47bc-9d23-29bf1ef6a50a
-			ab973d77-85c2-46da-8987-4c78adc2ba7b b2f8a94a-3e9c-4cc0-9a6b-25d38e6bd800
-			b9b775ff-7761-43a3-a9d1-4983b4ad2099 bd675265-3493-4360-afa0-f9ae1d2173a1
-			bf27dfa3-0876-4594-9b64-780617d8d801 d82145a4-d66e-4571-8546-8fef9073222b
-			ea359137-3a1d-4737-8eac-1d59ef859851 f8c4ccd2-b9e5-406e-8647-97e0857082f9
+		(members "30518c6c-3940-42bd-94e3-7abbb828092f" "33c3ce12-f327-4a6f-9b5b-748322dc64a6"
+			"3b158304-c7d6-4fc3-adef-bf477dae4c5b" "4213bc52-3bca-43ac-a467-d21416a43cc9"
+			"4d7cc70c-44a7-497d-a113-018ed2f3d2c7" "64731d6a-5ae6-4b9c-908e-d2ee109de1bd"
+			"6a0119ab-254d-4821-88b8-1dcb17b36f1d" "915fd001-2e60-47bc-9d23-29bf1ef6a50a"
+			"ab973d77-85c2-46da-8987-4c78adc2ba7b" "b2f8a94a-3e9c-4cc0-9a6b-25d38e6bd800"
+			"b9b775ff-7761-43a3-a9d1-4983b4ad2099" "bd675265-3493-4360-afa0-f9ae1d2173a1"
+			"bf27dfa3-0876-4594-9b64-780617d8d801" "d82145a4-d66e-4571-8546-8fef9073222b"
+			"ea359137-3a1d-4737-8eac-1d59ef859851" "f8c4ccd2-b9e5-406e-8647-97e0857082f9"
 		)
 	)
 	(generated
@@ -18116,14 +17514,14 @@
 		(target_skew_max 0.1)
 		(target_skew_min -0.1)
 		(tuning_mode "diff_pair")
-		(members 1007a185-9ad0-4d2a-a134-24b5bfb19c18 1b5d927a-8401-4290-8d68-4bad835dab31
-			2fe1c137-4dff-4285-b664-e2555b9d5e15 306f6c8e-3bd5-4bc9-9c86-20012f95ae98
-			30795695-8f5d-4831-8247-ab4745106c5b 35dac362-c974-4f02-905f-c67314855867
-			5b9826b1-0155-4d40-8fa2-4f5239d1dc54 5eda78b5-2c43-4153-83ad-6931960cce52
-			6b648081-99b6-4151-bb01-ea75acd5d2e5 76a9ae90-0fa4-4422-b4d1-ca92251422fc
-			7895c146-4c43-4c6f-ad52-e798e658d73b 83452110-8bed-4f83-9a99-2482e2d0d97b
-			bd42e79a-407c-449e-83b8-f3e16bafacee e234d61f-7ab5-48db-b1dc-0b6f1c202f46
-			e999825f-cb11-44f2-b085-1abb6a5f2a55
+		(members "1007a185-9ad0-4d2a-a134-24b5bfb19c18" "1b5d927a-8401-4290-8d68-4bad835dab31"
+			"2fe1c137-4dff-4285-b664-e2555b9d5e15" "306f6c8e-3bd5-4bc9-9c86-20012f95ae98"
+			"30795695-8f5d-4831-8247-ab4745106c5b" "35dac362-c974-4f02-905f-c67314855867"
+			"5b9826b1-0155-4d40-8fa2-4f5239d1dc54" "5eda78b5-2c43-4153-83ad-6931960cce52"
+			"6b648081-99b6-4151-bb01-ea75acd5d2e5" "76a9ae90-0fa4-4422-b4d1-ca92251422fc"
+			"7895c146-4c43-4c6f-ad52-e798e658d73b" "83452110-8bed-4f83-9a99-2482e2d0d97b"
+			"bd42e79a-407c-449e-83b8-f3e16bafacee" "e234d61f-7ab5-48db-b1dc-0b6f1c202f46"
+			"e999825f-cb11-44f2-b085-1abb6a5f2a55"
 		)
 	)
 	(generated
@@ -18167,15 +17565,15 @@
 		(target_skew_max 0.0127)
 		(target_skew_min -0.0127)
 		(tuning_mode "diff_pair_skew")
-		(members 0f990d32-01c2-4697-af5c-489b1cf0282c 14b90090-0035-4d53-aa0d-57eb329e8bda
-			18204736-c72b-460e-aef6-e68f8d498efe 19cc0936-6346-4bbd-9482-31455a5a302c
-			2e964840-f180-4ebe-a406-1c7a51999b0e 33ad0c20-762c-45ba-a898-f807aa32c3b7
-			4a3d1817-6e7c-427c-8041-550b869d7c52 6f045bbf-8be4-4746-bb0c-b273dc47390e
-			6fc09f2a-d3ba-457e-be64-4eee4e9ed51b aadfc5c9-b109-437a-9dbc-0245401a5170
-			ab1279fb-f344-4e64-8e88-689e77065ef4 af3eede8-6f36-4d93-bb3d-a0b2faf6db04
-			c531dc54-72d4-4aad-8637-0cbbfc86ebf3 e2a95544-696e-4978-8b7d-758467a24f27
-			ebd6bd0b-731a-4a1c-a6f9-8fc66e34011c ec7c0d15-7f0b-44ff-bd54-df2e64247662
-			ff8c1c99-36c7-429a-98f9-fa028c1be045
+		(members "0f990d32-01c2-4697-af5c-489b1cf0282c" "14b90090-0035-4d53-aa0d-57eb329e8bda"
+			"18204736-c72b-460e-aef6-e68f8d498efe" "19cc0936-6346-4bbd-9482-31455a5a302c"
+			"2e964840-f180-4ebe-a406-1c7a51999b0e" "33ad0c20-762c-45ba-a898-f807aa32c3b7"
+			"4a3d1817-6e7c-427c-8041-550b869d7c52" "6f045bbf-8be4-4746-bb0c-b273dc47390e"
+			"6fc09f2a-d3ba-457e-be64-4eee4e9ed51b" "aadfc5c9-b109-437a-9dbc-0245401a5170"
+			"ab1279fb-f344-4e64-8e88-689e77065ef4" "af3eede8-6f36-4d93-bb3d-a0b2faf6db04"
+			"c531dc54-72d4-4aad-8637-0cbbfc86ebf3" "e2a95544-696e-4978-8b7d-758467a24f27"
+			"ebd6bd0b-731a-4a1c-a6f9-8fc66e34011c" "ec7c0d15-7f0b-44ff-bd54-df2e64247662"
+			"ff8c1c99-36c7-429a-98f9-fa028c1be045"
 		)
 	)
 	(generated
@@ -18214,15 +17612,15 @@
 		(target_skew_max 0.1)
 		(target_skew_min -0.1)
 		(tuning_mode "single")
-		(members 11a09339-35c0-4573-ab10-69b2486d6325 17e5ab3e-ea5f-488e-bf13-62f4992afb12
-			1a017528-197a-49bd-8ba1-1d3f4b179ed8 3f11ec81-64a7-432a-8cc4-33d72db63ab0
-			45243cdb-36da-4b33-ac2c-25611e36bbb6 4986f5cc-0b71-4ce4-bf4b-6f16730ecc71
-			502630d5-4535-4ee6-ac31-85fac7840c72 5b710b04-f3c2-47d2-be48-5c85cb364dbd
-			71675ba4-64bf-47bd-9c99-78cb33bee3d5 78b8bbd9-35de-4e9a-b5ef-c159fde58add
-			7bb96f1f-1567-4b14-ba7e-1a6460091505 7fbd1f92-2c08-4e25-aba9-b750cf0f1de3
-			8523785a-6db6-483a-af7e-74508913a026 8d5af6dc-6bdf-4d4f-a752-3f2c197cba15
-			945325d0-a0fb-442a-aaa2-31d4c815b0bc a34f20a7-ad93-4473-baa7-9cdead2ee6e2
-			c0a654cc-3fa9-4c9d-a40c-02b5962345b7 db8eb8ad-6e86-4315-ac0b-56ce2a4e095a
+		(members "11a09339-35c0-4573-ab10-69b2486d6325" "17e5ab3e-ea5f-488e-bf13-62f4992afb12"
+			"1a017528-197a-49bd-8ba1-1d3f4b179ed8" "3f11ec81-64a7-432a-8cc4-33d72db63ab0"
+			"45243cdb-36da-4b33-ac2c-25611e36bbb6" "4986f5cc-0b71-4ce4-bf4b-6f16730ecc71"
+			"502630d5-4535-4ee6-ac31-85fac7840c72" "5b710b04-f3c2-47d2-be48-5c85cb364dbd"
+			"71675ba4-64bf-47bd-9c99-78cb33bee3d5" "78b8bbd9-35de-4e9a-b5ef-c159fde58add"
+			"7bb96f1f-1567-4b14-ba7e-1a6460091505" "7fbd1f92-2c08-4e25-aba9-b750cf0f1de3"
+			"8523785a-6db6-483a-af7e-74508913a026" "8d5af6dc-6bdf-4d4f-a752-3f2c197cba15"
+			"945325d0-a0fb-442a-aaa2-31d4c815b0bc" "a34f20a7-ad93-4473-baa7-9cdead2ee6e2"
+			"c0a654cc-3fa9-4c9d-a40c-02b5962345b7" "db8eb8ad-6e86-4315-ac0b-56ce2a4e095a"
 		)
 	)
 	(generated
@@ -18261,16 +17659,16 @@
 		(target_skew_max 0.1)
 		(target_skew_min -0.1)
 		(tuning_mode "single")
-		(members 01b0623f-2293-46a9-b42d-93a587a91405 020cd492-25c0-419f-ac6c-f133e311fec5
-			1bdd94df-f784-40d0-86d0-daaef45e2c12 1e65fba3-0acd-409e-8d6e-01400a2c2539
-			22d674ed-1790-4963-a131-cb56ddc690f7 27c36251-9044-446d-8ba7-9df2d3f9cc36
-			32cecc55-e724-4752-ba20-99f49e2137c7 38791f23-5059-4b4d-bccf-b65e5a4812a2
-			3e2c2998-d6a6-4412-99ab-7b478d6de69c 43896dcb-afb9-4e80-855a-3ffb3ccd0626
-			69d5ade1-0575-4037-bfa3-fc5afdafe9a0 6dd8a69d-999b-4481-9338-73a91fa6e4fa
-			705371e4-2766-4b5d-a26e-03121111bc84 9e37c085-7f52-4776-8cfa-403c2a8ab5b8
-			bfd70e9f-88bf-4f05-9922-c55328c211aa c7d4d3a4-d966-42bb-8e80-5f0d46b3cd10
-			d741e980-fba1-4ccd-9c9d-94fe97c2f05e defcf637-cb25-45b6-abeb-44d32ec4331a
-			e5bca06e-912a-4ee5-8765-a08a05e9f615 e7b86dff-5fcc-45d3-888f-3f4b5ae6b591
+		(members "01b0623f-2293-46a9-b42d-93a587a91405" "020cd492-25c0-419f-ac6c-f133e311fec5"
+			"1bdd94df-f784-40d0-86d0-daaef45e2c12" "1e65fba3-0acd-409e-8d6e-01400a2c2539"
+			"22d674ed-1790-4963-a131-cb56ddc690f7" "27c36251-9044-446d-8ba7-9df2d3f9cc36"
+			"32cecc55-e724-4752-ba20-99f49e2137c7" "38791f23-5059-4b4d-bccf-b65e5a4812a2"
+			"3e2c2998-d6a6-4412-99ab-7b478d6de69c" "43896dcb-afb9-4e80-855a-3ffb3ccd0626"
+			"69d5ade1-0575-4037-bfa3-fc5afdafe9a0" "6dd8a69d-999b-4481-9338-73a91fa6e4fa"
+			"705371e4-2766-4b5d-a26e-03121111bc84" "9e37c085-7f52-4776-8cfa-403c2a8ab5b8"
+			"bfd70e9f-88bf-4f05-9922-c55328c211aa" "c7d4d3a4-d966-42bb-8e80-5f0d46b3cd10"
+			"d741e980-fba1-4ccd-9c9d-94fe97c2f05e" "defcf637-cb25-45b6-abeb-44d32ec4331a"
+			"e5bca06e-912a-4ee5-8765-a08a05e9f615" "e7b86dff-5fcc-45d3-888f-3f4b5ae6b591"
 		)
 	)
 	(generated
@@ -18314,20 +17712,20 @@
 		(target_skew_max 0.0127)
 		(target_skew_min -0.0127)
 		(tuning_mode "diff_pair_skew")
-		(members 08ffa9e7-b44c-4982-814b-f46fc64929fe 23d8f07f-1069-4f17-81c4-1cbb9d25013b
-			2e1c6165-c312-41d1-8664-8bbaef86d231 40435cc7-71ce-498d-9a9d-ade590c1e1fd
-			430cd0fe-c484-4ef0-9102-29e728c1aebe 5191c68b-d772-4394-813b-e2dcdee14411
-			5213f236-c380-4b35-8306-b25f25852ced 52681be2-3e6a-4501-91cf-e142b6276910
-			5ff0307f-f8f4-403c-bfda-d8928a824ae9 60d7bda7-aa24-4f31-9edf-4106ae07f827
-			661ff39c-77fa-43bf-bbda-1256505c75a7 66793c3f-65d4-4f7d-98c5-05bbfc476aa5
-			77c1f4b1-d7e9-483a-b668-eb634c9e037b 7b3a806c-516a-4209-8249-450a082c4691
-			7f66330d-93ba-4b6d-aef1-9f6bb44e249e 8968d44b-663d-46e3-84d1-fe6aee666533
-			8d310042-b723-4146-8418-2bd1aa487848 965ff291-5f7c-4af6-b8f1-74c91a61e6bb
-			973f1d59-f90d-4d0c-90bb-426887ce36cc 9ba988b2-0438-48c9-8380-d2eb43af9d6b
-			c6348cf3-9965-4ff2-8f55-4208f3f4df96 d109526a-8e21-4d17-8da4-10fdec2c8017
-			d7518c95-2c60-4166-a17b-d1023cef8e01 dc1b2a3f-2f3c-4036-97ed-cd5a53d6a4aa
-			deb4823c-418a-4b21-975e-e1bac68ae3d6 e85c8e9f-9b1c-4637-b511-1396a8545e97
-			efa07b97-ec7e-436b-8a67-245c5ef157da f60753f3-1695-4ccc-a932-32df1032f935
+		(members "08ffa9e7-b44c-4982-814b-f46fc64929fe" "23d8f07f-1069-4f17-81c4-1cbb9d25013b"
+			"2e1c6165-c312-41d1-8664-8bbaef86d231" "40435cc7-71ce-498d-9a9d-ade590c1e1fd"
+			"430cd0fe-c484-4ef0-9102-29e728c1aebe" "5191c68b-d772-4394-813b-e2dcdee14411"
+			"5213f236-c380-4b35-8306-b25f25852ced" "52681be2-3e6a-4501-91cf-e142b6276910"
+			"5ff0307f-f8f4-403c-bfda-d8928a824ae9" "60d7bda7-aa24-4f31-9edf-4106ae07f827"
+			"661ff39c-77fa-43bf-bbda-1256505c75a7" "66793c3f-65d4-4f7d-98c5-05bbfc476aa5"
+			"77c1f4b1-d7e9-483a-b668-eb634c9e037b" "7b3a806c-516a-4209-8249-450a082c4691"
+			"7f66330d-93ba-4b6d-aef1-9f6bb44e249e" "8968d44b-663d-46e3-84d1-fe6aee666533"
+			"8d310042-b723-4146-8418-2bd1aa487848" "965ff291-5f7c-4af6-b8f1-74c91a61e6bb"
+			"973f1d59-f90d-4d0c-90bb-426887ce36cc" "9ba988b2-0438-48c9-8380-d2eb43af9d6b"
+			"c6348cf3-9965-4ff2-8f55-4208f3f4df96" "d109526a-8e21-4d17-8da4-10fdec2c8017"
+			"d7518c95-2c60-4166-a17b-d1023cef8e01" "dc1b2a3f-2f3c-4036-97ed-cd5a53d6a4aa"
+			"deb4823c-418a-4b21-975e-e1bac68ae3d6" "e85c8e9f-9b1c-4637-b511-1396a8545e97"
+			"efa07b97-ec7e-436b-8a67-245c5ef157da" "f60753f3-1695-4ccc-a932-32df1032f935"
 		)
 	)
 	(generated
@@ -18366,13 +17764,13 @@
 		(target_skew_max 0.1)
 		(target_skew_min -0.1)
 		(tuning_mode "single")
-		(members 019606d8-8f9b-43e1-a448-2530cab849aa 22e0f22e-5305-4303-bdd7-472851ce7462
-			2c94da3a-33da-44bd-b049-8a984b07a694 302a7105-a41b-4a78-9916-eb6ff3da24e8
-			4900cebd-c686-4634-a962-7b1a74e36d93 808d6d5d-15c1-41c3-8536-12ce3399dbbb
-			8ab7d12e-2036-49db-911a-bdaa6e59da16 a8adfcd5-4117-49ab-8bf6-88212bbeef33
-			c0951254-f9ff-4fb2-807b-f460dc20f30f d96fd83b-9f20-4091-8b24-50ac527a032a
-			dd76beea-3027-4cf9-86c8-bf6415a6875f e44602a0-8545-4cf6-ac58-e728541ccdc2
-			ea088909-3040-4c09-a3b3-21fdf91dc700
+		(members "019606d8-8f9b-43e1-a448-2530cab849aa" "22e0f22e-5305-4303-bdd7-472851ce7462"
+			"2c94da3a-33da-44bd-b049-8a984b07a694" "302a7105-a41b-4a78-9916-eb6ff3da24e8"
+			"4900cebd-c686-4634-a962-7b1a74e36d93" "808d6d5d-15c1-41c3-8536-12ce3399dbbb"
+			"8ab7d12e-2036-49db-911a-bdaa6e59da16" "a8adfcd5-4117-49ab-8bf6-88212bbeef33"
+			"c0951254-f9ff-4fb2-807b-f460dc20f30f" "d96fd83b-9f20-4091-8b24-50ac527a032a"
+			"dd76beea-3027-4cf9-86c8-bf6415a6875f" "e44602a0-8545-4cf6-ac58-e728541ccdc2"
+			"ea088909-3040-4c09-a3b3-21fdf91dc700"
 		)
 	)
 	(generated
@@ -18416,12 +17814,12 @@
 		(target_skew_max 0.1)
 		(target_skew_min -0.1)
 		(tuning_mode "diff_pair")
-		(members 1bce5344-690c-4e46-8cf8-6f6ba02ed14e 24c79bb7-9b6a-4b70-970e-cc2c1b572df3
-			3a007ed7-acd1-44ab-933d-58febe0500c7 3a0d1f28-218e-4c6d-bb6a-dc41e831c1ff
-			65b54810-d49a-4fe3-bb13-9233fa487335 67049283-9480-4cdc-94a0-8b2f45cd60c3
-			8ce9dea8-238c-4883-9b69-34c8153a500a 986718e4-cef0-41cb-9ac8-64a5b33850c3
-			9b426923-366b-4ae0-9e7e-567213cc96fb 9cbf0cb5-7f90-4a31-b3b9-cbaaad4e0414
-			f1f9c188-f8e2-40b2-96b4-2aa5ba11b5f4 f73b669a-5a0d-45fa-a30f-1db03a07305e
+		(members "1bce5344-690c-4e46-8cf8-6f6ba02ed14e" "24c79bb7-9b6a-4b70-970e-cc2c1b572df3"
+			"3a007ed7-acd1-44ab-933d-58febe0500c7" "3a0d1f28-218e-4c6d-bb6a-dc41e831c1ff"
+			"65b54810-d49a-4fe3-bb13-9233fa487335" "67049283-9480-4cdc-94a0-8b2f45cd60c3"
+			"8ce9dea8-238c-4883-9b69-34c8153a500a" "986718e4-cef0-41cb-9ac8-64a5b33850c3"
+			"9b426923-366b-4ae0-9e7e-567213cc96fb" "9cbf0cb5-7f90-4a31-b3b9-cbaaad4e0414"
+			"f1f9c188-f8e2-40b2-96b4-2aa5ba11b5f4" "f73b669a-5a0d-45fa-a30f-1db03a07305e"
 		)
 	)
 	(generated
@@ -18465,16 +17863,16 @@
 		(target_skew_max 0.1)
 		(target_skew_min -0.1)
 		(tuning_mode "diff_pair")
-		(members 05326b4f-e812-4fab-a088-6a6eeb41bba2 0ad5c348-bd52-4f06-8b40-5b5198f2520f
-			2ce4ef61-4382-4f1f-b46a-46c3fb27d51a 2ffd5e8d-33cc-4ab4-837c-7a56b6efc74a
-			4c677bd2-53bb-4eeb-8157-341406a6b424 4d9affce-9066-4809-9462-4e3a9b11788f
-			51acb0a3-0c82-4248-b1ec-25503628be6a 592a8fa0-bde6-4a36-8a31-02132bfb309d
-			5f6728b0-c84f-4f94-ab0c-1c7f9724a3ec 64909139-904c-4a60-a075-2eab69306579
-			7c070f58-da7b-423b-b266-e3cb1c805537 89f1e2bf-d671-4f83-b395-cf39d8b08223
-			8b1c35de-a0ff-4da5-ac63-c3b8e1910e3b a078842b-2dd9-45c3-8591-c96ddf09bd32
-			a5b10cc6-5279-42a3-b8a6-52188d77c1ab abbe3472-83d6-4d0f-a92e-b6bcf08e49cf
-			cf2a0c2f-f782-4a7d-b895-8fb811dfbbfe d359baee-3b2a-4542-9ee9-14849b90f4de
-			dfbeae42-d24b-4adb-955d-3271fb9a5723
+		(members "05326b4f-e812-4fab-a088-6a6eeb41bba2" "0ad5c348-bd52-4f06-8b40-5b5198f2520f"
+			"2ce4ef61-4382-4f1f-b46a-46c3fb27d51a" "2ffd5e8d-33cc-4ab4-837c-7a56b6efc74a"
+			"4c677bd2-53bb-4eeb-8157-341406a6b424" "4d9affce-9066-4809-9462-4e3a9b11788f"
+			"51acb0a3-0c82-4248-b1ec-25503628be6a" "592a8fa0-bde6-4a36-8a31-02132bfb309d"
+			"5f6728b0-c84f-4f94-ab0c-1c7f9724a3ec" "64909139-904c-4a60-a075-2eab69306579"
+			"7c070f58-da7b-423b-b266-e3cb1c805537" "89f1e2bf-d671-4f83-b395-cf39d8b08223"
+			"8b1c35de-a0ff-4da5-ac63-c3b8e1910e3b" "a078842b-2dd9-45c3-8591-c96ddf09bd32"
+			"a5b10cc6-5279-42a3-b8a6-52188d77c1ab" "abbe3472-83d6-4d0f-a92e-b6bcf08e49cf"
+			"cf2a0c2f-f782-4a7d-b895-8fb811dfbbfe" "d359baee-3b2a-4542-9ee9-14849b90f4de"
+			"dfbeae42-d24b-4adb-955d-3271fb9a5723"
 		)
 	)
 	(generated
@@ -18513,11 +17911,11 @@
 		(target_skew_max 0.1)
 		(target_skew_min -0.1)
 		(tuning_mode "single")
-		(members 04a43afb-293c-4fbe-85c0-187590cd8e2d 1a21a657-bd33-45b2-ab2c-8537e57ed2a5
-			2e1b482e-7e16-4a99-8fa1-1eb7403fa655 623aea5c-0da9-4510-a060-7b185eee633e
-			7b63fc31-18cc-4250-bc48-6263f9636028 b652ea29-b2b7-478a-b33a-3aba60a28c0a
-			d07e530f-ff71-4500-ba4f-b5c914327cc4 f680a990-b1ac-47f3-9843-a4bfe9697ae4
-			fb60c1ba-746f-4990-88c9-ba27c2b531ba
+		(members "04a43afb-293c-4fbe-85c0-187590cd8e2d" "1a21a657-bd33-45b2-ab2c-8537e57ed2a5"
+			"2e1b482e-7e16-4a99-8fa1-1eb7403fa655" "623aea5c-0da9-4510-a060-7b185eee633e"
+			"7b63fc31-18cc-4250-bc48-6263f9636028" "b652ea29-b2b7-478a-b33a-3aba60a28c0a"
+			"d07e530f-ff71-4500-ba4f-b5c914327cc4" "f680a990-b1ac-47f3-9843-a4bfe9697ae4"
+			"fb60c1ba-746f-4990-88c9-ba27c2b531ba"
 		)
 	)
 	(generated
@@ -18561,19 +17959,19 @@
 		(target_skew_max 0.0127)
 		(target_skew_min -0.0127)
 		(tuning_mode "diff_pair_skew")
-		(members 0605fa24-9f4f-4e4f-a26e-eb0bf8185857 1e16b478-c418-4e39-a343-32ec8e566f90
-			1f66dfc9-fab2-49c1-a4f3-fc01dd41772a 2d4b4ca2-61b9-4778-8b21-e7d582712f5c
-			326ccbbe-6fba-451a-b6cf-f6242338601b 42302468-652a-4f3f-860f-e4669ae99621
-			47204f6a-be41-46f0-96ec-9b4f9122618a 54130f46-a7e7-4ab2-b6f4-d082320ce9ea
-			54388160-d4da-46a5-80a0-516f9ec0ee44 5b95a33d-11bc-4db0-b1d5-5216e98a85bc
-			63d2c95d-d7ec-48d3-a12a-8552e6462380 64b65af2-cd62-421d-aeda-ffd329ed111c
-			68f8d12a-58fa-490a-ae52-11e488ebf17c 7aa95ec9-6074-4be6-b064-ef0bf8d8a153
-			7bea16e4-38c2-4b97-8262-0e5a0b15d443 872d4ca2-224b-4483-abef-189945b23bb8
-			a21cfc38-eccc-4d3e-a983-ed24517c06e7 a700ad06-202a-47c0-bcc2-5241a0def427
-			abe20b29-de37-40b9-98a5-2213c73fb360 b10488b3-8ff8-4789-bd2d-20fe3587cc1b
-			b58fa381-6a09-4724-a918-4e11aaef5871 ca8f8179-89f6-463c-b067-ead23215bfa3
-			dbbc1b28-eb47-4f14-a733-84023e883fb0 e557817d-e2ff-4fb6-a9d3-649fcc5c5b11
-			e838dfaf-bb62-4c9d-a5e4-863ab841467a
+		(members "0605fa24-9f4f-4e4f-a26e-eb0bf8185857" "1e16b478-c418-4e39-a343-32ec8e566f90"
+			"1f66dfc9-fab2-49c1-a4f3-fc01dd41772a" "2d4b4ca2-61b9-4778-8b21-e7d582712f5c"
+			"326ccbbe-6fba-451a-b6cf-f6242338601b" "42302468-652a-4f3f-860f-e4669ae99621"
+			"47204f6a-be41-46f0-96ec-9b4f9122618a" "54130f46-a7e7-4ab2-b6f4-d082320ce9ea"
+			"54388160-d4da-46a5-80a0-516f9ec0ee44" "5b95a33d-11bc-4db0-b1d5-5216e98a85bc"
+			"63d2c95d-d7ec-48d3-a12a-8552e6462380" "64b65af2-cd62-421d-aeda-ffd329ed111c"
+			"68f8d12a-58fa-490a-ae52-11e488ebf17c" "7aa95ec9-6074-4be6-b064-ef0bf8d8a153"
+			"7bea16e4-38c2-4b97-8262-0e5a0b15d443" "872d4ca2-224b-4483-abef-189945b23bb8"
+			"a21cfc38-eccc-4d3e-a983-ed24517c06e7" "a700ad06-202a-47c0-bcc2-5241a0def427"
+			"abe20b29-de37-40b9-98a5-2213c73fb360" "b10488b3-8ff8-4789-bd2d-20fe3587cc1b"
+			"b58fa381-6a09-4724-a918-4e11aaef5871" "ca8f8179-89f6-463c-b067-ead23215bfa3"
+			"dbbc1b28-eb47-4f14-a733-84023e883fb0" "e557817d-e2ff-4fb6-a9d3-649fcc5c5b11"
+			"e838dfaf-bb62-4c9d-a5e4-863ab841467a"
 		)
 	)
 	(generated
@@ -18617,19 +18015,19 @@
 		(target_skew_max 0.0127)
 		(target_skew_min -0.0127)
 		(tuning_mode "diff_pair_skew")
-		(members 15a74f35-646a-498c-beaf-71508fc0d9e2 3dac821f-6afc-4040-8bd7-c04a70c24f98
-			3f482a4c-fd43-41a1-8af1-b04d56fc3db0 42015482-ee01-456c-8469-8c5c156e7acf
-			435068b5-7efb-4535-85b1-cd20c0866e20 57d5be7b-8188-4853-8cda-e3e4c60c59f3
-			630d7a08-0cfd-466b-a537-e663574d1f78 6634136e-5003-49ea-b648-3a40b7284358
-			763681c2-700a-4840-9a16-2562d992d2d6 813e160d-e216-4d82-84fb-ac390df75031
-			84ceda12-536b-4d0f-90cc-ee8d49e7c0dc 899ba02c-48bc-4e75-894b-fe10f19cf8ee
-			8aefa83a-b325-41a4-acd9-78e2667b20e4 9fe8f706-b6bb-45cd-a3e1-c73c83a4a85f
-			a9f9eeb6-4f1f-439b-9e3d-9523b5ed292a bb856fd8-92df-4f2c-8e30-90f9db2ab293
-			bba56d32-16ff-4ee8-bf6a-116c90f9f51b cb7a1e08-d8b1-4810-96e8-7019707a8627
-			d2fffe8a-9e6c-486a-a7d4-2bd447809951 d4280bb2-b011-4416-83c8-89f94228486e
-			d89dcdc4-0e4d-4fd1-bc1e-b1e8d485b2a5 eacfd3a7-7667-4edf-bc3a-645b4fe408cd
-			ed6a229c-7f4f-4866-a39a-aa3b1e09a7dd fe182583-7b0e-4ce6-9ce7-1653853d6c36
-			fe5dde9c-b2d4-4a74-ab30-d5a8721e80e9
+		(members "15a74f35-646a-498c-beaf-71508fc0d9e2" "3dac821f-6afc-4040-8bd7-c04a70c24f98"
+			"3f482a4c-fd43-41a1-8af1-b04d56fc3db0" "42015482-ee01-456c-8469-8c5c156e7acf"
+			"435068b5-7efb-4535-85b1-cd20c0866e20" "57d5be7b-8188-4853-8cda-e3e4c60c59f3"
+			"630d7a08-0cfd-466b-a537-e663574d1f78" "6634136e-5003-49ea-b648-3a40b7284358"
+			"763681c2-700a-4840-9a16-2562d992d2d6" "813e160d-e216-4d82-84fb-ac390df75031"
+			"84ceda12-536b-4d0f-90cc-ee8d49e7c0dc" "899ba02c-48bc-4e75-894b-fe10f19cf8ee"
+			"8aefa83a-b325-41a4-acd9-78e2667b20e4" "9fe8f706-b6bb-45cd-a3e1-c73c83a4a85f"
+			"a9f9eeb6-4f1f-439b-9e3d-9523b5ed292a" "bb856fd8-92df-4f2c-8e30-90f9db2ab293"
+			"bba56d32-16ff-4ee8-bf6a-116c90f9f51b" "cb7a1e08-d8b1-4810-96e8-7019707a8627"
+			"d2fffe8a-9e6c-486a-a7d4-2bd447809951" "d4280bb2-b011-4416-83c8-89f94228486e"
+			"d89dcdc4-0e4d-4fd1-bc1e-b1e8d485b2a5" "eacfd3a7-7667-4edf-bc3a-645b4fe408cd"
+			"ed6a229c-7f4f-4866-a39a-aa3b1e09a7dd" "fe182583-7b0e-4ce6-9ce7-1653853d6c36"
+			"fe5dde9c-b2d4-4a74-ab30-d5a8721e80e9"
 		)
 	)
 	(generated
@@ -18668,11 +18066,11 @@
 		(target_skew_max 0.1)
 		(target_skew_min -0.1)
 		(tuning_mode "single")
-		(members 23675d26-e0fe-4e76-ba14-13c89b7d6f20 3b819130-a632-48a7-a3ff-d5817c1e8640
-			59e02120-fc3b-4ca3-bb5e-6ab908093f9b 6301cf8d-38df-49d2-9f20-7d96af0d417c
-			66f1cf1c-e9fc-4532-aa17-b50cfc976a9b 68c779b5-22b1-48b2-85b3-681956dbe23a
-			9d72faf6-5cd0-4931-ab3a-d760e3ce4093 a31c341a-755b-4de4-9d61-1f21877d6beb
-			e324b401-5289-451c-a514-2e6b7549e363 f5c595fc-e823-4140-ab0c-532a70ba8246
+		(members "23675d26-e0fe-4e76-ba14-13c89b7d6f20" "3b819130-a632-48a7-a3ff-d5817c1e8640"
+			"59e02120-fc3b-4ca3-bb5e-6ab908093f9b" "6301cf8d-38df-49d2-9f20-7d96af0d417c"
+			"66f1cf1c-e9fc-4532-aa17-b50cfc976a9b" "68c779b5-22b1-48b2-85b3-681956dbe23a"
+			"9d72faf6-5cd0-4931-ab3a-d760e3ce4093" "a31c341a-755b-4de4-9d61-1f21877d6beb"
+			"e324b401-5289-451c-a514-2e6b7549e363" "f5c595fc-e823-4140-ab0c-532a70ba8246"
 		)
 	)
 	(generated
@@ -18716,14 +18114,14 @@
 		(target_skew_max 0.1)
 		(target_skew_min -0.1)
 		(tuning_mode "diff_pair")
-		(members 0ab5e0d5-3e8b-4419-8f68-fee87c6800d6 0d43dbd7-7d08-422d-8f4d-c05eade37802
-			0eae3432-dc93-4078-aa29-e115eb0a3f3e 19c42394-a1af-4e4e-a1bd-560532e86f50
-			1cce7f5e-653c-49a7-964e-a5ce36b8f65a 3be0c58c-50fe-4257-a062-8915223eeda7
-			3f419698-5669-4180-a0af-f42c8729de90 43f3799a-baef-44c2-bda9-7fb8a77b988e
-			4412290b-da1d-4c75-8c34-3c0b0858bf9a 653deb71-15aa-4df5-87b5-47e79a159148
-			8adc5767-2910-4d12-867b-f7f585b83de6 b02b094b-6661-46f9-9cc9-44b487569242
-			d0dece7e-e963-4559-890b-cd10ea9da427 dbdd47f6-602d-426b-bfd6-ee0c05603d20
-			f7c279a9-4177-4889-83c2-ac2d3221d10c
+		(members "0ab5e0d5-3e8b-4419-8f68-fee87c6800d6" "0d43dbd7-7d08-422d-8f4d-c05eade37802"
+			"0eae3432-dc93-4078-aa29-e115eb0a3f3e" "19c42394-a1af-4e4e-a1bd-560532e86f50"
+			"1cce7f5e-653c-49a7-964e-a5ce36b8f65a" "3be0c58c-50fe-4257-a062-8915223eeda7"
+			"3f419698-5669-4180-a0af-f42c8729de90" "43f3799a-baef-44c2-bda9-7fb8a77b988e"
+			"4412290b-da1d-4c75-8c34-3c0b0858bf9a" "653deb71-15aa-4df5-87b5-47e79a159148"
+			"8adc5767-2910-4d12-867b-f7f585b83de6" "b02b094b-6661-46f9-9cc9-44b487569242"
+			"d0dece7e-e963-4559-890b-cd10ea9da427" "dbdd47f6-602d-426b-bfd6-ee0c05603d20"
+			"f7c279a9-4177-4889-83c2-ac2d3221d10c"
 		)
 	)
 	(generated
@@ -18762,56 +18160,13 @@
 		(target_skew_max 0.1)
 		(target_skew_min -0.1)
 		(tuning_mode "single")
-		(members 0a85f81b-0851-4fa4-83cd-69cbe68c1d13 4d785fe5-2be0-4b84-8ade-8451c43a0eac
-			5b2db15e-8044-4d30-94f7-43fb3e61eb70 5f067fe4-e41d-4eb2-bf2c-c8087cc3d8ed
-			661844e1-4be7-41cf-8f69-1552b8ce4b05 7cf173c1-12fc-455e-8364-62d17790ab66
-			8c2a779f-cc82-4a4e-8b5f-d2ce5c8b4718 98775a56-d90d-42a7-b862-996b96b862f8
-			a024e030-6486-4cae-be16-6117d6bd6def a83214a1-57f2-418b-856d-e2cd52724cbc
-			b080e6a6-5d14-4399-9c13-8b71f5b02831 ee56d56b-af5d-4899-abc5-fe5aa36f564c
+		(members "0a85f81b-0851-4fa4-83cd-69cbe68c1d13" "4d785fe5-2be0-4b84-8ade-8451c43a0eac"
+			"5b2db15e-8044-4d30-94f7-43fb3e61eb70" "5f067fe4-e41d-4eb2-bf2c-c8087cc3d8ed"
+			"661844e1-4be7-41cf-8f69-1552b8ce4b05" "7cf173c1-12fc-455e-8364-62d17790ab66"
+			"8c2a779f-cc82-4a4e-8b5f-d2ce5c8b4718" "98775a56-d90d-42a7-b862-996b96b862f8"
+			"a024e030-6486-4cae-be16-6117d6bd6def" "a83214a1-57f2-418b-856d-e2cd52724cbc"
+			"b080e6a6-5d14-4399-9c13-8b71f5b02831" "ee56d56b-af5d-4899-abc5-fe5aa36f564c"
 		)
-	)
-	(generated
-		(uuid "a96102d2-dad0-4cc2-97ea-c37757fe125c")
-		(type tuning_pattern)
-		(name "Tuning Pattern")
-		(layer "F.Cu")
-		(base_line
-			(pts
-				(xy 41.508241 78.526549) (xy 41.590395 78.608703)
-			)
-		)
-		(base_line_coupled
-			(pts
-				(xy 41.276549 78.758241) (xy 41.260118 78.74181)
-			)
-		)
-		(corner_radius_percent 80)
-		(end
-			(xy 41.590395 78.608703)
-		)
-		(initial_side "right")
-		(last_diff_pair_gap 0.18)
-		(last_netname "/Out_13+")
-		(last_status "too_long")
-		(last_track_width 0.17526)
-		(last_tuning "3.2374 mm (too long)")
-		(max_amplitude 1)
-		(min_amplitude 0.2)
-		(min_spacing 0.6)
-		(origin
-			(xy 41.508241 78.526549)
-		)
-		(override_custom_rules no)
-		(rounded yes)
-		(single_sided no)
-		(target_length 1000000)
-		(target_length_max 1000000)
-		(target_length_min 0)
-		(target_skew -0.0127)
-		(target_skew_max 0.0127)
-		(target_skew_min -0.0127)
-		(tuning_mode "diff_pair_skew")
-		(members)
 	)
 	(generated
 		(uuid "b261be65-1d2b-4014-bdab-6c614e744fba")
@@ -18854,19 +18209,19 @@
 		(target_skew_max 0.0127)
 		(target_skew_min -0.0127)
 		(tuning_mode "diff_pair_skew")
-		(members 029c3a69-ddb2-46aa-a414-698b803b8b82 0c57fcf3-7600-4cf8-b2a3-549db1ac12a3
-			26d1457a-c347-42a7-99bb-cc8b8ae3b472 2a6ea9fc-cd8b-4170-87cc-37a04138dc39
-			3b80b522-3f4e-4446-b708-1c71471027a4 3b9037dc-1f6a-40a6-a484-0b3f82d17b39
-			3da6169f-c5b9-4a81-af7a-09536e99e4f5 3ebc3308-da5d-4abb-91eb-6ea57abe5d38
-			4044cc6e-f765-4baf-8737-090da3ee079d 417ca835-97f8-450a-a949-16914c3730c7
-			428c332e-67a6-488e-88e2-682b4be2921e 4f2cf040-13ca-438a-98dc-dce7e21aca2e
-			567b4813-d1f4-450d-888b-aa6bcdd1ccea 5906bea5-09b0-40df-9538-5c5158ca978f
-			59eb5e21-dbab-4610-b0b2-cd3fda78f954 7425726d-72d5-47d4-a95c-807b162e7d03
-			8371e487-1a2b-4091-a9e5-36d8d6cf7b55 8b9fc800-4e5d-4224-8219-39ec08d5d279
-			8c25abfe-2988-46d0-adc1-bc4d3e8fb193 a55d4ef9-ed8d-4676-9497-6e4bf9a8b701
-			add7a8c1-a300-4a77-b199-04244423f7bd b36bd2c5-87e0-4ab8-81de-c5eed6541469
-			bbeadcdd-650f-41af-bcf6-77b61619a4ac ed7e08d9-8b1e-46ae-9eff-e30e3222d967
-			f12399fe-5c6e-4711-adc0-283020e9bc06 f1e72564-0333-42bb-96f3-395244796908
+		(members "029c3a69-ddb2-46aa-a414-698b803b8b82" "0c57fcf3-7600-4cf8-b2a3-549db1ac12a3"
+			"26d1457a-c347-42a7-99bb-cc8b8ae3b472" "2a6ea9fc-cd8b-4170-87cc-37a04138dc39"
+			"3b80b522-3f4e-4446-b708-1c71471027a4" "3b9037dc-1f6a-40a6-a484-0b3f82d17b39"
+			"3da6169f-c5b9-4a81-af7a-09536e99e4f5" "3ebc3308-da5d-4abb-91eb-6ea57abe5d38"
+			"4044cc6e-f765-4baf-8737-090da3ee079d" "417ca835-97f8-450a-a949-16914c3730c7"
+			"428c332e-67a6-488e-88e2-682b4be2921e" "4f2cf040-13ca-438a-98dc-dce7e21aca2e"
+			"567b4813-d1f4-450d-888b-aa6bcdd1ccea" "5906bea5-09b0-40df-9538-5c5158ca978f"
+			"59eb5e21-dbab-4610-b0b2-cd3fda78f954" "7425726d-72d5-47d4-a95c-807b162e7d03"
+			"8371e487-1a2b-4091-a9e5-36d8d6cf7b55" "8b9fc800-4e5d-4224-8219-39ec08d5d279"
+			"8c25abfe-2988-46d0-adc1-bc4d3e8fb193" "a55d4ef9-ed8d-4676-9497-6e4bf9a8b701"
+			"add7a8c1-a300-4a77-b199-04244423f7bd" "b36bd2c5-87e0-4ab8-81de-c5eed6541469"
+			"bbeadcdd-650f-41af-bcf6-77b61619a4ac" "ed7e08d9-8b1e-46ae-9eff-e30e3222d967"
+			"f12399fe-5c6e-4711-adc0-283020e9bc06" "f1e72564-0333-42bb-96f3-395244796908"
 		)
 	)
 	(generated
@@ -18905,57 +18260,14 @@
 		(target_skew_max 0.1)
 		(target_skew_min -0.1)
 		(tuning_mode "single")
-		(members 0dfb0d43-6c4e-446e-839f-054c2f86b0da 15206bd5-254a-48de-8799-051e3fae9da0
-			1a526819-8008-41c4-a7cd-b1eba953961c 38590e26-8c9d-43d2-994c-78e4b52852f2
-			386a4ca0-cf99-4966-bfc5-c74ee210f82a 79337083-96a8-4f6f-a1c1-448fcc86931d
-			8361e31a-0ee1-43d7-a6d7-08bc68bc8924 97364e68-5ba3-451c-aaba-288201b9714b
-			9c8436bc-237a-4266-99d4-05d50e90e2df ad3f9c8c-8940-4f97-a83c-77bea33ab0c2
-			c74d4bdf-4f5a-4fd1-8e6f-f78b2ffdc9b7 c7a65691-b981-4520-8dce-dc6641e9db69
-			e406dccc-c24c-4280-84e9-fb4dda70e050 f6ff237a-6e84-464d-9db6-11b24d4bbddc
+		(members "0dfb0d43-6c4e-446e-839f-054c2f86b0da" "15206bd5-254a-48de-8799-051e3fae9da0"
+			"1a526819-8008-41c4-a7cd-b1eba953961c" "38590e26-8c9d-43d2-994c-78e4b52852f2"
+			"386a4ca0-cf99-4966-bfc5-c74ee210f82a" "79337083-96a8-4f6f-a1c1-448fcc86931d"
+			"8361e31a-0ee1-43d7-a6d7-08bc68bc8924" "97364e68-5ba3-451c-aaba-288201b9714b"
+			"9c8436bc-237a-4266-99d4-05d50e90e2df" "ad3f9c8c-8940-4f97-a83c-77bea33ab0c2"
+			"c74d4bdf-4f5a-4fd1-8e6f-f78b2ffdc9b7" "c7a65691-b981-4520-8dce-dc6641e9db69"
+			"e406dccc-c24c-4280-84e9-fb4dda70e050" "f6ff237a-6e84-464d-9db6-11b24d4bbddc"
 		)
-	)
-	(generated
-		(uuid "b33c0699-68d2-455f-959c-480b2a764a7a")
-		(type tuning_pattern)
-		(name "Tuning Pattern")
-		(layer "F.Cu")
-		(base_line
-			(pts
-				(xy 39.778618 56.44) (xy 39.779386 56.44)
-			)
-		)
-		(base_line_coupled
-			(pts
-				(xy 39.778618 56.76766) (xy 39.779386 56.76766)
-			)
-		)
-		(corner_radius_percent 80)
-		(end
-			(xy 39.779386 56.44)
-		)
-		(initial_side "left")
-		(last_diff_pair_gap 0.1524)
-		(last_netname "/Out_5-")
-		(last_status "too_short")
-		(last_track_width 0.17526)
-		(last_tuning "12.2720 mm (too short)")
-		(max_amplitude 1)
-		(min_amplitude 0.2)
-		(min_spacing 1)
-		(origin
-			(xy 39.778618 56.44)
-		)
-		(override_custom_rules no)
-		(rounded yes)
-		(single_sided no)
-		(target_length 12.7)
-		(target_length_max 13.462)
-		(target_length_min 12.7)
-		(target_skew 0)
-		(target_skew_max 0.1)
-		(target_skew_min -0.1)
-		(tuning_mode "diff_pair")
-		(members)
 	)
 	(generated
 		(uuid "b8d17b88-7e5c-4608-9bd6-8fd9ad5b89e8")
@@ -18998,15 +18310,15 @@
 		(target_skew_max 0.1)
 		(target_skew_min -0.1)
 		(tuning_mode "diff_pair")
-		(members 087255b9-38bf-457c-81cd-78907811d0d0 1806391c-d3aa-4f45-a710-9e3506cff874
-			4bc3a8dc-a1fc-48e9-ab12-c6f5feed08bf 578e461a-1330-4d7f-83fa-8002d87d2c32
-			64e8473f-e0c5-4e0f-8431-faf7367e0aa1 70c71efc-e67c-4d6c-b4bc-c0bb07f34fde
-			7da9c91b-0d8a-4e47-b969-757783f60988 921bcda2-46f8-43c5-8dd8-e7c300790b7e
-			95d048ed-ca07-48e7-8aff-b6b0e64fb5f2 96bf855e-7028-447d-8770-249bef264d1f
-			98c7f16f-1e82-497d-9333-eb2d07cebe0e 9b30d62e-7f52-4c50-98e3-5b3c7e10a0ab
-			b0d0753a-2c48-4825-a4f2-2b0cafeebc39 c459691a-25e5-4df5-ab2f-c8f4d98e3b67
-			da0c054e-dbdf-446c-91c6-bead8b6e8823 f3af7075-0f6e-419d-b1e4-733b0736c26d
-			fd547ac8-ed72-483a-820c-70fe01c99206
+		(members "087255b9-38bf-457c-81cd-78907811d0d0" "1806391c-d3aa-4f45-a710-9e3506cff874"
+			"4bc3a8dc-a1fc-48e9-ab12-c6f5feed08bf" "578e461a-1330-4d7f-83fa-8002d87d2c32"
+			"64e8473f-e0c5-4e0f-8431-faf7367e0aa1" "70c71efc-e67c-4d6c-b4bc-c0bb07f34fde"
+			"7da9c91b-0d8a-4e47-b969-757783f60988" "921bcda2-46f8-43c5-8dd8-e7c300790b7e"
+			"95d048ed-ca07-48e7-8aff-b6b0e64fb5f2" "96bf855e-7028-447d-8770-249bef264d1f"
+			"98c7f16f-1e82-497d-9333-eb2d07cebe0e" "9b30d62e-7f52-4c50-98e3-5b3c7e10a0ab"
+			"b0d0753a-2c48-4825-a4f2-2b0cafeebc39" "c459691a-25e5-4df5-ab2f-c8f4d98e3b67"
+			"da0c054e-dbdf-446c-91c6-bead8b6e8823" "f3af7075-0f6e-419d-b1e4-733b0736c26d"
+			"fd547ac8-ed72-483a-820c-70fe01c99206"
 		)
 	)
 	(generated
@@ -19050,15 +18362,15 @@
 		(target_skew_max 0.0127)
 		(target_skew_min -0.0127)
 		(tuning_mode "diff_pair_skew")
-		(members 03ea3c4a-5b23-497e-beab-02d00b890d7f 12f13758-0dd2-4e1c-be03-aa71aa7555e1
-			251f7d34-8a20-4410-82e9-e05f7b5f1c95 279ac4c1-0638-4793-8de5-ba066267ebd9
-			2a8bf147-2cbd-4ec2-82d5-bf26a3edf8e7 2a99df1d-cba6-4d7c-9304-ef0d2576ea45
-			5f4481d5-d1f1-42c7-a734-5b52809fba54 76243e06-697b-4cb6-8c9c-e785e039ed80
-			8866db03-f29f-4145-ac4f-0443c7559502 8bee8a34-f8c4-43a5-9d9c-107f057bb8c0
-			a4248701-f658-4913-8d52-74289d221426 b1c1534b-46b0-4ee0-8d5f-86d64ac06d9b
-			da5fabd5-cbc4-4208-b969-0bfe973d9b41 e1d7254f-ccff-4da7-9b78-086af1b765a3
-			e3802139-c4d7-487a-b6cf-b69461715b7e ee57f258-f7f5-4926-9af3-376bf340831b
-			fdb1e7ad-eb69-4f39-b910-19323878d703
+		(members "03ea3c4a-5b23-497e-beab-02d00b890d7f" "12f13758-0dd2-4e1c-be03-aa71aa7555e1"
+			"251f7d34-8a20-4410-82e9-e05f7b5f1c95" "279ac4c1-0638-4793-8de5-ba066267ebd9"
+			"2a8bf147-2cbd-4ec2-82d5-bf26a3edf8e7" "2a99df1d-cba6-4d7c-9304-ef0d2576ea45"
+			"5f4481d5-d1f1-42c7-a734-5b52809fba54" "76243e06-697b-4cb6-8c9c-e785e039ed80"
+			"8866db03-f29f-4145-ac4f-0443c7559502" "8bee8a34-f8c4-43a5-9d9c-107f057bb8c0"
+			"a4248701-f658-4913-8d52-74289d221426" "b1c1534b-46b0-4ee0-8d5f-86d64ac06d9b"
+			"da5fabd5-cbc4-4208-b969-0bfe973d9b41" "e1d7254f-ccff-4da7-9b78-086af1b765a3"
+			"e3802139-c4d7-487a-b6cf-b69461715b7e" "ee57f258-f7f5-4926-9af3-376bf340831b"
+			"fdb1e7ad-eb69-4f39-b910-19323878d703"
 		)
 	)
 	(generated
@@ -19102,14 +18414,14 @@
 		(target_skew_max 0.1)
 		(target_skew_min -0.1)
 		(tuning_mode "diff_pair")
-		(members 1924e974-e2a4-420d-a2c5-72838ca907ac 3c33225a-4058-4d33-9f48-b30cacbee4a6
-			7e183007-e07c-4b1e-8bb4-78dab3e8a138 989ec40e-11f4-4015-bc53-247112bc9db5
-			b862dcb2-b8b9-40fe-9dfc-0b4c7070b864 b9dba34b-034e-4983-945a-a72547147407
-			c01b180a-c592-40ec-bb8d-1351096b3fb4 c5f14314-e03a-4b5e-b2b6-badeb1e85542
-			d0d32b37-51b8-4205-993b-3f9227cf7c94 d9d15d68-9c83-492a-a49f-643bf58898b2
-			e1b9ee72-798d-4bee-ac42-82db74693b59 e8453475-394e-4501-9f14-42bd4c9880e0
-			eb357166-2ca5-412f-bee9-f80cb90c8d2c fa40ece9-c0e3-42cf-bf90-5ff0029fa8de
-			fe3f59ba-7287-44e5-a470-2edfe5fb8876
+		(members "1924e974-e2a4-420d-a2c5-72838ca907ac" "3c33225a-4058-4d33-9f48-b30cacbee4a6"
+			"7e183007-e07c-4b1e-8bb4-78dab3e8a138" "989ec40e-11f4-4015-bc53-247112bc9db5"
+			"b862dcb2-b8b9-40fe-9dfc-0b4c7070b864" "b9dba34b-034e-4983-945a-a72547147407"
+			"c01b180a-c592-40ec-bb8d-1351096b3fb4" "c5f14314-e03a-4b5e-b2b6-badeb1e85542"
+			"d0d32b37-51b8-4205-993b-3f9227cf7c94" "d9d15d68-9c83-492a-a49f-643bf58898b2"
+			"e1b9ee72-798d-4bee-ac42-82db74693b59" "e8453475-394e-4501-9f14-42bd4c9880e0"
+			"eb357166-2ca5-412f-bee9-f80cb90c8d2c" "fa40ece9-c0e3-42cf-bf90-5ff0029fa8de"
+			"fe3f59ba-7287-44e5-a470-2edfe5fb8876"
 		)
 	)
 	(generated
@@ -19153,19 +18465,19 @@
 		(target_skew_max 0.0127)
 		(target_skew_min -0.0127)
 		(tuning_mode "diff_pair_skew")
-		(members 03cb1c5d-18c1-41dc-a9d5-51af7ea1396b 0c2f6f58-26d6-450b-89e1-2960b9ae0ec2
-			20cfb035-4262-4652-a53a-2d8ab29b1cc9 2d08e8c4-0dbf-4216-99c7-31cdbcacbada
-			31a90bec-9a93-439a-8db5-25fd6345a0e7 3c58a0ff-3de1-429a-b285-c1fb304c1f2a
-			4193c011-5b55-4a46-86e3-c2fb37655bcc 539c8317-f532-430c-ba5c-c212ab987b22
-			5b112126-28ee-4ad6-a4a2-bf87b2d39dbf 6a3edb35-4927-490d-924e-4b76cd088e37
-			6e3ce8b8-9dea-4a60-8cfd-12e4f430e7f8 718f78dd-c9e2-4c2b-9556-c457ec0a0ec0
-			7a484aab-117b-4117-af82-d384c3e30253 7d4c7d18-b449-4a21-a8bc-f100f03ed6e0
-			7d5ba11d-70d1-4672-959e-9e503c31b6ad 9237eb2f-3a3b-4447-a1e1-feadf64299fc
-			aa190514-3bda-4da9-814c-b8323de3d08a addea1a1-ed34-4ed7-b3c4-69624213cae5
-			aef948e6-1d43-443d-ae31-0412eb4c0b8c bdd092fd-4681-4b35-8cfe-4c932e25d42a
-			c77ec561-30cd-4e2e-98dc-489b50d2d937 cb305d64-a737-4f92-85dc-5c701c7cfd8b
-			d5f54d03-fcda-490c-8faa-2efc589e0e6c eb9525bb-15d6-46be-9f11-2738bee7d224
-			f8ed84ed-6b25-42dd-b58d-a2462a36a715
+		(members "03cb1c5d-18c1-41dc-a9d5-51af7ea1396b" "0c2f6f58-26d6-450b-89e1-2960b9ae0ec2"
+			"20cfb035-4262-4652-a53a-2d8ab29b1cc9" "2d08e8c4-0dbf-4216-99c7-31cdbcacbada"
+			"31a90bec-9a93-439a-8db5-25fd6345a0e7" "3c58a0ff-3de1-429a-b285-c1fb304c1f2a"
+			"4193c011-5b55-4a46-86e3-c2fb37655bcc" "539c8317-f532-430c-ba5c-c212ab987b22"
+			"5b112126-28ee-4ad6-a4a2-bf87b2d39dbf" "6a3edb35-4927-490d-924e-4b76cd088e37"
+			"6e3ce8b8-9dea-4a60-8cfd-12e4f430e7f8" "718f78dd-c9e2-4c2b-9556-c457ec0a0ec0"
+			"7a484aab-117b-4117-af82-d384c3e30253" "7d4c7d18-b449-4a21-a8bc-f100f03ed6e0"
+			"7d5ba11d-70d1-4672-959e-9e503c31b6ad" "9237eb2f-3a3b-4447-a1e1-feadf64299fc"
+			"aa190514-3bda-4da9-814c-b8323de3d08a" "addea1a1-ed34-4ed7-b3c4-69624213cae5"
+			"aef948e6-1d43-443d-ae31-0412eb4c0b8c" "bdd092fd-4681-4b35-8cfe-4c932e25d42a"
+			"c77ec561-30cd-4e2e-98dc-489b50d2d937" "cb305d64-a737-4f92-85dc-5c701c7cfd8b"
+			"d5f54d03-fcda-490c-8faa-2efc589e0e6c" "eb9525bb-15d6-46be-9f11-2738bee7d224"
+			"f8ed84ed-6b25-42dd-b58d-a2462a36a715"
 		)
 	)
 	(generated
@@ -19209,15 +18521,15 @@
 		(target_skew_max 0.1)
 		(target_skew_min -0.1)
 		(tuning_mode "diff_pair")
-		(members 001be33e-24be-4e81-8c2b-6839ad526641 11dbc90b-3050-4a5a-a72c-5ed0fbc96185
-			27b83037-9d18-4707-9dbc-6b2f9c8eed9d 33e905ba-d2e1-4754-a74c-459551ca88fa
-			3c016f26-7a2c-4530-ab60-6bad9259b422 4859f643-65b4-4e92-aef8-569fcd72ad1c
-			898723bb-1020-49a7-887d-3e48aab284ba 99e61bbb-c35a-4def-8597-927eed0efabd
-			ae026c0c-6163-4cf9-83f4-06ac875db155 b2eaa51e-9492-47db-a17f-f4161fc04850
-			b4ba7048-207c-4085-b9ed-b79675642fce c6454f3b-c813-432b-8565-d644d8037a18
-			d935efd1-134e-4fec-b166-db7ca78bf60b d9f06732-401b-479f-b0ff-5c6b59be7bac
-			ec097cf9-b6bd-4c82-b9b3-fd56213a3b75 edb4b519-a65f-40ed-be16-8b6a9bec8fe9
-			fbcc1781-0dd1-4e91-9d1c-416d1cd06766
+		(members "001be33e-24be-4e81-8c2b-6839ad526641" "11dbc90b-3050-4a5a-a72c-5ed0fbc96185"
+			"27b83037-9d18-4707-9dbc-6b2f9c8eed9d" "33e905ba-d2e1-4754-a74c-459551ca88fa"
+			"3c016f26-7a2c-4530-ab60-6bad9259b422" "4859f643-65b4-4e92-aef8-569fcd72ad1c"
+			"898723bb-1020-49a7-887d-3e48aab284ba" "99e61bbb-c35a-4def-8597-927eed0efabd"
+			"ae026c0c-6163-4cf9-83f4-06ac875db155" "b2eaa51e-9492-47db-a17f-f4161fc04850"
+			"b4ba7048-207c-4085-b9ed-b79675642fce" "c6454f3b-c813-432b-8565-d644d8037a18"
+			"d935efd1-134e-4fec-b166-db7ca78bf60b" "d9f06732-401b-479f-b0ff-5c6b59be7bac"
+			"ec097cf9-b6bd-4c82-b9b3-fd56213a3b75" "edb4b519-a65f-40ed-be16-8b6a9bec8fe9"
+			"fbcc1781-0dd1-4e91-9d1c-416d1cd06766"
 		)
 	)
 	(generated
@@ -19256,14 +18568,14 @@
 		(target_skew_max 0.1)
 		(target_skew_min -0.1)
 		(tuning_mode "single")
-		(members 0e7b79c4-452b-4d2c-ad9d-4ff038047d0b 13f414e0-c8af-4641-b177-60c328be2fa9
-			29cfd026-43c8-401c-9df6-9d1a86046b79 2e6f6aef-41f4-432d-8319-be3b47dd94b5
-			4d252959-7aea-49c7-840d-12d88d878df6 64b98027-53b6-4372-9c3c-d4623cfd5c26
-			69b64c5a-9978-4e47-a70d-4d6d3eb90d35 75620932-dcf5-40df-8bbb-bb7bfc9bcce5
-			8254f4d3-8454-4277-a975-a44f7d85d4c1 82eecc54-c0a9-4bb4-836d-a73111148e77
-			849fedc1-c03e-42fa-8be0-1a70cac6c21a 97f14b5b-1285-49f3-b3c0-1134fe9fbdb1
-			acc4bb2d-8bf4-441c-910f-c528a192309a c671b5c5-17ab-47b3-912a-b131795684e4
-			f40ee86b-56a1-4dbd-ad08-7713fbc0f662
+		(members "0e7b79c4-452b-4d2c-ad9d-4ff038047d0b" "13f414e0-c8af-4641-b177-60c328be2fa9"
+			"29cfd026-43c8-401c-9df6-9d1a86046b79" "2e6f6aef-41f4-432d-8319-be3b47dd94b5"
+			"4d252959-7aea-49c7-840d-12d88d878df6" "64b98027-53b6-4372-9c3c-d4623cfd5c26"
+			"69b64c5a-9978-4e47-a70d-4d6d3eb90d35" "75620932-dcf5-40df-8bbb-bb7bfc9bcce5"
+			"8254f4d3-8454-4277-a975-a44f7d85d4c1" "82eecc54-c0a9-4bb4-836d-a73111148e77"
+			"849fedc1-c03e-42fa-8be0-1a70cac6c21a" "97f14b5b-1285-49f3-b3c0-1134fe9fbdb1"
+			"acc4bb2d-8bf4-441c-910f-c528a192309a" "c671b5c5-17ab-47b3-912a-b131795684e4"
+			"f40ee86b-56a1-4dbd-ad08-7713fbc0f662"
 		)
 	)
 	(generated
@@ -19302,13 +18614,13 @@
 		(target_skew_max 0.1)
 		(target_skew_min -0.1)
 		(tuning_mode "single")
-		(members 0a3fc881-7110-4784-abd7-3a7e4f05505b 1c09221e-c9cb-458e-809b-24d254e67fc3
-			36224f0d-fd80-41d3-a494-d613bfd37019 3bb82298-0ed5-4e75-b8ff-d427c92c16d3
-			44ee2aba-c1f5-4931-8a4d-6cc8d6c285e9 6bf4598b-0e66-4d00-b829-adf25d4c8e7c
-			728f746f-d254-4a3c-94fe-002e10f43c00 86510bbe-5266-45d0-aa4c-55ac4febd445
-			8994e040-6b33-42f7-a005-a78ca8e93069 8a04ef36-8a16-4766-89b8-e8a6e4583e7a
-			956aa424-d2e6-4221-a135-8c81107aefa5 aba9756a-16f0-40a8-8bb4-367664737b0b
-			d57f83eb-4988-43e9-af34-d19df757111b dd422b34-b341-4d0d-8754-9aa9abcbc3b9
+		(members "0a3fc881-7110-4784-abd7-3a7e4f05505b" "1c09221e-c9cb-458e-809b-24d254e67fc3"
+			"36224f0d-fd80-41d3-a494-d613bfd37019" "3bb82298-0ed5-4e75-b8ff-d427c92c16d3"
+			"44ee2aba-c1f5-4931-8a4d-6cc8d6c285e9" "6bf4598b-0e66-4d00-b829-adf25d4c8e7c"
+			"728f746f-d254-4a3c-94fe-002e10f43c00" "86510bbe-5266-45d0-aa4c-55ac4febd445"
+			"8994e040-6b33-42f7-a005-a78ca8e93069" "8a04ef36-8a16-4766-89b8-e8a6e4583e7a"
+			"956aa424-d2e6-4221-a135-8c81107aefa5" "aba9756a-16f0-40a8-8bb4-367664737b0b"
+			"d57f83eb-4988-43e9-af34-d19df757111b" "dd422b34-b341-4d0d-8754-9aa9abcbc3b9"
 		)
 	)
 	(generated
@@ -19352,15 +18664,15 @@
 		(target_skew_max 0.0127)
 		(target_skew_min -0.0127)
 		(tuning_mode "diff_pair_skew")
-		(members 07484642-b325-42bb-a720-3d68ee447d23 19341403-fb90-4708-bbe9-06425ff18604
-			1b289be2-8e88-4831-bf7d-4b1111819d28 385e6b1e-25bd-4240-b1c5-55c52dbfab6f
-			38d943c0-be46-4176-971a-67e80d080c12 4f461650-f357-4786-b39f-70c59153f5b9
-			58f49b03-9340-475b-97d2-72e7d2161431 95de3e18-e9d5-406a-aa2e-588c8a2c8bf8
-			95e3c951-5dd9-4214-ace5-ed74ad3897f8 b1215b0f-96ac-4c34-b2d0-73cda24c1c3c
-			c8e05051-7186-4e4d-9103-174cf4e6e54a d7eb678d-6ce9-46f5-a3fe-3c2e516b5867
-			dcff8290-571a-47a0-b8bd-a5126a874851 eba4b870-edb7-4e0b-940c-d9c35cbdb7d2
-			ed9aa899-a37e-4187-b608-fb15481d0ab3 f54344d2-75cb-42f7-8b63-ef8b580fecf4
-			f74c8fed-a791-4e7c-9285-a3cbb94e898b
+		(members "07484642-b325-42bb-a720-3d68ee447d23" "19341403-fb90-4708-bbe9-06425ff18604"
+			"1b289be2-8e88-4831-bf7d-4b1111819d28" "385e6b1e-25bd-4240-b1c5-55c52dbfab6f"
+			"38d943c0-be46-4176-971a-67e80d080c12" "4f461650-f357-4786-b39f-70c59153f5b9"
+			"58f49b03-9340-475b-97d2-72e7d2161431" "95de3e18-e9d5-406a-aa2e-588c8a2c8bf8"
+			"95e3c951-5dd9-4214-ace5-ed74ad3897f8" "b1215b0f-96ac-4c34-b2d0-73cda24c1c3c"
+			"c8e05051-7186-4e4d-9103-174cf4e6e54a" "d7eb678d-6ce9-46f5-a3fe-3c2e516b5867"
+			"dcff8290-571a-47a0-b8bd-a5126a874851" "eba4b870-edb7-4e0b-940c-d9c35cbdb7d2"
+			"ed9aa899-a37e-4187-b608-fb15481d0ab3" "f54344d2-75cb-42f7-8b63-ef8b580fecf4"
+			"f74c8fed-a791-4e7c-9285-a3cbb94e898b"
 		)
 	)
 	(generated
@@ -19404,19 +18716,20 @@
 		(target_skew_max 0.0127)
 		(target_skew_min -0.0127)
 		(tuning_mode "diff_pair_skew")
-		(members 194a7646-5540-4b49-bb4c-d03200f7a106 320c7a66-a15e-4860-8e56-5d26dccf60ff
-			353e24b0-c038-4ea5-a8c7-153c3c95fe15 3fc799b2-33b6-4013-9438-5b822ae0e96d
-			435fb999-1f55-4dab-898f-83abec8edd70 59ebe877-eeb6-4868-bdc7-6a74ab8fd9ee
-			5c4c2a51-57a3-412a-ba9c-17b1055ee60f 65cb5185-d099-4cb9-afef-44f84fafa6ae
-			6b834955-57b7-44df-b368-b2c8cf9934db 6f09a326-4714-4b41-949d-e730bcf8b7bc
-			7d034707-c633-4281-b85c-a4dbc195ffb2 87a28cc2-f04f-4dff-a662-8b7cede82502
-			881eddf5-a7c0-4657-9cea-5e181a9e15bc 887d8061-b406-4e3f-aa50-af2905683e1d
-			8ee615a4-45d2-4e14-9ad4-8101e355a4e7 934b9617-b9d3-4172-b293-a78922fe96cf
-			95d55434-5fc9-41d8-a83a-a893d76caeca a5f9564c-e7e7-44c6-8e97-14c0d6503458
-			a60cbced-5492-407c-a8ba-808b057c1be5 a61d5b76-ef89-41e8-8e36-4eb9b790b8dc
-			bb3d1f31-a801-4a5e-a5df-05a2f410983a bcc5b058-349f-4c80-a356-cd52bf03b4f1
-			c52108d2-8326-40ad-ab23-6fb95778e20d dfc19541-77a3-4f1b-9946-18deee4e3104
-			ed11bdaf-9a79-4b55-8e59-56e9bb5f5207
+		(members "194a7646-5540-4b49-bb4c-d03200f7a106" "320c7a66-a15e-4860-8e56-5d26dccf60ff"
+			"353e24b0-c038-4ea5-a8c7-153c3c95fe15" "3fc799b2-33b6-4013-9438-5b822ae0e96d"
+			"435fb999-1f55-4dab-898f-83abec8edd70" "59ebe877-eeb6-4868-bdc7-6a74ab8fd9ee"
+			"5c4c2a51-57a3-412a-ba9c-17b1055ee60f" "65cb5185-d099-4cb9-afef-44f84fafa6ae"
+			"6b834955-57b7-44df-b368-b2c8cf9934db" "6f09a326-4714-4b41-949d-e730bcf8b7bc"
+			"7d034707-c633-4281-b85c-a4dbc195ffb2" "87a28cc2-f04f-4dff-a662-8b7cede82502"
+			"881eddf5-a7c0-4657-9cea-5e181a9e15bc" "887d8061-b406-4e3f-aa50-af2905683e1d"
+			"8ee615a4-45d2-4e14-9ad4-8101e355a4e7" "934b9617-b9d3-4172-b293-a78922fe96cf"
+			"95d55434-5fc9-41d8-a83a-a893d76caeca" "a5f9564c-e7e7-44c6-8e97-14c0d6503458"
+			"a60cbced-5492-407c-a8ba-808b057c1be5" "a61d5b76-ef89-41e8-8e36-4eb9b790b8dc"
+			"bb3d1f31-a801-4a5e-a5df-05a2f410983a" "bcc5b058-349f-4c80-a356-cd52bf03b4f1"
+			"c52108d2-8326-40ad-ab23-6fb95778e20d" "dfc19541-77a3-4f1b-9946-18deee4e3104"
+			"ed11bdaf-9a79-4b55-8e59-56e9bb5f5207"
 		)
 	)
+	(embedded_fonts no)
 )
