@@ -500,7 +500,6 @@
         "bus_width": 12,
         "clearance": 0.15,
         "diff_pair_gap": 0.12954,
-        "diff_pair_via_gap": 0.25,
         "diff_pair_width": 0.17526,
         "line_style": 0,
         "microvia_diameter": 0.3,
@@ -518,7 +517,6 @@
         "bus_width": 12,
         "clearance": 0.381,
         "diff_pair_gap": 0.25,
-        "diff_pair_via_gap": 0.25,
         "diff_pair_width": 0.2,
         "line_style": 0,
         "microvia_diameter": 0.3,
@@ -536,7 +534,6 @@
         "bus_width": 12,
         "clearance": 0.3048,
         "diff_pair_gap": 0.25,
-        "diff_pair_via_gap": 0.25,
         "diff_pair_width": 0.2,
         "line_style": 0,
         "microvia_diameter": 0.3,
@@ -572,6 +569,10 @@
       {
         "netclass": "fan_pwr",
         "pattern": "GND"
+      },
+      {
+        "netclass": "50ohm",
+        "pattern": "/SR"
       }
     ]
   },

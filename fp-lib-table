@@ -2,4 +2,6 @@
   (version 7)
   (lib (name "Kria_Board_Parts")(type "KiCad")(uri "${KIPRJMOD}/project_libraries/Kria_Board_Parts/Kria_Board_Parts.pretty")(options "")(descr ""))
   (lib (name "RPi_Pico")(type "KiCad")(uri "${KIPRJMOD}/project_libraries/RP-Pico/MCU_RaspberryPi_and_Boards.pretty")(options "")(descr ""))
+  (lib (name "SN65MLVD206BD")(type "KiCad")(uri "${KIPRJMOD}/project_libraries/ul_SN65MLVD206BD/KiCADv6/footprints.pretty")(options "")(descr ""))
+  (lib (name "RJHSE508002")(type "KiCad")(uri "${KIPRJMOD}/project_libraries/RJHSE508002")(options "")(descr ""))
 )
