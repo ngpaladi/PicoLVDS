@@ -1,3 +1,6 @@
 [submodule "project_libraries/raspi-pico-kicad"]
 	path = project_libraries/raspi-pico-kicad
-	url = https://github.com/ngpaladi/raspi-pico-kicad.git
+	url = ssh://git@github.com/ngpaladi/raspi-pico-kicad.git
+[submodule "project_libraries/--force"]
+	path = project_libraries/--force
+	url = ssh://git@github.com/ngpaladi/raspi-pico-kicad.git
