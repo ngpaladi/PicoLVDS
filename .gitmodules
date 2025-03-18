@@ -1,0 +1,3 @@
+[submodule "project_libraries/raspi-pico-kicad"]
+	path = project_libraries/raspi-pico-kicad
+	url = https://github.com/ngpaladi/raspi-pico-kicad.git

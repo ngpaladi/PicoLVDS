@@ -48,7 +48,7 @@
         "silk_text_thickness": 0.1,
         "silk_text_upright": false,
         "zones": {
-          "min_clearance": 0.762
+          "min_clearance": 1.27
         }
       },
       "diff_pair_dimensions": [
@@ -506,12 +506,26 @@
         "microvia_drill": 0.1,
         "name": "100ohm_diff",
         "pcb_color": "rgba(0, 0, 0, 0.000)",
-        "priority": 0,
+        "priority": 2,
         "schematic_color": "rgba(0, 0, 0, 0.000)",
         "track_width": 0.17526,
         "via_diameter": 0.5,
         "via_drill": 0.3,
         "wire_width": 6
+      },
+      {
+        "clearance": 0.15,
+        "diff_pair_gap": 0.12954,
+        "diff_pair_width": 0.17526,
+        "microvia_diameter": 0.3,
+        "microvia_drill": 0.1,
+        "name": "100ohm_diff_RJ45",
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "priority": 1,
+        "schematic_color": "rgba(0, 0, 0, 0.000)",
+        "track_width": 0.17526,
+        "via_diameter": 0.5,
+        "via_drill": 0.3
       },
       {
         "bus_width": 12,
@@ -523,12 +537,26 @@
         "microvia_drill": 0.1,
         "name": "50ohm",
         "pcb_color": "rgba(0, 0, 0, 0.000)",
-        "priority": 1,
+        "priority": 3,
         "schematic_color": "rgba(0, 0, 0, 0.000)",
         "track_width": 0.381,
         "via_diameter": 0.6,
         "via_drill": 0.4,
         "wire_width": 6
+      },
+      {
+        "clearance": 0.381,
+        "diff_pair_gap": 0.12954,
+        "diff_pair_width": 0.17526,
+        "microvia_diameter": 0.3,
+        "microvia_drill": 0.1,
+        "name": "50ohm_RJ45",
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "priority": 0,
+        "schematic_color": "rgba(0, 0, 0, 0.000)",
+        "track_width": 0.381,
+        "via_diameter": 0.6,
+        "via_drill": 0.3
       },
       {
         "bus_width": 12,
@@ -540,7 +568,7 @@
         "microvia_drill": 0.1,
         "name": "fan_pwr",
         "pcb_color": "rgba(0, 0, 0, 0.000)",
-        "priority": 2,
+        "priority": 4,
         "schematic_color": "rgba(0, 0, 0, 0.000)",
         "track_width": 0.762,
         "via_diameter": 0.6,
@@ -559,7 +587,7 @@
         "pattern": "/D*"
       },
       {
-        "netclass": "100ohm_diff",
+        "netclass": "50ohm_RJ45",
         "pattern": "/Out*"
       },
       {
@@ -573,6 +601,14 @@
       {
         "netclass": "50ohm",
         "pattern": "/SR"
+      },
+      {
+        "netclass": "100ohm_diff_RJ45",
+        "pattern": "/RJ45*"
+      },
+      {
+        "netclass": "50ohm_RJ45",
+        "pattern": "/D1[6789]"
       }
     ]
   },

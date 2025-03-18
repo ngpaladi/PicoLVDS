@@ -4,7 +4,13 @@
 	(constraint length (min 505mil) (max 525mil))
 	(condition "A.NetClass == '100ohm_diff'")
 	(severity warning))
+
 (rule "Length matching 50ohm"
 	(constraint length (min 621mil) (max 623mil))
 	(condition "A.NetClass == '50ohm'")
+	(severity warning))
+
+(rule "Length matching 50ohm RJ45"
+	(constraint length (opt 1600mil))
+	(condition "A.NetClass == '50ohm_RJ45'")
 	(severity warning))

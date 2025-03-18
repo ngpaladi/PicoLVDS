@@ -5,16 +5,16 @@
       "Application": "Pcbnew",
       "Version": "9.0.0"
     },
-    "CreationDate": "2025-03-11T15:03:30-04:00"
+    "CreationDate": "2025-03-18T14:59:47-04:00"
   },
   "GeneralSpecs": {
     "ProjectId": {
       "Name": "PicoLVDS",
       "GUID": "5069636f-4c56-4445-932e-6b696361645f",
-      "Revision": "2"
+      "Revision": "3"
     },
     "Size": {
-      "X": 58.05,
+      "X": 92.34,
       "Y": 52.85
     },
     "LayerNumber": 4,
