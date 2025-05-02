@@ -37,6 +37,7 @@
 		(29 "B.CrtYd" user "B.Courtyard")
 		(35 "F.Fab" user)
 		(33 "B.Fab" user)
+		(39 "User.1" user "StencilFrame.Cuts")
 	)
 	(setup
 		(stackup
@@ -110,7 +111,7 @@
 		(allow_soldermask_bridges_in_footprints no)
 		(tenting front back)
 		(pcbplotparams
-			(layerselection 0x00000000_00000000_55555555_575575ff)
+			(layerselection 0x00000000_00000000_555555d5_55555500)
 			(plot_on_all_layers_selection 0x00000000_00000000_00000000_00000000)
 			(disableapertmacros yes)
 			(usegerberextensions no)
@@ -136,14 +137,13 @@
 			(psnegative no)
 			(psa4output no)
 			(plot_black_and_white yes)
-			(plotinvisibletext no)
 			(sketchpadsonfab no)
 			(plotpadnumbers no)
 			(hidednponfab no)
 			(sketchdnponfab yes)
 			(crossoutdnponfab yes)
 			(subtractmaskfromsilk no)
-			(outputformat 1)
+			(outputformat 5)
 			(mirror no)
 			(drillshape 0)
 			(scaleselection 1)
@@ -11920,6 +11920,31 @@
 		(fill no)
 		(layer "Edge.Cuts")
 		(uuid "4a87e199-2f72-4f32-8060-0ea80632071c")
+	)
+	(gr_poly
+		(pts
+			(xy 30 90) (xy 30 87.15) (xy 27.5 87.15) (xy 27.5 38) (xy 30 38) (xy 30 37.2) (xy 31 37.25) (xy 31 34.95)
+			(xy 120 35) (xy 120 37.2) (xy 122.3 37.2) (xy 122.3 39.5) (xy 125 39.5) (xy 125 87.5) (xy 122.3 87.5)
+			(xy 122.35 90.05) (xy 120.05 90.05) (xy 120.05 93) (xy 32.55 92.95) (xy 32.55 90)
+		)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(fill no)
+		(layer "User.1")
+		(uuid "51791448-e2f1-4f04-a2fa-f3f1639ac4d9")
+	)
+	(gr_rect
+		(start 23 30)
+		(end 130 98)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(fill no)
+		(layer "User.1")
+		(uuid "bba0a695-9457-4710-b4eb-dbf64ee157fc")
 	)
 	(gr_text "PicoLVDS v${REVISION}\nNoah Paladino"
 		(at 102.87 80.772 0)
